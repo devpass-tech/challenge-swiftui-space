@@ -60,7 +60,7 @@
 		98BDC98A2784F8B5003820AD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
-		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,6 @@
 		98B5516D2784D78900AC9086 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				98BDC9902784FBFC003820AD /* Info.plist */,
 				98BDC97C2784F6B3003820AD /* App */,
 				98BDC97D2784F6CA003820AD /* Resources */,
 				98BDC97B2784F6A5003820AD /* Screens */,
@@ -205,6 +204,7 @@
 		98BDC97D2784F6CA003820AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				98BDC9902784FBFC003820AD /* Info.plist */,
 				98B551722784D78E00AC9086 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -520,7 +520,7 @@
 				DEVELOPMENT_TEAM = B8F644M47X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpaceApp/Info.plist;
+				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -550,7 +550,7 @@
 				DEVELOPMENT_TEAM = B8F644M47X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SpaceApp/Info.plist;
+				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
