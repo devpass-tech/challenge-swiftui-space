@@ -24,6 +24,7 @@
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320373279F5C0400A5244B /* NextLaunchRowView.swift */; };
 		A2320376279F6E1400A5244B /* NextLaunchRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */; };
+		A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264C55D27A09FC4001DAF9D /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2320373279F5C0400A5244B /* NextLaunchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowView.swift; sourceTree = "<group>"; };
 		A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowViewModel.swift; sourceTree = "<group>"; };
+		A264C55D27A09FC4001DAF9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				98BDC9902784FBFC003820AD /* Info.plist */,
+				A264C55D27A09FC4001DAF9D /* Colors.swift */,
 				98B551722784D78E00AC9086 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -369,6 +372,7 @@
 				A2320376279F6E1400A5244B /* NextLaunchRowViewModel.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
+				A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */,

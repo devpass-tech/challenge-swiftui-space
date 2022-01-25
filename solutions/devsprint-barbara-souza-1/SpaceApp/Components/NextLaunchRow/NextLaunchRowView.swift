@@ -9,9 +9,14 @@ import SwiftUI
 
 struct NextLaunchRowView: View {
     // MARK: Properties
-    var viewModel = NextLaunchRowViewModel()
+    var viewModel: NextLaunchRowViewModel
     var imageSize: CGFloat = 130
-    var backgroundColor = Color(.sRGB, red: 28/255, green: 28/255, blue: 30/255, opacity: 1)
+    var backgroundColor: Color = .appGray
+
+    // MARK: Initializer
+    init(viewModel: NextLaunchRowViewModel = NextLaunchRowViewModel()) {
+         self.viewModel = viewModel
+    }
 
     // MARK: Main View
     var body: some View {
@@ -59,5 +64,6 @@ struct NextLaunchRowView_Previews: PreviewProvider {
     static var previews: some View {
         NextLaunchRowView()
             .padding()
+            .preferredColorScheme(.dark)
     }
 }
