@@ -13,10 +13,6 @@ struct InfoRowViewModel {
     var title: String = "Rocket"
     var subtitle: String? = "Falcon Heavy (SpaceX)"
     var description: String = "With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded..."
-}
-
-struct CustomButtonViewModel {
     var buttonText: String = "See more"
-    var clicked: (() -> Void)
 }
 

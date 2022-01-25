@@ -10,7 +10,13 @@ import SwiftUI
 
 struct InfoRowView: View {
 
-    var infoRowViewModel = InfoRowViewModel()
+    var infoRowViewModel: InfoRowViewModel
+    var action: () -> Void
+
+    init(infoRowViewModel: InfoRowViewModel, action: @escaping (() -> Void)) {
+        self.infoRowViewModel = infoRowViewModel
+        self.action = action
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -26,34 +32,36 @@ struct InfoRowView: View {
                 .foregroundColor(.gray)
                 .font(.system(size: 20, weight: .regular))
                 .lineLimit(3)
-            CustomButton(
-                text: "See more") {
-                    print("pressed")
-                }
+            Button(action: action) {
+                Text(infoRowViewModel.buttonText)
+                    .font(.system(size: 17, weight: .regular))
+                    .foregroundColor(.white)
+            }
+            .frame(width: 343, height: 56, alignment: .center)
+            .background(Color.blue)
+            .cornerRadius(14)
         }
         .background(Color.black)
     }
 }
 
-struct CustomButton: View {
 
-    var text: String
-    var clicked: (() -> Void)
-
-    var body: some View {
-        Button(action: clicked) {
-            Text(text)
-                .font(.system(size: 17, weight: .regular))
-                .foregroundColor(.white)
-        }
-        .frame(width: 343, height: 56, alignment: .center)
-        .background(Color.blue)
-        .cornerRadius(14)
-    }
+extension InfoRowViewModel {
+    static let mock = Self(
+        title: "Rocket",
+        subtitle: "Falcon Heavy (SpaceX)",
+        description: "With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded...",
+        buttonText: "See more")
 }
 
 struct InfoRowView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoRowView()
+        previewDefault
     }
 }
+
+var previewDefault: some View {
+    InfoRowView(infoRowViewModel: .mock, action: {})
+        .frame(width: 320, height: 350)
+}
+
