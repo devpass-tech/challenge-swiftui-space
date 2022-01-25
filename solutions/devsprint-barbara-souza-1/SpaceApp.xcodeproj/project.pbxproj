@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E78FF64279F642200D82D16 /* LaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E78FF63279F642200D82D16 /* LaunchRowView.swift */; };
+		3EF04B6A27A047FE00F4FC10 /* LaunchRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF04B6927A047FE00F4FC10 /* LaunchRowViewModel.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeView.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E78FF63279F642200D82D16 /* LaunchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRowView.swift; sourceTree = "<group>"; };
+		3EF04B6927A047FE00F4FC10 /* LaunchRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRowViewModel.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E78FF62279F640500D82D16 /* LaunchRowView */ = {
+			isa = PBXGroup;
+			children = (
+				3E78FF63279F642200D82D16 /* LaunchRowView.swift */,
+				3EF04B6927A047FE00F4FC10 /* LaunchRowViewModel.swift */,
+			);
+			path = LaunchRowView;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +201,7 @@
 		98BDC97B2784F6A5003820AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3E78FF62279F640500D82D16 /* LaunchRowView */,
 				98B551702784D78900AC9086 /* HomeView.swift */,
 			);
 			path = Screens;
@@ -349,7 +363,9 @@
 			files = (
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
+				3EF04B6A27A047FE00F4FC10 /* LaunchRowViewModel.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				3E78FF64279F642200D82D16 /* LaunchRowView.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
