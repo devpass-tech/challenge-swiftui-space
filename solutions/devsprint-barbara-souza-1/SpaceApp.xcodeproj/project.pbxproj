@@ -22,6 +22,8 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
+		F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085C727A0572300D0B9D8 /* InfoRowView.swift */; };
+		F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09085C727A0572300D0B9D8 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoRowView.swift; path = SpaceApp/Screens/InfoRowView/InfoRowView.swift; sourceTree = SOURCE_ROOT; };
+		F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */,
+				F09085CC27A057C700D0B9D8 /* SnapshotsTests */,
 			);
 			path = SpaceAppTests;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 		98BDC97B2784F6A5003820AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F09085C927A0572B00D0B9D8 /* InfoRowView */,
 				98B551702784D78900AC9086 /* HomeView.swift */,
 			);
 			path = Screens;
@@ -215,6 +221,22 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F09085C927A0572B00D0B9D8 /* InfoRowView */ = {
+			isa = PBXGroup;
+			children = (
+				F09085C727A0572300D0B9D8 /* InfoRowView.swift */,
+				F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */,
+			);
+			path = InfoRowView;
+			sourceTree = "<group>";
+		};
+		F09085CC27A057C700D0B9D8 /* SnapshotsTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SnapshotsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,7 +378,9 @@
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
+				F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
+				F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
