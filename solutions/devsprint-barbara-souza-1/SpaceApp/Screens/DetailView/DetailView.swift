@@ -10,41 +10,40 @@ import SwiftUI
 struct DetailsView: View {
     
     var viewModel = DetailViewModel()
+    
     init(viewModel: DetailViewModel = DetailViewModel()) {
         self.viewModel = viewModel
     }
     
     init() {
         UINavigationBar.appearance().backgroundColor = UIColor(.gray)
-        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     var body: some View {
         NavigationView {
-            VStack(){
-                TextView(text: viewModel.description )
-                    .padding()
+            ZStack(alignment: .top) {
+                Color.black
+                
+                ZStack(alignment: .leading) {
+                    Text(viewModel.description)
+                        .foregroundColor(.gray)
+                        .font(.system(size: 20, weight: .regular))
+                        .frame(width: 340, height: 456)
+                        .padding(.top , 16)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                VStack {
+                                    Text(viewModel.title)
+                                        .font(.largeTitle.bold())
+                                        .foregroundColor(.white)
+                            }
+                        }
+                    }
+                }
             }
-            .navigationTitle(viewModel.title)
-            .navigationBarTitleDisplayMode(.inline)
-            .background(.black)
         }
-    }
-}
-//MARK: - UIViewRepresentable methods
-
-struct TextView: UIViewRepresentable {
-    
-    var text: String
-    func makeUIView(context: Context) -> UITextView {
-        let textView = UITextView()
-        textView.textColor = .gray
-        textView.textAlignment = .justified
-        textView.backgroundColor = UIColor.black
-        return textView
-    }
-    
-    func updateUIView(_ uiView: UITextView, context: Context) {
-        uiView.text = text
+        .cornerRadius(20)
+        
     }
 }
 
