@@ -6,9 +6,16 @@
 //
 
 import Foundation
-import SwiftUI
 
-struct InfoRowViewModel {
+protocol InfoRowViewModelRepresentable {
+
+    var title: String { get }
+    var subtitle: String? { get }
+    var description: String { get }
+    var buttonText: String { get }
+}
+
+struct InfoRowViewModel: InfoRowViewModelRepresentable {
 
     var title: String = "Rocket"
     var subtitle: String? = "Falcon Heavy (SpaceX)"

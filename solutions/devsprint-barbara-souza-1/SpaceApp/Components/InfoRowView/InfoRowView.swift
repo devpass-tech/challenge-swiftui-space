@@ -9,10 +9,10 @@ import SwiftUI
 
 struct InfoRowView: View {
 
-    var infoRowViewModel: InfoRowViewModel
+    var infoRowViewModel: InfoRowViewModelRepresentable
     var action: () -> Void
 
-    init(infoRowViewModel: InfoRowViewModel, action: @escaping (() -> Void)) {
+    init(infoRowViewModel: InfoRowViewModelRepresentable, action: @escaping (() -> Void)) {
         self.infoRowViewModel = infoRowViewModel
         self.action = action
     }
@@ -20,27 +20,25 @@ struct InfoRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text(infoRowViewModel.title)
-                .foregroundColor(.white)
+                .foregroundColor(.titleColorWhite)
                 .font(.system(size: 24, weight: .semibold))
-            if infoRowViewModel.subtitle != nil {
-                Text(infoRowViewModel.subtitle ?? "")
-                    .foregroundColor(.gray)
-                    .font(.system(size: 20, weight: .regular))
-            }
+            infoRowViewModel.subtitle.map(Text.init)
+                .foregroundColor(.descriptionColorGray)
+                .font(.system(size: 20, weight: .regular))
             Text(infoRowViewModel.description)
-                .foregroundColor(.gray)
+                .foregroundColor(.descriptionColorGray)
                 .font(.system(size: 20, weight: .regular))
                 .lineLimit(3)
             Button(action: action) {
                 Text(infoRowViewModel.buttonText)
                     .font(.system(size: 17, weight: .regular))
-                    .foregroundColor(.white)
+                    .foregroundColor(.buttonColorBlue)
             }
             .frame(maxWidth: .infinity,  maxHeight: 56)
-            .background(Color.blue)
+            .background(Color.titleColorWhite)
             .cornerRadius(14)
         }
-        .background(Color.black)
+        .background(Color.backgroundColorBlack)
     }
 }
 
