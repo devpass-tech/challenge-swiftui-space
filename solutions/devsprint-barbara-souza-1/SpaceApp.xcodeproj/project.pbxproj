@@ -22,8 +22,13 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
+		A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320373279F5C0400A5244B /* NextLaunchRowView.swift */; };
+		A2320376279F6E1400A5244B /* NextLaunchRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */; };
+		A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264C55D27A09FC4001DAF9D /* Colors.swift */; };
 		F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085C727A0572300D0B9D8 /* InfoRowView.swift */; };
 		F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */; };
+		F09085D227A0C7EB00D0B9D8 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F09085D127A0C7EB00D0B9D8 /* SnapshotTesting */; };
+		F09085D527A0E73A00D0B9D8 /* InfoRowViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +68,12 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F09085C727A0572300D0B9D8 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoRowView.swift; path = SpaceApp/Screens/InfoRowView/InfoRowView.swift; sourceTree = SOURCE_ROOT; };
+		A2320373279F5C0400A5244B /* NextLaunchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowView.swift; sourceTree = "<group>"; };
+		A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowViewModel.swift; sourceTree = "<group>"; };
+		A264C55D27A09FC4001DAF9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F09085C727A0572300D0B9D8 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoRowView.swift; path = SpaceApp/Components/InfoRowView/InfoRowView.swift; sourceTree = SOURCE_ROOT; };
 		F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowViewModel.swift; sourceTree = "<group>"; };
+		F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09085D227A0C7EB00D0B9D8 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,9 +127,9 @@
 			children = (
 				98BDC97C2784F6B3003820AD /* App */,
 				98BDC97D2784F6CA003820AD /* Resources */,
+				A2320378279F6E4A00A5244B /* Components */,
 				98BDC97B2784F6A5003820AD /* Screens */,
 				98BDC9772784F674003820AD /* DataManager */,
-				98BDC97F2784F6FA003820AD /* Extensions */,
 				98B551742784D78E00AC9086 /* Preview Content */,
 			);
 			path = SpaceApp;
@@ -137,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */,
-				F09085CC27A057C700D0B9D8 /* SnapshotsTests */,
+				F09085CC27A057C700D0B9D8 /* Components */,
 			);
 			path = SpaceAppTests;
 			sourceTree = "<group>";
@@ -193,7 +203,6 @@
 		98BDC97B2784F6A5003820AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				F09085C927A0572B00D0B9D8 /* InfoRowView */,
 				98B551702784D78900AC9086 /* HomeView.swift */,
 			);
 			path = Screens;
@@ -211,16 +220,28 @@
 			isa = PBXGroup;
 			children = (
 				98BDC9902784FBFC003820AD /* Info.plist */,
+				A264C55D27A09FC4001DAF9D /* Colors.swift */,
 				98B551722784D78E00AC9086 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		98BDC97F2784F6FA003820AD /* Extensions */ = {
+		A2320377279F6E4200A5244B /* NextLaunchRow */ = {
 			isa = PBXGroup;
 			children = (
+				A2320373279F5C0400A5244B /* NextLaunchRowView.swift */,
+				A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */,
 			);
-			path = Extensions;
+			path = NextLaunchRow;
+			sourceTree = "<group>";
+		};
+		A2320378279F6E4A00A5244B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A2320377279F6E4200A5244B /* NextLaunchRow */,
+				F09085C927A0572B00D0B9D8 /* InfoRowView */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F09085C927A0572B00D0B9D8 /* InfoRowView */ = {
@@ -232,11 +253,20 @@
 			path = InfoRowView;
 			sourceTree = "<group>";
 		};
-		F09085CC27A057C700D0B9D8 /* SnapshotsTests */ = {
+		F09085CC27A057C700D0B9D8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F09085D327A0E70400D0B9D8 /* InfoRowView */,
 			);
-			path = SnapshotsTests;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F09085D327A0E70400D0B9D8 /* InfoRowView */ = {
+			isa = PBXGroup;
+			children = (
+				F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */,
+			);
+			path = InfoRowView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +303,9 @@
 				98B5517D2784D78F00AC9086 /* PBXTargetDependency */,
 			);
 			name = SpaceAppTests;
+			packageProductDependencies = (
+				F09085D127A0C7EB00D0B9D8 /* SnapshotTesting */,
+			);
 			productName = SpaceAppTests;
 			productReference = 98B5517B2784D78F00AC9086 /* SpaceAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -327,6 +360,9 @@
 				Base,
 			);
 			mainGroup = 98B551622784D78900AC9086;
+			packageReferences = (
+				F09085D027A0C7EB00D0B9D8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 98B5516C2784D78900AC9086 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -374,11 +410,14 @@
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
+				A2320376279F6E1400A5244B /* NextLaunchRowViewModel.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
+				A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */,
+				A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
 				F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */,
 			);
@@ -389,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */,
+				F09085D527A0E73A00D0B9D8 /* InfoRowViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -523,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -541,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = AZJDHZ37UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
@@ -550,6 +590,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +612,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = AZJDHZ37UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
@@ -580,6 +621,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,7 +644,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.SpaceAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -622,7 +664,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B8F644M47X;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.SpaceAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,6 +751,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F09085D027A0C7EB00D0B9D8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F09085D127A0C7EB00D0B9D8 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F09085D027A0C7EB00D0B9D8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98B551632784D78900AC9086 /* Project object */;
 }

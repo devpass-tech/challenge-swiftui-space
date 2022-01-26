@@ -5,7 +5,6 @@
 //  Created by Bruna Ebina on 24/01/22.
 //
 
-import Foundation
 import SwiftUI
 
 struct InfoRowView: View {
@@ -37,7 +36,7 @@ struct InfoRowView: View {
                     .font(.system(size: 17, weight: .regular))
                     .foregroundColor(.white)
             }
-            .frame(width: 343, height: 56, alignment: .center)
+            .frame(maxWidth: .infinity,  maxHeight: 56)
             .background(Color.blue)
             .cornerRadius(14)
         }
@@ -56,12 +55,9 @@ extension InfoRowViewModel {
 
 struct InfoRowView_Previews: PreviewProvider {
     static var previews: some View {
-        previewDefault
+        InfoRowView(infoRowViewModel: InfoRowViewModel(), action: {})
+            .padding()
+            .preferredColorScheme(.dark)
     }
-}
-
-var previewDefault: some View {
-    InfoRowView(infoRowViewModel: .mock, action: {})
-        .frame(width: 320, height: 350)
 }
 

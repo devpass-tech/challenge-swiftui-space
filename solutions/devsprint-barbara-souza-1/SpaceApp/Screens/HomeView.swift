@@ -13,13 +13,10 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            List(launches) { launch in
-                Text("\(launch.name)")
-            }
+            InfoRowView(infoRowViewModel: InfoRowViewModel(), action: {})
+               
             .onAppear() {
-                SpaceXAPI().fetchAllLaunches { launches in
-                    self.launches = launches ?? []
-                }
+                InfoRowView(infoRowViewModel: InfoRowViewModel(), action: {})
             }.navigationTitle("Space App 🚀")
         }
     }
