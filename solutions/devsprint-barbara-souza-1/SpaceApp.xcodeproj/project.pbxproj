@@ -27,7 +27,6 @@
 		A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264C55D27A09FC4001DAF9D /* Colors.swift */; };
 		F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085C727A0572300D0B9D8 /* InfoRowView.swift */; };
 		F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */; };
-		F09085D227A0C7EB00D0B9D8 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F09085D127A0C7EB00D0B9D8 /* SnapshotTesting */; };
 		F09085D527A0E73A00D0B9D8 /* InfoRowViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09085D227A0C7EB00D0B9D8 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +302,6 @@
 			);
 			name = SpaceAppTests;
 			packageProductDependencies = (
-				F09085D127A0C7EB00D0B9D8 /* SnapshotTesting */,
 			);
 			productName = SpaceAppTests;
 			productReference = 98B5517B2784D78F00AC9086 /* SpaceAppTests.xctest */;
@@ -361,7 +358,6 @@
 			);
 			mainGroup = 98B551622784D78900AC9086;
 			packageReferences = (
-				F09085D027A0C7EB00D0B9D8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 98B5516C2784D78900AC9086 /* Products */;
 			projectDirPath = "";
@@ -751,25 +747,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F09085D027A0C7EB00D0B9D8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F09085D127A0C7EB00D0B9D8 /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F09085D027A0C7EB00D0B9D8 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98B551632784D78900AC9086 /* Project object */;
 }
