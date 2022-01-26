@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B565F2527A1E5DF0004326D /* DetailsHeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B565F2427A1E5DF0004326D /* DetailsHeaderViewTests.swift */; };
+		0B6920B727A1DCE600A13C02 /* DetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6920B627A1DCE600A13C02 /* DetailsHeaderView.swift */; };
+		0B6920B927A1DCF500A13C02 /* DetailsHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6920B827A1DCF500A13C02 /* DetailsHeaderViewModel.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeView.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B565F2427A1E5DF0004326D /* DetailsHeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderViewTests.swift; sourceTree = "<group>"; };
+		0B6920B627A1DCE600A13C02 /* DetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderView.swift; sourceTree = "<group>"; };
+		0B6920B827A1DCF500A13C02 /* DetailsHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderViewModel.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B565F2327A1E5D70004326D /* DetailsHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				0B565F2427A1E5DF0004326D /* DetailsHeaderViewTests.swift */,
+			);
+			path = DetailsHeaderView;
+			sourceTree = "<group>";
+		};
+		0B6920B527A1DCC800A13C02 /* DetailsHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				0B6920B627A1DCE600A13C02 /* DetailsHeaderView.swift */,
+				0B6920B827A1DCF500A13C02 /* DetailsHeaderViewModel.swift */,
+			);
+			path = DetailsHeaderView;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +248,7 @@
 		9F8B0E6E27A0AB390049E67F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0B565F2327A1E5D70004326D /* DetailsHeaderView */,
 				9F8B0E6F27A0AB460049E67F /* NextLaunchRow */,
 			);
 			path = Components;
@@ -250,6 +274,7 @@
 		A2320378279F6E4A00A5244B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0B6920B527A1DCC800A13C02 /* DetailsHeaderView */,
 				A2320377279F6E4200A5244B /* NextLaunchRow */,
 			);
 			path = Components;
@@ -400,10 +425,12 @@
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */,
+				0B6920B927A1DCF500A13C02 /* DetailsHeaderViewModel.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
+				0B6920B727A1DCE600A13C02 /* DetailsHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8B0E7127A0AB560049E67F /* NextLaunchRowTests.swift in Sources */,
+				0B565F2527A1E5DF0004326D /* DetailsHeaderViewTests.swift in Sources */,
 				98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
