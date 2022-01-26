@@ -9,41 +9,24 @@ import SwiftUI
 
 struct DetailsView: View {
     
-    var viewModel = DetailViewModel()
+    var viewModel: DetailViewModel
     
     init(viewModel: DetailViewModel = DetailViewModel()) {
         self.viewModel = viewModel
-    }
-    
-    init() {
         UINavigationBar.appearance().backgroundColor = UIColor(.gray)
     }
+
     var body: some View {
         NavigationView {
-            ZStack(alignment: .top) {
-                Color.black
-                
-                ZStack(alignment: .leading) {
-                    Text(viewModel.description)
-                        .foregroundColor(.gray)
-                        .font(.system(size: 20, weight: .regular))
-                        .frame(width: 340, height: 456)
-                        .padding(.top , 16)
-                        .navigationBarTitleDisplayMode(.inline)
-                        .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                VStack {
-                                    Text(viewModel.title)
-                                        .font(.largeTitle.bold())
-                                        .foregroundColor(.white)
-                            }
-                        }
-                    }
-                }
+            ScrollView {
+                Text(viewModel.description)
+                    .foregroundColor(.gray)
+                    .font(.system(size: 20, weight: .regular))
+                    .padding(.top , 16)
+                    .background(.black)
+                    .navigationTitle(viewModel.title)
             }
         }
-        .cornerRadius(20)
-        
     }
 }
 
