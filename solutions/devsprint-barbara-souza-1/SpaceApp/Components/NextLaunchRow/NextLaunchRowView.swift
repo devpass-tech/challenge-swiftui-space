@@ -9,12 +9,12 @@ import SwiftUI
 
 struct NextLaunchRowView: View {
     // MARK: Properties
-    var viewModel: NextLaunchRowViewModel
+    var viewModel: NextLaunchRowViewModelRepresentable
     var imageSize: CGFloat = 130
     var backgroundColor: Color = .appGray
 
     // MARK: Initializer
-    init(viewModel: NextLaunchRowViewModel = NextLaunchRowViewModel()) {
+    init(viewModel: NextLaunchRowViewModelRepresentable = NextLaunchRowViewModel()) {
          self.viewModel = viewModel
     }
 
