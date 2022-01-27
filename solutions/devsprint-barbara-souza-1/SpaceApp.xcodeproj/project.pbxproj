@@ -27,6 +27,9 @@
 		A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320373279F5C0400A5244B /* NextLaunchRowView.swift */; };
 		A2320376279F6E1400A5244B /* NextLaunchRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */; };
 		A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264C55D27A09FC4001DAF9D /* Colors.swift */; };
+		F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085C727A0572300D0B9D8 /* InfoRowView.swift */; };
+		F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */; };
+		F09085D527A0E73A00D0B9D8 /* InfoRowViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		A2320373279F5C0400A5244B /* NextLaunchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowView.swift; sourceTree = "<group>"; };
 		A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowViewModel.swift; sourceTree = "<group>"; };
 		A264C55D27A09FC4001DAF9D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F09085C727A0572300D0B9D8 /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoRowView.swift; path = SpaceApp/Components/InfoRowView/InfoRowView.swift; sourceTree = SOURCE_ROOT; };
+		F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowViewModel.swift; sourceTree = "<group>"; };
+		F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,7 @@
 		9F8B0E6E27A0AB390049E67F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F09085D327A0E70400D0B9D8 /* InfoRowView */,
 				9F8B0E6F27A0AB460049E67F /* NextLaunchRow */,
 			);
 			path = Components;
@@ -251,8 +258,26 @@
 			isa = PBXGroup;
 			children = (
 				A2320377279F6E4200A5244B /* NextLaunchRow */,
+				F09085C927A0572B00D0B9D8 /* InfoRowView */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F09085C927A0572B00D0B9D8 /* InfoRowView */ = {
+			isa = PBXGroup;
+			children = (
+				F09085C727A0572300D0B9D8 /* InfoRowView.swift */,
+				F09085CA27A0574B00D0B9D8 /* InfoRowViewModel.swift */,
+			);
+			path = InfoRowView;
+			sourceTree = "<group>";
+		};
+		F09085D327A0E70400D0B9D8 /* InfoRowView */ = {
+			isa = PBXGroup;
+			children = (
+				F09085D427A0E73900D0B9D8 /* InfoRowViewTests.swift */,
+			);
+			path = InfoRowView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,8 +427,10 @@
 				A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
+				F09085CB27A0574B00D0B9D8 /* InfoRowViewModel.swift in Sources */,
 				A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
+				F09085C827A0572300D0B9D8 /* InfoRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +440,7 @@
 			files = (
 				9F8B0E7127A0AB560049E67F /* NextLaunchRowTests.swift in Sources */,
 				98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */,
+				F09085D527A0E73A00D0B9D8 /* InfoRowViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +520,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -547,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -565,7 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = AZJDHZ37UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
@@ -597,7 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = AZJDHZ37UU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
