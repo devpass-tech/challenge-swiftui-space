@@ -32,10 +32,10 @@ struct InfoRowView: View {
             Button(action: action) {
                 Text(infoRowViewModel.buttonText)
                     .font(.system(size: 17, weight: .regular))
-                    .foregroundColor(.buttonColorBlue)
+                    .foregroundColor(.titleColorWhite)
             }
             .frame(maxWidth: .infinity,  maxHeight: 56)
-            .background(Color.titleColorWhite)
+            .background(Color.buttonColorBlue)
             .cornerRadius(14)
         }
         .background(Color.backgroundColorBlack)
