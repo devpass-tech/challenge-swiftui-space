@@ -29,15 +29,35 @@ struct NextLaunchRowView: View {
             .padding()
         }
         .cornerRadius(15)
-        .frame(width: .infinity, height: 260)
+        .frame(height: 260)
     }
 
     // MARK: Subviews
     var topView: some View {
         HStack(spacing: 10) {
-            Image(viewModel.imageRocket)
-                .resizable()
-                .frame(width: imageSize, height: imageSize)
+            AsyncImage(url: viewModel.imageUrl) { phase in
+                switch phase {
+                case .empty:
+                    Image(viewModel.imageRocket)
+                        .resizable()
+                        .frame(width: imageSize, height: imageSize)
+                    
+                case let .success(image):
+                    image
+                        .resizable()
+                        .frame(width: imageSize, height: imageSize)
+                
+                case .failure:
+                    Image(viewModel.imageRocket)
+                        .resizable()
+                        .frame(width: imageSize, height: imageSize)
+                
+                @unknown default:
+                    Image(viewModel.imageRocket)
+                        .resizable()
+                        .frame(width: imageSize, height: imageSize)
+                }
+            }
             VStack(alignment: .leading, spacing: 10) {
                 Text(viewModel.name)
                     .foregroundColor(.white)
