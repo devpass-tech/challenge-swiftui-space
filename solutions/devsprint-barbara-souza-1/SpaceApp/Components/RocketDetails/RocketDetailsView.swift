@@ -18,19 +18,22 @@ struct RocketDetailsView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            
-            rocketName
-            
-            rocketImage
-            
-            rocketManufacturer
-            
-            rocketPayloaDescription
-            
-            Spacer()
+        
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 20) {
+                
+                rocketName
+                
+                rocketImage
+                
+                rocketManufacturer
+                
+                rocketPayloaDescription
+                
+                Spacer()
+            }
+            .padding(30)
         }
-        .padding(30)
     }
     
     var rocketName: some View {
