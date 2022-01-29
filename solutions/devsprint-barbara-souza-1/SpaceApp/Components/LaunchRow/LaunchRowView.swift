@@ -17,9 +17,7 @@ struct LaunchRowView: View {
     var viewModel: LaunchRowViewModel
     
     //MARK: - Init
-    init(
-        viewModel: LaunchRowViewModel = LaunchRowViewModel()
-    ) {
+    init(viewModel: LaunchRowViewModel = LaunchRowViewModel()) {
         self.viewModel = viewModel
     }
     
@@ -38,7 +36,6 @@ struct LaunchRowView: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: backgroundCellHeight)
-        .padding(.horizontal, 20)
     }
     
     //MARK: - Subviews
