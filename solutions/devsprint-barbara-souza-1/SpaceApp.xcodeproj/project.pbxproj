@@ -34,6 +34,8 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
+		A470903527A0941C0009026E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470903427A0941C0009026E /* DetailView.swift */; };
+		A470903727A094550009026E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470903627A094550009026E /* DetailViewModel.swift */; };
 		9F8B0E6D27A0AB0C0049E67F /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9F8B0E6C27A0AB0C0049E67F /* SnapshotTesting */; };
 		9F8B0E7127A0AB560049E67F /* NextLaunchRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8B0E7027A0AB560049E67F /* NextLaunchRowTests.swift */; };
 		A2320374279F5C0400A5244B /* NextLaunchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2320373279F5C0400A5244B /* NextLaunchRowView.swift */; };
@@ -96,6 +98,8 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A470903427A0941C0009026E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A470903627A094550009026E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		9F8B0E7027A0AB560049E67F /* NextLaunchRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowTests.swift; sourceTree = "<group>"; };
 		A2320373279F5C0400A5244B /* NextLaunchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowView.swift; sourceTree = "<group>"; };
 		A2320375279F6E1400A5244B /* NextLaunchRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchRowViewModel.swift; sourceTree = "<group>"; };
@@ -312,6 +316,7 @@
 		98BDC97B2784F6A5003820AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A470903327A0940B0009026E /* DetailView */,
 				3E5B2F2327A572AB00518C63 /* LaunchView */,
 				98B551702784D78900AC9086 /* HomeView.swift */,
 				F018486F27A367CF000A1001 /* NextLaunchView */,
@@ -411,6 +416,15 @@
 				F099229727A608E600DD7B72 /* NextLaunchViewTests.swift */,
 			);
 			path = NextLaunchView;
+			sourceTree = "<group>";
+		};
+		A470903327A0940B0009026E /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A470903427A0941C0009026E /* DetailView.swift */,
+				A470903627A094550009026E /* DetailViewModel.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,9 +571,11 @@
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
+				A470903527A0941C0009026E /* DetailView.swift in Sources */,
 				A2320376279F6E1400A5244B /* NextLaunchRowViewModel.swift in Sources */,
 				3E5B2F2727A57D2600518C63 /* LaunchViewModel.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
+				A470903727A094550009026E /* DetailViewModel.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				3E942D9127A2EA4400A78945 /* RocketDetailsViewModel.swift in Sources */,
 				A264C55E27A09FC4001DAF9D /* Colors.swift in Sources */,
