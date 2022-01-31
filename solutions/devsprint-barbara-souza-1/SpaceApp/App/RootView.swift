@@ -31,19 +31,11 @@ struct RootView: View {
     }
 
     var launchesTab: some View {
-        buildLaunchDetailsView()
+        LaunchView()
             .tabItem {
                 Image(systemName: "location.north.fill")
                 Text("Launches")
             }
-    }
-
-    // MARK: View Builders
-    private func buildLaunchDetailsView() -> LaunchDetailsView {
-        LaunchDetailsView(viewModel: LaunchDetailsViewModel(),
-                          pressedSeeMoreDetails: {},
-                          pressedSeeMoreInfo: {})
-
     }
 }
 
