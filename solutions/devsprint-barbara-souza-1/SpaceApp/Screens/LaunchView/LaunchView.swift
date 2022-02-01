@@ -10,7 +10,7 @@ import SwiftUI
 struct LaunchView: View {
     
     //MARK: - Constants
-    let viewModel: LaunchViewModel
+    @ObservedObject var viewModel: LaunchViewModel
     
     //MARK: - Init
     init(viewModel: LaunchViewModel = LaunchViewModel()) {
@@ -21,12 +21,15 @@ struct LaunchView: View {
     //MARK: - Main View
     var body: some View {
         NavigationView {
-            List(0..<viewModel.launchRowCellNumberList.count) { item in
-                viewModel.launchRowCellNumberList[item]
+            List(viewModel.launchRowCellNumberList.indices, id: \.self) { indice in
+                LaunchRowView(viewModel: viewModel.launchRowCellNumberList[indice])
                     .listRowSeparator(.hidden)
             }
             .listStyle(.plain)
             .navigationTitle(viewModel.navigationViewTitle)
+            .onAppear {
+                viewModel.onAppear()
+            }
         }
     }
 }

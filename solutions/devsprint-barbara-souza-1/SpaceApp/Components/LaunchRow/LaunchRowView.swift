@@ -17,7 +17,7 @@ struct LaunchRowView: View {
     var viewModel: LaunchRowViewModel
     
     //MARK: - Init
-    init(viewModel: LaunchRowViewModel = LaunchRowViewModel()) {
+    init(viewModel: LaunchRowViewModel) {
         self.viewModel = viewModel
     }
     
@@ -87,7 +87,11 @@ struct LaunchRowView: View {
     //MARK: - Previews
     struct LaunchRowView_Previews: PreviewProvider {
         static var previews: some View {
-            LaunchRowView()
+            LaunchRowView(viewModel: LaunchRowViewModel(launchPatchURL:  "https://images2.imgbox.com/02/51/7NLaBm8c_o.png",
+                                                        launchName: "CRS-20",
+                                                        launchDate: "July 03, 2020",
+                                                        launchStatus: "Success",
+                                                        launchNumber: "#91"))
                 .preferredColorScheme(.dark)
         }
     }
