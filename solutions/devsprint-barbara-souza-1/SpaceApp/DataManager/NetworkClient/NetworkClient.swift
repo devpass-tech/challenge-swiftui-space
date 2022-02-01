@@ -23,17 +23,21 @@ final class NetworkClient {
 
     func post(url: URL,
               parameters: [String : String],
+              data: Data?,
               headers: [HTTPHeaderField : String],
               completion: @escaping (Response) -> ()) {
 
         self.performRequest(httpMethod: .post,
                             url: url,
                             parameters: parameters,
+                            data: data,
                             headers: headers,
                             completion: completion)
     }
 
-    func performRequest(httpMethod: HTTPMethod, url: URL, parameters: [String : String], headers: [HTTPHeaderField : String], completion: @escaping (Response) -> ()) {
+    func performRequest(httpMethod: HTTPMethod, url: URL,
+                        parameters: [String : String], data: Data? = nil,
+                        headers: [HTTPHeaderField : String], completion: @escaping (Response) -> ()) {
 
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
         components.queryItems = parameters.map { (key, value) in
@@ -47,6 +51,8 @@ final class NetworkClient {
 
             request.setValue(value, forHTTPHeaderField: headerField.rawValue)
         }
+        
+        request.httpBody = data
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
 
