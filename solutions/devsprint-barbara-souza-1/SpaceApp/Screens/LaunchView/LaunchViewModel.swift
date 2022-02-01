@@ -8,23 +8,40 @@
 import Foundation
 import SwiftUI
 
-struct LaunchViewModel {
+class LaunchViewModel: ObservableObject {
     
     //MARK: - Constants
     let navigationViewTitle = "Launches"
     
     //MARK: - Variables
-    var launchRowCellNumberList = [LaunchRowView]()
-        
+    @Published var launchRowCellNumberList: [LaunchRowViewModel]
+    
+    private var service: SpaceXAPI
+
     //MARK: - Init
-    init() {
-        populateLaunchRowCellNumberList(with: 5)
+    init(service: SpaceXAPI = SpaceXAPI()) {
+        self.service = service
+        launchRowCellNumberList = []
     }
     
     //MARK: - Functions
-    mutating func populateLaunchRowCellNumberList(with quantity: Int) {
-        for _ in (0..<quantity) {
-            self.launchRowCellNumberList.append(LaunchRowView())
-        }
+    func onAppear() {
+        service
+            .fetchLaunches(query: LaunchesQuery(options: LaunchesQuery.Options(limit: 20))) { [weak self] launches in
+                guard
+                    let self = self,
+                    let launches = launches
+                else { return }
+                
+                let launchesList = launches.compactMap { launch in
+                    return LaunchRowViewModel(launchPatchURL: launch.links.patch.small,
+                                              launchName: launch.name,
+                                              launchDate: launch.data,
+                                              launchStatus: launch.success ? "Success" : "Failure",
+                                              launchNumber: "#\(launch.flightNumber)")
+                }
+                
+                self.launchRowCellNumberList = launchesList
+            }
     }
 }
