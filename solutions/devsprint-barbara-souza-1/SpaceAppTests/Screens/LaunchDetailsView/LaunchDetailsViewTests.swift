@@ -21,11 +21,8 @@ class LaunchDetailsViewTests: XCTestCase {
     }
 
     func testLaunchDetailsView() throws {
-        let sut = LaunchDetailsView(viewModel: LaunchDetailsViewModelStub(),
-                                    pressedSeeMoreDetails: {},
-                                    pressedSeeMoreInfo: {})
+        let sut = LaunchDetailsView(viewModel: LaunchDetailsViewModelStub())
         let view = UIHostingController(rootView: sut)
-
         assertSnapshot(matching: view, as: .image)
     }
 
