@@ -18,7 +18,6 @@ struct DetailsHeaderView: View {
     
     var body: some View {
         ZStack{
-            backgroundColor
             VStack(alignment: .center, spacing: 20){
                 imageView
                 detailsView

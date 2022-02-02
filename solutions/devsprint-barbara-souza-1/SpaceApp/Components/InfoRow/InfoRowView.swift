@@ -34,11 +34,11 @@ struct InfoRowView: View {
                     .font(.system(size: 17, weight: .regular))
                     .foregroundColor(.titleColorWhite)
             }
-            .frame(maxWidth: .infinity,  maxHeight: 56)
+            .frame(maxWidth: .infinity)
+            .frame(height: 56)
             .background(Color.buttonColorBlue)
             .cornerRadius(14)
         }
-        .background(Color.backgroundColorBlack)
     }
 }
 
