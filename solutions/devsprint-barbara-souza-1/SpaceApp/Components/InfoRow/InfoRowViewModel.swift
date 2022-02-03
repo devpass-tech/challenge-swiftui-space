@@ -17,10 +17,10 @@ protocol InfoRowViewModelRepresentable {
 
 struct InfoRowViewModel: InfoRowViewModelRepresentable {
 
-    var title: String = "Rocket"
-    var subtitle: String? = "Falcon Heavy (SpaceX)"
-    var description: String = "With the ability to lift into orbit over 54 metric tons (119,000 lb)--a mass equivalent to a 737 jetliner loaded..."
-    var buttonText: String = "See more"
+    var title: String = ""
+    var subtitle: String?
+    var description: String = ""
+    var buttonText: String = ""
 }
 
 struct DetailsInfoRowViewModel: InfoRowViewModelRepresentable {

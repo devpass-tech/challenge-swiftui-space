@@ -7,14 +7,16 @@
 
 import SwiftUI
 
-struct LaunchDetailsView: View {
+struct LaunchDetailsView<LaunchDetailsObservable>: View where LaunchDetailsObservable: LaunchDetailsViewModelRepresentable {
     // MARK: Properties
-    var viewModel: LaunchDetailsViewModelRepresentable
+    @ObservedObject private var viewModel: LaunchDetailsObservable
+    var rocketID = "5e9d0d95eda69974db09d1ed"
     var imageSize: CGFloat = 130
     var backgroundColor: Color = .appGray
 
+
     // MARK: Initializer
-    init(viewModel: LaunchDetailsViewModelRepresentable = LaunchDetailsViewModel()) {
+    init(viewModel: LaunchDetailsObservable) {
         self.viewModel = viewModel
     }
 
@@ -29,13 +31,17 @@ struct LaunchDetailsView: View {
                     InfoRowView(infoRowViewModel: viewModel.infoViewModel,
                                 action: {})
                 }.padding(36)
+                    .onAppear() {
+                        viewModel.rocketDetailsOnAppear(rocketID: rocketID)
+                    }
             }
         }
     }
 }
 
+
 struct LaunchDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchDetailsView()
+        LaunchDetailsView(viewModel: LaunchDetailsViewModel())
     }
 }

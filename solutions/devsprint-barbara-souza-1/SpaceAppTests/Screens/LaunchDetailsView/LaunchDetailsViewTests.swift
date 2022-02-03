@@ -21,9 +21,7 @@ class LaunchDetailsViewTests: XCTestCase {
     }
 
     func testLaunchDetailsView() throws {
-        let sut = LaunchDetailsView(viewModel: LaunchDetailsViewModelStub(),
-                                    pressedSeeMoreDetails: {},
-                                    pressedSeeMoreInfo: {})
+        let sut = LaunchDetailsView(viewModel: LaunchDetailsViewModelStub())
         let view = UIHostingController(rootView: sut)
 
         assertSnapshot(matching: view, as: .image)
@@ -31,8 +29,16 @@ class LaunchDetailsViewTests: XCTestCase {
 
 }
 
-struct LaunchDetailsViewModelStub: LaunchDetailsViewModelRepresentable {
+class LaunchDetailsViewModelStub: LaunchDetailsViewModelRepresentable {
+
     var headerViewModel: DetailsHeaderViewModel = .init()
     var detailsViewModel: InfoRowViewModelRepresentable = DetailsInfoRowViewModel()
-    var infoViewModel: InfoRowViewModelRepresentable = InfoRowViewModel()
+    var infoViewModel: InfoRowViewModelRepresentable = InfoRowViewModel(
+        title: "Title",
+        subtitle: "Subtitle",
+        description: "Description",
+        buttonText: "See more"
+    )
+    func rocketDetailsOnAppear(rocketID: String) {}
 }
+
