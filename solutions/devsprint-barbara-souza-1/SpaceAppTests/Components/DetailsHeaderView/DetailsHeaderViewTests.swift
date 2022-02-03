@@ -6,7 +6,7 @@ import XCTest
 class DetailsHeaderViewTests: XCTestCase {
     func test_detaltApperance() {
         let sut = DetailsHeaderView()
-        
+
         assertSnapshot(matching: sut, as: .image(layout: .device(config: .iPhoneX)))
     }
     
