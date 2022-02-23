@@ -18,7 +18,7 @@ final class SpaceXAPI {
 
     var httpHeaders: [HTTPHeaderField : String] {
 
-        return [:]
+        return [HTTPHeaderField.contentType: ContentType.json.rawValue]
     }
 
     let networkClient = NetworkClient()
@@ -29,13 +29,17 @@ final class SpaceXAPI {
                                parameters: self.parameters,
                                headers: self.httpHeaders) { response in
 
-            DispatchQueue.main.async {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {
+                    completion(nil)
+                    return
+                }
 
                 switch response {
 
                 case .result(let data):
 
-                    completion(self.decodeData(data))
+                    completion(self.decodeData(data, as: [Launch].self))
                 case .error:
 
                     completion(nil)
@@ -43,13 +47,38 @@ final class SpaceXAPI {
             }
         }
     }
+    
+    func fetchLaunches(query: LaunchesQuery, completion: @escaping ([Launch]?) -> ()) {
+        let queryData = try? JSONEncoder().encode(query)
+        
+        networkClient.post(url: baseURL.appendingPathComponent("query"),
+                           parameters: parameters,
+                           data: queryData,
+                           headers: httpHeaders) { response in
+            
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else {
+                    completion(nil)
+                    return
+                }
+                
+                switch response {
+                case .result(let data):
+                    completion(self.decodeData(data, as: LaunchesPage.self)?.docs)
+                case .error:
+                    completion(nil)
+                }
+            }
+        }
+    }
 
-    private func decodeData(_ data: Data) -> [Launch]? {
+    private func decodeData<DecodableType: Decodable>(_ data: Data,
+                                                      as type: DecodableType.Type) -> DecodableType? {
 
         let jsonDecoder = JSONDecoder()
         do {
 
-            let response = try jsonDecoder.decode([Launch].self, from: data)
+            let response = try jsonDecoder.decode(type, from: data)
             return response
         } catch {
             print(error)
