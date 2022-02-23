@@ -1,7 +1,7 @@
 
 # SwiftUI Challenge - Space App 🚀
 
-Neste desafio, desenvolveremos a interface de um aplicativo que mostra os próximos lançamentos da SpaceX em SwiftUI.
+In this challenge, we will develop the UI of an application that shows SpaceX's upcoming releases using SwiftUI.
 
 <p float="left">
 <img src="screenshots/screenshot-1.png" alt="drawing" width="200"/>
@@ -10,15 +10,15 @@ Neste desafio, desenvolveremos a interface de um aplicativo que mostra os próxi
 <img src="screenshots/screenshot-6.png" alt="drawing" width="200"/>
 </p>
 
-# Iniciando os trabalhos
+# Contributing
 
+1. Clone this repository.
+2. Start a new feature branch. 
+3. Open `solutions` folder and access your Dev Sprint's project.
+4. Build, run and code! 👩‍💻
 
-1. Clone este repositório na sua máquina.
-2. Abra a pasta `solutions` e acesse o projeto referente à sua Sprint.
-3. Faça um build e rode o projeto. ▶️
+# About Devpass
 
-# Sobre a Devpass
+Devpass is a diverse community of high-potential software developers accelerating their careers through real-world product development and mentorship from tech leaders of the best tech companies.
 
-A Devpass é uma comunidade de pessoas desenvolvedoras de alto potencial acelerando suas carreiras através de desenvolvimento de produtos reais, como o Hereminders, e conexões com as principais lideranças de tecnologia do país, através de mentorias particulares e Tech Talks.
-
-Se interessou? Acesse www.devpass.com.br e se inscreva na nossa lista para ficar por dentro das novidades!
+Interested? Access www.devpass.com.br for more information!
