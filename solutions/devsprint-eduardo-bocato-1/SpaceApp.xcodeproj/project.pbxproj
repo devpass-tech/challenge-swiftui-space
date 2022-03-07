@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
-		98B551712784D78900AC9086 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeView.swift */; };
+		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
 		98B551762784D78E00AC9086 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551752784D78E00AC9086 /* Preview Assets.xcassets */; };
 		98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */; };
-		98B5518A2784D78F00AC9086 /* SpaceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551892784D78F00AC9086 /* SpaceAppUITests.swift */; };
-		98B5518C2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5518B2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift */; };
 		98BDC9812784F865003820AD /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC9802784F865003820AD /* ContentType.swift */; };
 		98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC9822784F86F003820AD /* HTTPClient.swift */; };
 		98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC9842784F880003820AD /* HTTPHeaderField.swift */; };
@@ -22,17 +20,11 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
+		E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		98B5517C2784D78F00AC9086 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98B551632784D78900AC9086 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98B5516A2784D78900AC9086;
-			remoteInfo = SpaceApp;
-		};
-		98B551862784D78F00AC9086 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 98B551632784D78900AC9086 /* Project object */;
 			proxyType = 1;
@@ -44,14 +36,11 @@
 /* Begin PBXFileReference section */
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
-		98B551702784D78900AC9086 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		98B551702784D78900AC9086 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
 		98B551722784D78E00AC9086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98B551752784D78E00AC9086 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98B5517B2784D78F00AC9086 /* SpaceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppTests.swift; sourceTree = "<group>"; };
-		98B551852784D78F00AC9086 /* SpaceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		98B551892784D78F00AC9086 /* SpaceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppUITests.swift; sourceTree = "<group>"; };
-		98B5518B2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98BDC9802784F865003820AD /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		98BDC9822784F86F003820AD /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		98BDC9842784F880003820AD /* HTTPHeaderField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderField.swift; sourceTree = "<group>"; };
@@ -61,6 +50,7 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +68,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98B551822784D78F00AC9086 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,7 +76,6 @@
 			children = (
 				98B5516D2784D78900AC9086 /* SpaceApp */,
 				98B5517E2784D78F00AC9086 /* SpaceAppTests */,
-				98B551882784D78F00AC9086 /* SpaceAppUITests */,
 				98B5516C2784D78900AC9086 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,7 +85,6 @@
 			children = (
 				98B5516B2784D78900AC9086 /* SpaceApp.app */,
 				98B5517B2784D78F00AC9086 /* SpaceAppTests.xctest */,
-				98B551852784D78F00AC9086 /* SpaceAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,11 +92,9 @@
 		98B5516D2784D78900AC9086 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				98BDC97C2784F6B3003820AD /* App */,
+				98BDC97C2784F6B3003820AD /* Application */,
+				E50FB66C27D5FF3A00DFD1DD /* Modules */,
 				98BDC97D2784F6CA003820AD /* Resources */,
-				98BDC97B2784F6A5003820AD /* Screens */,
-				98BDC9772784F674003820AD /* DataManager */,
-				98BDC97F2784F6FA003820AD /* Extensions */,
 				98B551742784D78E00AC9086 /* Preview Content */,
 			);
 			path = SpaceApp;
@@ -137,25 +116,6 @@
 			path = SpaceAppTests;
 			sourceTree = "<group>";
 		};
-		98B551882784D78F00AC9086 /* SpaceAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				98B551892784D78F00AC9086 /* SpaceAppUITests.swift */,
-				98B5518B2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift */,
-			);
-			path = SpaceAppUITests;
-			sourceTree = "<group>";
-		};
-		98BDC9772784F674003820AD /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				98BDC9782784F681003820AD /* Models */,
-				98BDC9792784F687003820AD /* APIClient */,
-				98BDC97A2784F695003820AD /* NetworkClient */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
 		98BDC9782784F681003820AD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,15 +124,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		98BDC9792784F687003820AD /* APIClient */ = {
-			isa = PBXGroup;
-			children = (
-				98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */,
-			);
-			path = APIClient;
-			sourceTree = "<group>";
-		};
-		98BDC97A2784F695003820AD /* NetworkClient */ = {
+		98BDC97A2784F695003820AD /* Devpass-Example-NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
 				98BDC9802784F865003820AD /* ContentType.swift */,
@@ -182,23 +134,15 @@
 				98BDC9882784F891003820AD /* NetworkClient.swift */,
 				98BDC98A2784F8B5003820AD /* HTTPMethod.swift */,
 			);
-			path = NetworkClient;
+			path = "Devpass-Example-NetworkClient";
 			sourceTree = "<group>";
 		};
-		98BDC97B2784F6A5003820AD /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				98B551702784D78900AC9086 /* HomeView.swift */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		98BDC97C2784F6B3003820AD /* App */ = {
+		98BDC97C2784F6B3003820AD /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				98B5516E2784D78900AC9086 /* SpaceAppApp.swift */,
 			);
-			path = App;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		98BDC97D2784F6CA003820AD /* Resources */ = {
@@ -210,11 +154,192 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		98BDC97F2784F6FA003820AD /* Extensions */ = {
+		E50FB66C27D5FF3A00DFD1DD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB66E27D5FF5200DFD1DD /* Core */,
+				E50FB66D27D5FF4F00DFD1DD /* Features */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E50FB66D27D5FF4F00DFD1DD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67527D6000D00DFD1DD /* Home */,
+				E50FB67727D6001900DFD1DD /* Details */,
+				E50FB67627D6001100DFD1DD /* Launches */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E50FB66E27D5FF5200DFD1DD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67427D5FF8D00DFD1DD /* Networking */,
+				E50FB67327D5FF7D00DFD1DD /* Services */,
+				E50FB66F27D5FF5F00DFD1DD /* UI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E50FB66F27D5FF5F00DFD1DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67227D5FF7300DFD1DD /* Extensions */,
+				E50FB67127D5FF6A00DFD1DD /* DesignSystem */,
+				E50FB67027D5FF6500DFD1DD /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E50FB67027D5FF6500DFD1DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB68427D6150E00DFD1DD /* Views */,
+				E50FB68327D6150600DFD1DD /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E50FB67127D5FF6A00DFD1DD /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		E50FB67227D5FF7300DFD1DD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E50FB67327D5FF7D00DFD1DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB68627D617BC00DFD1DD /* DevpassExample-APIClient */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E50FB67427D5FF8D00DFD1DD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				98BDC97A2784F695003820AD /* Devpass-Example-NetworkClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E50FB67527D6000D00DFD1DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67827D6003600DFD1DD /* Scenes */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E50FB67627D6001100DFD1DD /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB68127D60F5200DFD1DD /* Scenes */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
+		E50FB67727D6001900DFD1DD /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67A27D6007200DFD1DD /* Scenes */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		E50FB67827D6003600DFD1DD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67927D6003A00DFD1DD /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E50FB67927D6003A00DFD1DD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98B551702784D78900AC9086 /* HomeScene.swift */,
+				E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E50FB67A27D6007200DFD1DD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB67D27D6009D00DFD1DD /* LaunchDetails */,
+				E50FB67C27D6008F00DFD1DD /* RocketDetailsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E50FB67C27D6008F00DFD1DD /* RocketDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RocketDetailsScene;
+			sourceTree = "<group>";
+		};
+		E50FB67D27D6009D00DFD1DD /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LaunchDetails;
+			sourceTree = "<group>";
+		};
+		E50FB68027D60F4900DFD1DD /* UpcomingLaunches */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UpcomingLaunches;
+			sourceTree = "<group>";
+		};
+		E50FB68127D60F5200DFD1DD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E50FB68227D60F5B00DFD1DD /* AllLaunches */,
+				E50FB68027D60F4900DFD1DD /* UpcomingLaunches */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E50FB68227D60F5B00DFD1DD /* AllLaunches */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AllLaunches;
+			sourceTree = "<group>";
+		};
+		E50FB68327D6150600DFD1DD /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		E50FB68427D6150E00DFD1DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E50FB68627D617BC00DFD1DD /* DevpassExample-APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				98BDC9782784F681003820AD /* Models */,
+				98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */,
+			);
+			path = "DevpassExample-APIClient";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,24 +380,6 @@
 			productReference = 98B5517B2784D78F00AC9086 /* SpaceAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98B551842784D78F00AC9086 /* SpaceAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98B551952784D78F00AC9086 /* Build configuration list for PBXNativeTarget "SpaceAppUITests" */;
-			buildPhases = (
-				98B551812784D78F00AC9086 /* Sources */,
-				98B551822784D78F00AC9086 /* Frameworks */,
-				98B551832784D78F00AC9086 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98B551872784D78F00AC9086 /* PBXTargetDependency */,
-			);
-			name = SpaceAppUITests;
-			productName = SpaceAppUITests;
-			productReference = 98B551852784D78F00AC9086 /* SpaceAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,10 +394,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					98B5517A2784D78F00AC9086 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 98B5516A2784D78900AC9086;
-					};
-					98B551842784D78F00AC9086 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 98B5516A2784D78900AC9086;
 					};
@@ -311,7 +414,6 @@
 			targets = (
 				98B5516A2784D78900AC9086 /* SpaceApp */,
 				98B5517A2784D78F00AC9086 /* SpaceAppTests */,
-				98B551842784D78F00AC9086 /* SpaceAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,13 +435,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98B551832784D78F00AC9086 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -347,7 +442,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
+				98B551712784D78900AC9086 /* HomeScene.swift in Sources */,
+				E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
@@ -368,15 +464,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98B551812784D78F00AC9086 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98B5518C2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift in Sources */,
-				98B5518A2784D78F00AC9086 /* SpaceAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -384,11 +471,6 @@
 			isa = PBXTargetDependency;
 			target = 98B5516A2784D78900AC9086 /* SpaceApp */;
 			targetProxy = 98B5517C2784D78F00AC9086 /* PBXContainerItemProxy */;
-		};
-		98B551872784D78F00AC9086 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 98B5516A2784D78900AC9086 /* SpaceApp */;
-			targetProxy = 98B551862784D78F00AC9086 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -609,42 +691,6 @@
 			};
 			name = Release;
 		};
-		98B551962784D78F00AC9086 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.SpaceAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpaceApp;
-			};
-			name = Debug;
-		};
-		98B551972784D78F00AC9086 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B8F644M47X;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devpass.SpaceAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpaceApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -671,15 +717,6 @@
 			buildConfigurations = (
 				98B551932784D78F00AC9086 /* Debug */,
 				98B551942784D78F00AC9086 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98B551952784D78F00AC9086 /* Build configuration list for PBXNativeTarget "SpaceAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98B551962784D78F00AC9086 /* Debug */,
-				98B551972784D78F00AC9086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

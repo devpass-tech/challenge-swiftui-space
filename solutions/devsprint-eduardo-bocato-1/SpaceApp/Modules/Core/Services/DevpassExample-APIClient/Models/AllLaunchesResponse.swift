@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Launch: Decodable, Identifiable {
-
+struct Launch: Decodable, Identifiable, Equatable {
     let id: String
     let name: String
 }
