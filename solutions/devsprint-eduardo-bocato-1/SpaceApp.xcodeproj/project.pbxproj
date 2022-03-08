@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A60612627D7DD9600279648 /* LaunchDetailsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612527D7DD9600279648 /* LaunchDetailsBodyView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A60612527D7DD9600279648 /* LaunchDetailsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsBodyView.swift; path = Details/Scenes/LaunchDetails/Views/LaunchDetailsBodyView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A60612427D7DD0800279648 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A60612527D7DD9600279648 /* LaunchDetailsBodyView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -253,8 +263,9 @@
 			children = (
 				E50FB67A27D6007200DFD1DD /* Scenes */,
 			);
-			path = Details;
-			sourceTree = "<group>";
+			name = Details;
+			path = SpaceApp/Modules/Features;
+			sourceTree = SOURCE_ROOT;
 		};
 		E50FB67827D6003600DFD1DD /* Scenes */ = {
 			isa = PBXGroup;
@@ -279,7 +290,7 @@
 				E50FB67D27D6009D00DFD1DD /* LaunchDetails */,
 				E50FB67C27D6008F00DFD1DD /* RocketDetailsScene */,
 			);
-			path = Scenes;
+			name = Scenes;
 			sourceTree = "<group>";
 		};
 		E50FB67C27D6008F00DFD1DD /* RocketDetailsScene */ = {
@@ -292,9 +303,11 @@
 		E50FB67D27D6009D00DFD1DD /* LaunchDetails */ = {
 			isa = PBXGroup;
 			children = (
+				7A60612427D7DD0800279648 /* Views */,
 			);
-			path = LaunchDetails;
-			sourceTree = "<group>";
+			name = LaunchDetails;
+			path = SpaceApp/Modules/Features;
+			sourceTree = SOURCE_ROOT;
 		};
 		E50FB68027D60F4900DFD1DD /* UpcomingLaunches */ = {
 			isa = PBXGroup;
@@ -450,6 +463,7 @@
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
+				7A60612627D7DD9600279648 /* LaunchDetailsBodyView.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
