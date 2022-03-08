@@ -9,6 +9,20 @@ struct HomeScene: View {
     }
     
     var body: some View {
+        TabView {
+            Text("Simple Home")
+                .tabItem {
+                    Label("Home", systemImage: "home")
+                }
+            launchesScene()
+                .tabItem {
+                    Label("Launches", systemImage: "star")
+                }
+        }
+    }
+
+    @ViewBuilder
+    private func launchesScene() -> some View {
         NavigationView {
             List(viewModel.launches) { launch in
                 Text("\(launch.name)")
