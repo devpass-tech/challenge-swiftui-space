@@ -10,17 +10,18 @@ struct HomeScene: View {
     
     var body: some View {
         TabView {
-            Text("Simple Home")
+            homeScene()
                 .tabItem {
-                    Label("Home", systemImage: "home")
+                    Label("homescene_home_tab_title", systemImage: "house.fill")
                 }
             launchesScene()
                 .tabItem {
-                    Label("Launches", systemImage: "star")
+                    Label("homescene_launches_tab_title", systemImage: "location.north.fill")
                 }
         }
     }
 
+    // TODO: Check what scene will be show for Launches tab
     @ViewBuilder
     private func launchesScene() -> some View {
         NavigationView {
@@ -28,7 +29,18 @@ struct HomeScene: View {
                 Text("\(launch.name)")
             }
             .onAppear { viewModel.loadLaunches() }
-            .navigationTitle("Space App 🚀")
+            .navigationTitle("mainapp_title")
+        }
+    }
+
+    // TODO: Check what scene will be show for Home tab
+    @ViewBuilder
+    private func homeScene() -> some View {
+        NavigationView {
+            VStack {
+                Text("homescene_home_tab_title")
+            }
+            .navigationTitle("homescene_home_tab_title")
         }
     }
 }
