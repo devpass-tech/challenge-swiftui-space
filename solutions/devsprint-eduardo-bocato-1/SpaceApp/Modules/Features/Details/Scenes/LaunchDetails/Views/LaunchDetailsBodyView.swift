@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct LaunchDetailsBodyView: View {
-    let title: String
-    let description: String
-    let buttonTitle: String
+    struct Model {
+        let title: String
+        let description: String
+        let buttonTitle: String
+    }
     
+    let model: Model
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(title)
+            Text(model.title)
                 .font(.title2)
                 .bold()
                 .frame(alignment: .leading)
             
-            Text(description)
+            Text(model.description)
                 .lineLimit(3)
 
             Button {
                 
             } label: {
-                Text(buttonTitle)
+                Text(model.buttonTitle)
                     .bold()
                     .frame(minWidth: 0, maxWidth: .infinity)
             }.buttonStyle(SpaceButtonStyle())
@@ -46,6 +49,8 @@ struct SpaceButtonStyle: ButtonStyle {
 
 struct LaunchDetailsBodyView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchDetailsBodyView(title: "Details", description: "SpaceX's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission...", buttonTitle: "See more")
+        let model = LaunchDetailsBodyView.Model(title: "Details", description: "SpaceX's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission...", buttonTitle: "See more")
+        
+        LaunchDetailsBodyView(model: model)
     }
 }
