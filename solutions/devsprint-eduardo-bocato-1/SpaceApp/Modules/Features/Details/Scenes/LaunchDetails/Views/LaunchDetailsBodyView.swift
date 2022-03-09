@@ -15,6 +15,8 @@ struct LaunchDetailsBodyView: View {
     }
     
     let model: Model
+    let buttonAction: () -> Void
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Text(model.title)
@@ -26,7 +28,7 @@ struct LaunchDetailsBodyView: View {
                 .lineLimit(3)
 
             Button {
-                
+                buttonAction()
             } label: {
                 Text(model.buttonTitle)
                     .bold()
@@ -47,10 +49,32 @@ struct SpaceButtonStyle: ButtonStyle {
     }
 }
 
-struct LaunchDetailsBodyView_Previews: PreviewProvider {
-    static var previews: some View {
-        let model = LaunchDetailsBodyView.Model(title: "Details", description: "SpaceX's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission...", buttonTitle: "See more")
-        
-        LaunchDetailsBodyView(model: model)
+#if DEBUG
+extension LaunchDetailsBodyView.Model {
+    static func fixture (
+        title: String = "Details",
+        description: String = "SpaceX's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission...",
+        buttonTitle: String = "See more"
+    ) -> Self {
+        .init(
+            title: title,
+            description: description,
+            buttonTitle: buttonTitle
+        )
     }
 }
+#endif
+
+#if DEBUG
+struct LaunchDetailsBodyView_Previews: PreviewProvider {
+    static var previews: some View {
+        let action = {
+            print("Button Pressed")
+        }
+        LaunchDetailsBodyView(model: .fixture(), buttonAction: action)
+            .preferredColorScheme(.light)
+        LaunchDetailsBodyView(model: .fixture(), buttonAction: action)
+            .preferredColorScheme(.dark)
+    }
+}
+#endif
