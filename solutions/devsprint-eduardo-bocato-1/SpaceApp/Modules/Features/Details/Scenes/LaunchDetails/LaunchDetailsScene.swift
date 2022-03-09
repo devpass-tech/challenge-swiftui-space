@@ -2,12 +2,12 @@ import SwiftUI
 
 struct LaunchDetailsScene: View {
     @StateObject var viewModel: DetailsViewModel
-
+    
     var body: some View {
         VStack(spacing: 20) {
             Text(viewModel.details.name)
                 .font(.title)
-
+            
             Button {
                 viewModel.triggerAction_NotSureWhatYet()
             } label: {

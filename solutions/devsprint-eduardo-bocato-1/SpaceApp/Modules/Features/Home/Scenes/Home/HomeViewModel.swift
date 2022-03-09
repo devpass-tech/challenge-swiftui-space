@@ -43,6 +43,7 @@ final class HomeViewModel: ObservableObject {
         }
     }
 }
+
 extension HomeViewModel {
     subscript<T>(dynamicMember keyPath: KeyPath<HomeState, T>) -> T {
         state[keyPath: keyPath]

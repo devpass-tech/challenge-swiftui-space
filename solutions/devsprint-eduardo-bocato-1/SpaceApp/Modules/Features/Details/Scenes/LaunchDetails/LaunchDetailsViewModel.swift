@@ -22,15 +22,15 @@ struct DetailsEnvironment {
 @dynamicMemberLookup
 final class DetailsViewModel: ObservableObject {
     // MARK: - Properties
-
+    
     @Published private(set) var state: DetailsState
-
+    
     // MARK: - Dependencies
-
+    
     private let environment: DetailsEnvironment
-
+    
     // MARK: - Initialization
-
+    
     init(
         initialState: DetailsState,
         environment: DetailsEnvironment
@@ -38,9 +38,9 @@ final class DetailsViewModel: ObservableObject {
         self.state = initialState
         self.environment = environment
     }
-
+    
     // MARK: - Public API
-
+    
     func triggerAction_NotSureWhatYet() {
         environment.someDetailsAPI.triggerSomeStateChange()
     }
@@ -50,9 +50,9 @@ protocol API {
 }
 
 final class SomeDetailsAPI: API {
-
+    
     init() {}
-
+    
     func triggerSomeStateChange()  {
         print("state changed")
     }

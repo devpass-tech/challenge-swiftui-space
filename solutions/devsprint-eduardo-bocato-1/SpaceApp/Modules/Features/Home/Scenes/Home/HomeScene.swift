@@ -11,13 +11,13 @@ struct HomeScene: View {
     var body: some View {
         NavigationView {
             List(viewModel.launches) { launch in
-                NavigationLink(destination:
-                                LaunchDetailsScene(
-                                    viewModel: DetailsViewModel(
-                                        initialState: .init(details: launch),
-                                        environment: .init(someDetailsAPI: SomeDetailsAPI())
+                NavigationLink(
+                    destination: LaunchDetailsScene(
+                        viewModel: DetailsViewModel(
+                            initialState: .init(details: launch),
+                            environment: .init(someDetailsAPI: SomeDetailsAPI())
                         )
-                )
+                    )
                 ) {
                     Text("\(launch.name)")
                 }
