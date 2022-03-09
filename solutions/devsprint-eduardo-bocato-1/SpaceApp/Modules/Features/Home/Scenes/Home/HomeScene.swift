@@ -10,38 +10,31 @@ struct HomeScene: View {
     
     var body: some View {
         TabView {
-            homeScene()
-                .tabItem {
-                    Label("homescene_home_tab_title", systemImage: "house.fill")
+            sceneForTab("homescene_home_tab_title") {
+                VStack {
+                    Text("homescene_home_tab_title")
                 }
-            launchesScene()
-                .tabItem {
+            }.tabItem {
+                Label("homescene_home_tab_title", systemImage: "house.fill")
+            }
+            sceneForTab("mainapp_title") {
+                List(viewModel.launches) { launch in
+                    Text("\(launch.name)")
+                }
+                .onAppear { viewModel.loadLaunches() }
+            }.tabItem {
                     Label("homescene_launches_tab_title", systemImage: "location.north.fill")
-                }
+            }
         }
     }
 
-    // TODO: Check what scene will be show for Launches tab
-    @ViewBuilder
-    private func launchesScene() -> some View {
-        NavigationView {
-            List(viewModel.launches) { launch in
-                Text("\(launch.name)")
-            }
-            .onAppear { viewModel.loadLaunches() }
-            .navigationTitle("mainapp_title")
-        }
-    }
 
-    // TODO: Check what scene will be show for Home tab
     @ViewBuilder
-    private func homeScene() -> some View {
+    private func sceneForTab<Content: View>(_ title: LocalizedStringKey, content: () -> Content) -> some View {
         NavigationView {
-            VStack {
-                Text("homescene_home_tab_title")
-            }
-            .navigationTitle("homescene_home_tab_title")
-        }
+             content()
+            .navigationTitle(title)
+        }.navigationViewStyle(.stack)
     }
 }
 
