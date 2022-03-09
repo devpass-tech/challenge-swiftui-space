@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0E950727D950CD00F04843 /* SpaceButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950627D950CD00F04843 /* SpaceButtonStyle.swift */; };
 		7A60612827D7DE1800279648 /* LaunchDetailsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0E950627D950CD00F04843 /* SpaceButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpaceButtonStyle.swift; path = Buttons/Styles/SpaceButtonStyle.swift; sourceTree = SOURCE_ROOT; };
 		7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsBodyView.swift; path = Details/Scenes/LaunchDetails/Views/LaunchDetailsBodyView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0E950527D950BC00F04843 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				7A0E950627D950CD00F04843 /* SpaceButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		7A60612427D7DD0800279648 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +345,7 @@
 		E50FB68327D6150600DFD1DD /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				7A0E950527D950BC00F04843 /* Styles */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -459,6 +470,7 @@
 				E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				7A0E950727D950CD00F04843 /* SpaceButtonStyle.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,

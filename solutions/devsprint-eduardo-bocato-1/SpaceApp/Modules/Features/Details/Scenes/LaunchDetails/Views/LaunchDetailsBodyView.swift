@@ -39,16 +39,6 @@ struct LaunchDetailsBodyView: View {
     }
 }
 
-struct SpaceButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding()
-            .background(.blue)
-            .foregroundColor(.white)
-            .cornerRadius(15)
-    }
-}
-
 #if DEBUG
 extension LaunchDetailsBodyView.Model {
     static func fixture (
