@@ -19,6 +19,9 @@ public struct EmptyView: View {
 struct EmptyView_Previews: PreviewProvider {
     static var previews: some View {
         EmptyView(text: "Something wrong, it's empty!")
+            .preferredColorScheme(.light)
+        EmptyView(text: "Something wrong, it's empty!")
+            .preferredColorScheme(.dark)
     }
 }
 #endif

@@ -37,6 +37,13 @@ struct ContentInfoView_Previews: PreviewProvider {
             text: "Something wrong, it's empty!",
             retryAction: {}
         )
+        .preferredColorScheme(.light)
+
+        ContentInfoView(
+            text: "Something wrong, it's empty!",
+            retryAction: {}
+        )
+        .preferredColorScheme(.dark)
     }
 }
 
