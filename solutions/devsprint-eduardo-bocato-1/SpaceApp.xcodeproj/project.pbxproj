@@ -21,6 +21,8 @@
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */; };
+		ECBA7F9927D8170F00CF03FB /* LaunchDetailsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA7F9827D8170F00CF03FB /* LaunchDetailsScene.swift */; };
+		ECBA7F9B27D8176300CF03FB /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBA7F9A27D8176300CF03FB /* LaunchDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		ECBA7F9827D8170F00CF03FB /* LaunchDetailsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsScene.swift; sourceTree = "<group>"; };
+		ECBA7F9A27D8176300CF03FB /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				E50FB67527D6000D00DFD1DD /* Home */,
-				E50FB67727D6001900DFD1DD /* Details */,
+				ECBA7F9427D8164000CF03FB /* Details */,
 				E50FB67627D6001100DFD1DD /* Launches */,
 			);
 			path = Features;
@@ -248,14 +252,6 @@
 			path = Launches;
 			sourceTree = "<group>";
 		};
-		E50FB67727D6001900DFD1DD /* Details */ = {
-			isa = PBXGroup;
-			children = (
-				E50FB67A27D6007200DFD1DD /* Scenes */,
-			);
-			path = Details;
-			sourceTree = "<group>";
-		};
 		E50FB67827D6003600DFD1DD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,29 +267,6 @@
 				E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		E50FB67A27D6007200DFD1DD /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				E50FB67D27D6009D00DFD1DD /* LaunchDetails */,
-				E50FB67C27D6008F00DFD1DD /* RocketDetailsScene */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		E50FB67C27D6008F00DFD1DD /* RocketDetailsScene */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RocketDetailsScene;
-			sourceTree = "<group>";
-		};
-		E50FB67D27D6009D00DFD1DD /* LaunchDetails */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LaunchDetails;
 			sourceTree = "<group>";
 		};
 		E50FB68027D60F4900DFD1DD /* UpcomingLaunches */ = {
@@ -340,6 +313,39 @@
 				98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */,
 			);
 			path = "DevpassExample-APIClient";
+			sourceTree = "<group>";
+		};
+		ECBA7F9427D8164000CF03FB /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				ECBA7F9527D8165400CF03FB /* Scenes */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		ECBA7F9527D8165400CF03FB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ECBA7F9627D8166000CF03FB /* LaunchDetails */,
+				ECBA7F9727D8166D00CF03FB /* RocketDetailsScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ECBA7F9627D8166000CF03FB /* LaunchDetails */ = {
+			isa = PBXGroup;
+			children = (
+				ECBA7F9827D8170F00CF03FB /* LaunchDetailsScene.swift */,
+				ECBA7F9A27D8176300CF03FB /* LaunchDetailsViewModel.swift */,
+			);
+			path = LaunchDetails;
+			sourceTree = "<group>";
+		};
+		ECBA7F9727D8166D00CF03FB /* RocketDetailsScene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RocketDetailsScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,9 +451,11 @@
 				98B551712784D78900AC9086 /* HomeScene.swift in Sources */,
 				E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
+				ECBA7F9B27D8176300CF03FB /* LaunchDetailsViewModel.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
+				ECBA7F9927D8170F00CF03FB /* LaunchDetailsScene.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
