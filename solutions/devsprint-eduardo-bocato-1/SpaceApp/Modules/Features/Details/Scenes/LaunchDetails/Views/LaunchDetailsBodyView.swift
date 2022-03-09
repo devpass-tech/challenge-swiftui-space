@@ -32,7 +32,7 @@ struct LaunchDetailsBodyView: View {
             } label: {
                 Text(model.buttonTitle)
                     .bold()
-                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .frame(minWidth: .zero, maxWidth: .infinity)
             }.buttonStyle(SpaceButtonStyle())
         }
         .padding(15)
