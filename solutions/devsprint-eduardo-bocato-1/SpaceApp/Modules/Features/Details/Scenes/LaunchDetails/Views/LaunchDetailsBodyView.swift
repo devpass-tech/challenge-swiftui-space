@@ -20,6 +20,7 @@ struct LaunchDetailsBodyView: View {
                 .frame(alignment: .leading)
             
             Text(description)
+                .lineLimit(3)
 
             Button {
                 
