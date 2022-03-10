@@ -22,6 +22,8 @@
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */; };
+		F37BA22727D8E2B800C03F99 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA22627D8E2B800C03F99 /* EmptyView.swift */; };
+		F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F37BA22627D8E2B800C03F99 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,20 +192,11 @@
 		E50FB66F27D5FF5F00DFD1DD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F37BA22427D8E29800C03F99 /* Components */,
 				E50FB67227D5FF7300DFD1DD /* Extensions */,
 				E50FB67127D5FF6A00DFD1DD /* DesignSystem */,
-				E50FB67027D5FF6500DFD1DD /* Components */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		E50FB67027D5FF6500DFD1DD /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				E50FB68427D6150E00DFD1DD /* Views */,
-				E50FB68327D6150600DFD1DD /* Buttons */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		E50FB67127D5FF6A00DFD1DD /* DesignSystem */ = {
@@ -321,21 +316,6 @@
 			path = AllLaunches;
 			sourceTree = "<group>";
 		};
-		E50FB68327D6150600DFD1DD /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		E50FB68427D6150E00DFD1DD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				94020B2927D7658C00A05471 /* LoadingView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E50FB68627D617BC00DFD1DD /* DevpassExample-APIClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +323,24 @@
 				98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */,
 			);
 			path = "DevpassExample-APIClient";
+			sourceTree = "<group>";
+		};
+		F37BA22427D8E29800C03F99 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F37BA22527D8E2A300C03F99 /* Views */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F37BA22527D8E2A300C03F99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F37BA22627D8E2B800C03F99 /* EmptyView.swift */,
+				F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */,
+				94020B2927D7658C00A05471 /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B551712784D78900AC9086 /* HomeScene.swift in Sources */,
+				F37BA22727D8E2B800C03F99 /* EmptyView.swift in Sources */,
 				E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
@@ -453,6 +452,7 @@
 				94020B2A27D7658C00A05471 /* LoadingView.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
+				F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
