@@ -1,15 +1,17 @@
 import SwiftUI
 
 struct LoadingView: View {
-    var message: String?
+    let message: String?
     
     var body: some View {
-        VStack {
+        VStack(alignment: .center) {
+            Spacer()
             ProgressView()
             if let message = message {
                 Text(message)
                     .padding()
             }
+            Spacer()
         }
     }
 }
