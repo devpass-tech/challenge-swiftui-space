@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94020B2A27D7658C00A05471 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94020B2927D7658C00A05471 /* LoadingView.swift */; };
+		94E94FF827E0DED5003CA84B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E94FF727E0DED5003CA84B /* LoadingView.swift */; };
+		94E94FFF27E0E19B003CA84B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E94FFD27E0E19B003CA84B /* ViewExtension.swift */; };
+		94E9500027E0E19B003CA84B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E94FFE27E0E19B003CA84B /* Constants.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
 		98B551762784D78E00AC9086 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551752784D78E00AC9086 /* Preview Assets.xcassets */; };
 		98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */; };
@@ -60,6 +62,9 @@
 
 /* Begin PBXFileReference section */
 		94020B2927D7658C00A05471 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		94E94FF727E0DED5003CA84B /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		94E94FFD27E0E19B003CA84B /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		94E94FFE27E0E19B003CA84B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B551722784D78E00AC9086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98B551752784D78E00AC9086 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -287,6 +292,8 @@
 		E58D8FF327DFF9A5006F16EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				94E94FFE27E0E19B003CA84B /* Constants.swift */,
+				94E94FFD27E0E19B003CA84B /* ViewExtension.swift */,
 				E58D8FF627DFF9D4006F16EC /* String+Localized.swift */,
 			);
 			path = Extensions;
@@ -407,6 +414,7 @@
 			children = (
 				E58D902A27DFFB65006F16EC /* ContentInfoView.swift */,
 				E58D902B27DFFB65006F16EC /* EmptyView.swift */,
+				94E94FF727E0DED5003CA84B /* LoadingView.swift */,
 				E58D902C27DFFB65006F16EC /* NavigationSceneView.swift */,
 			);
 			path = Views;
@@ -547,15 +555,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94020B2A27D7658C00A05471 /* LoadingView.swift in Sources */,
 				E58D901C27DFFAE3006F16EC /* DS+Typography.swift in Sources */,
 				E58D8FFF27DFFA30006F16EC /* AllLaunchesResponse.swift in Sources */,
 				E58D8FF227DFF995006F16EC /* LaunchDetailsBodyView.swift in Sources */,
 				E58D901B27DFFAE3006F16EC /* DS+Spacing.swift in Sources */,
+				94E9500027E0E19B003CA84B /* Constants.swift in Sources */,
 				E58D902E27DFFB65006F16EC /* EmptyView.swift in Sources */,
 				E58D902727DFFB42006F16EC /* SpaceButtonStyle.swift in Sources */,
 				E58D901D27DFFAE3006F16EC /* Text+Typography.swift in Sources */,
+				94E94FF827E0DED5003CA84B /* LoadingView.swift in Sources */,
 				E58D8FFD27DFFA27006F16EC /* SpaceXAPIClient.swift in Sources */,
+				94E94FFF27E0E19B003CA84B /* ViewExtension.swift in Sources */,
 				E58D8FEE27DFF96C006F16EC /* HomeScene.swift in Sources */,
 				E58D902F27DFFB65006F16EC /* NavigationSceneView.swift in Sources */,
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
