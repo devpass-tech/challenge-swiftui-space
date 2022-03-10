@@ -21,6 +21,9 @@ struct LoadingView_Previews: PreviewProvider {
     static var textExample: String? = "Loading..."
     static var previews: some View {
         LoadingView(message: textExample)
+            .previewSquare(.light)
+        LoadingView(message: textExample)
+            .previewSquare(.dark)
     }
 }
 #endif

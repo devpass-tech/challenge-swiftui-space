@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		94020B2A27D7658C00A05471 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94020B2927D7658C00A05471 /* LoadingView.swift */; };
+		947C25D327D9F74F00694FB4 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947C25D227D9F74F00694FB4 /* ViewExtension.swift */; };
+		947C25D527D9F78D00694FB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947C25D427D9F78D00694FB4 /* Constants.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		94020B2927D7658C00A05471 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		947C25D227D9F74F00694FB4 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		947C25D427D9F78D00694FB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 		E50FB67127D5FF6A00DFD1DD /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				947C25D427D9F78D00694FB4 /* Constants.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 		E50FB67227D5FF7300DFD1DD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				947C25D227D9F74F00694FB4 /* ViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -450,8 +456,10 @@
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				94020B2A27D7658C00A05471 /* LoadingView.swift in Sources */,
+				947C25D527D9F78D00694FB4 /* Constants.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
+				947C25D327D9F74F00694FB4 /* ViewExtension.swift in Sources */,
 				F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
