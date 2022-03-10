@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1508B1D827D8180300B90148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1508B1D727D8180300B90148 /* Localizable.strings */; };
+		15B42B7F27DA97AE009AF552 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B42B7E27DA97AE009AF552 /* Constants.swift */; };
+		15B42B8227DA97FB009AF552 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B42B8127DA97FB009AF552 /* String+Localized.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		1508B1D727D8180300B90148 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		15B42B7E27DA97AE009AF552 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15B42B8127DA97FB009AF552 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
@@ -77,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15B42B7D27DA9758009AF552 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				15B42B7E27DA97AE009AF552 /* Constants.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		15B42B8027DA97D4009AF552 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15B42B8127DA97FB009AF552 /* String+Localized.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +203,8 @@
 		E50FB66E27D5FF5200DFD1DD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				15B42B8027DA97D4009AF552 /* Extension */,
+				15B42B7D27DA9758009AF552 /* Theme */,
 				E50FB67427D5FF8D00DFD1DD /* Networking */,
 				E50FB67327D5FF7D00DFD1DD /* Services */,
 				E50FB66F27D5FF5F00DFD1DD /* UI */,
@@ -449,6 +471,7 @@
 				E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				15B42B8227DA97FB009AF552 /* String+Localized.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
@@ -457,6 +480,7 @@
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
+				15B42B7F27DA97AE009AF552 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
