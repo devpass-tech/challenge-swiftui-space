@@ -1,5 +1,5 @@
 //
-//  DS+Spacing.swift
+//  DS+CornerRadius.swift
 //  SpaceApp
 //
 //  Created by Razee Hussein-Jamal on 10/03/2022.
@@ -8,11 +8,11 @@
 import CoreGraphics
 
 extension DS {
-    public struct Spacing {
+    public struct CornerRadius {
         let value: CGFloat
     }
 }
 
-extension DS.Spacing {
-    public static let xSmall: Self = .init(value: 12)
+extension DS.CornerRadius {
+    public static let small: Self = .init(value: 16)
 }

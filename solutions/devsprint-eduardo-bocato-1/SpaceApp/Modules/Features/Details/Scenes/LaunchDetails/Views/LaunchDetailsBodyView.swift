@@ -35,7 +35,7 @@ struct LaunchDetailsBodyView: View {
                     .frame(minWidth: .zero, maxWidth: .infinity)
             }.buttonStyle(SpaceButtonStyle())
         }
-        .padding(15)
+        .padding(.dsPadding(.small))
     }
 }
 

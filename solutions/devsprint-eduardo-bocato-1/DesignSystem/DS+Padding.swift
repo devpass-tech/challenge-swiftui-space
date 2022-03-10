@@ -1,5 +1,5 @@
 //
-//  DS+Spacing.swift
+//  DS+Size.swift
 //  SpaceApp
 //
 //  Created by Razee Hussein-Jamal on 10/03/2022.
@@ -8,11 +8,11 @@
 import CoreGraphics
 
 extension DS {
-    public struct Spacing {
+    public struct Padding {
         let value: CGFloat
     }
 }
 
-extension DS.Spacing {
-    public static let xSmall: Self = .init(value: 12)
+extension DS.Padding {
+    public static let small: Self = .init(value: 16)
 }

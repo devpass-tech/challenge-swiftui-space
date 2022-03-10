@@ -13,6 +13,6 @@ struct SpaceButtonStyle: ButtonStyle {
             .padding()
             .background(.blue)
             .foregroundColor(.white)
-            .cornerRadius(15)
+            .cornerRadius(.dsCornerRadius(.small))
     }
 }

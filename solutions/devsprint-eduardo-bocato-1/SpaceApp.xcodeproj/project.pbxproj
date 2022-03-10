@@ -11,6 +11,8 @@
 		7A0E950A27D9FB5F00F04843 /* DS+MaxLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950927D9FB5F00F04843 /* DS+MaxLines.swift */; };
 		7A0E950C27D9FD5F00F04843 /* DS+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950B27D9FD5F00F04843 /* DS+Spacing.swift */; };
 		7A0E950E27DA006700F04843 /* DS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950D27DA006700F04843 /* DS.swift */; };
+		7A0E951027DA018100F04843 /* DS+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950F27DA018100F04843 /* DS+Padding.swift */; };
+		7A0E951227DA068A00F04843 /* DS+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E951127DA068A00F04843 /* DS+CornerRadius.swift */; };
 		7A60612827D7DE1800279648 /* LaunchDetailsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
@@ -43,6 +45,8 @@
 		7A0E950927D9FB5F00F04843 /* DS+MaxLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+MaxLines.swift"; path = "DesignSystem/DS+MaxLines.swift"; sourceTree = SOURCE_ROOT; };
 		7A0E950B27D9FD5F00F04843 /* DS+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Spacing.swift"; path = "DesignSystem/DS+Spacing.swift"; sourceTree = SOURCE_ROOT; };
 		7A0E950D27DA006700F04843 /* DS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DS.swift; path = DesignSystem/DS.swift; sourceTree = SOURCE_ROOT; };
+		7A0E950F27DA018100F04843 /* DS+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Padding.swift"; path = "DesignSystem/DS+Padding.swift"; sourceTree = SOURCE_ROOT; };
+		7A0E951127DA068A00F04843 /* DS+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+CornerRadius.swift"; path = "DesignSystem/DS+CornerRadius.swift"; sourceTree = SOURCE_ROOT; };
 		7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsBodyView.swift; path = Details/Scenes/LaunchDetails/Views/LaunchDetailsBodyView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
@@ -231,8 +235,10 @@
 		E50FB67127D5FF6A00DFD1DD /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				7A0E951127DA068A00F04843 /* DS+CornerRadius.swift */,
 				7A0E950927D9FB5F00F04843 /* DS+MaxLines.swift */,
 				7A0E950B27D9FD5F00F04843 /* DS+Spacing.swift */,
+				7A0E950F27DA018100F04843 /* DS+Padding.swift */,
 				7A0E950D27DA006700F04843 /* DS.swift */,
 			);
 			path = DesignSystem;
@@ -490,6 +496,8 @@
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
+				7A0E951227DA068A00F04843 /* DS+CornerRadius.swift in Sources */,
+				7A0E951027DA018100F04843 /* DS+Padding.swift in Sources */,
 				7A0E950A27D9FB5F00F04843 /* DS+MaxLines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
