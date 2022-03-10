@@ -18,14 +18,14 @@ struct LaunchDetailsBodyView: View {
     let buttonAction: () -> Void
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: .dsSpacing(.xSmall)) {
             Text(model.title)
                 .font(.title2)
                 .bold()
                 .frame(alignment: .leading)
             
             Text(model.description)
-                .lineLimit(3)
+                .lineLimit(.dsMaxLines(.three))
 
             Button {
                 buttonAction()
