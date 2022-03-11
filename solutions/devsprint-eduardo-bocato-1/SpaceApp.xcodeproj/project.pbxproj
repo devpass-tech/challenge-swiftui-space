@@ -20,6 +20,7 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
+		B468895127DAD7BC000066B9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B468895027DAD7BC000066B9 /* ErrorView.swift */; };
 		E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */; };
 		F37BA22727D8E2B800C03F99 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA22627D8E2B800C03F99 /* EmptyView.swift */; };
 		F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */; };
@@ -52,6 +53,7 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B468895027DAD7BC000066B9 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F37BA22627D8E2B800C03F99 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInfoView.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 			children = (
 				F37BA22627D8E2B800C03F99 /* EmptyView.swift */,
 				F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */,
+				B468895027DAD7BC000066B9 /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
+				B468895127DAD7BC000066B9 /* ErrorView.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
 			);
