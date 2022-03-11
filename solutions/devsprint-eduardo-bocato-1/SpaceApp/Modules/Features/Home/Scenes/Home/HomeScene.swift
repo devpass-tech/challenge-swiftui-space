@@ -1,24 +1,28 @@
 import Foundation
 import SwiftUI
 
+enum HomeTabs: Int {
+    case home
+    case launches
+}
+
 struct HomeScene: View {
     @StateObject var viewModel: HomeViewModel
-    @State private var tabSelected: Int = 1
 
     init(viewModel: HomeViewModel) {
         self._viewModel = .init(wrappedValue: viewModel)
     }
     
     var body: some View {
-        TabView(selection: $tabSelected) {
+        TabView(selection: $viewModel.state.selectedTabIndex) {
 
-            NavigationSceneView(title: SpaceApp.HomeScene.homeTitle) {
-                Text(SpaceApp.HomeScene.homeTitle)
+            NavigationSceneView(title: L10n.HomeScene.homeTitle) {
+                Text(L10n.HomeScene.homeTitle)
             }.tabItem {
-                Label(SpaceApp.HomeScene.homeTitle, systemImage: "house.fill")
-            }.tag(1)
+                Label(L10n.HomeScene.homeTitle, systemImage: "house.fill")
+            }.tag(HomeTabs.home)
 
-            NavigationSceneView(title: SpaceApp.Common.appTitle) {
+            NavigationSceneView(title: L10n.Common.appTitle) {
                 VStack {
                     List(viewModel.launches) { launch in
                         Text("\(launch.name)")
@@ -26,8 +30,8 @@ struct HomeScene: View {
                     .onAppear { viewModel.loadLaunches() }
                 }
             }.tabItem {
-                Label(SpaceApp.HomeScene.launchesTitle, systemImage: "location.north.fill")
-            }.tag(2)
+                Label(L10n.HomeScene.launchesTitle, systemImage: "location.north.fill")
+            }.tag(HomeTabs.launches)
         }
     }
 }

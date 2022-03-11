@@ -27,8 +27,8 @@ public struct NavigationSceneView<Content: View>: View {
 
 public struct NavigationSceneView_Previews: PreviewProvider {
     public static var previews: some View {
-        NavigationSceneView(title: SpaceApp.Common.appTitle, content: {
-            Text(SpaceApp.Common.appTitle)
+        NavigationSceneView(title: L10n.Common.appTitle, content: {
+            Text(L10n.Common.appTitle)
         })
     }
 }

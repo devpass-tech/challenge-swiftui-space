@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum SpaceApp {
+enum L10n {
 
     enum Common {
         static let appTitle: LocalizedStringKey = "mainapp_title"

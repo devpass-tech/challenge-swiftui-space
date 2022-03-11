@@ -5,6 +5,7 @@ import SwiftUI
 
 struct HomeState: Equatable {
     var launches: [Launch] = []
+    var selectedTabIndex: HomeTabs = .home
 }
 
 // MARK: - Environment
@@ -19,7 +20,7 @@ struct HomeEnvironment {
 final class HomeViewModel: ObservableObject {
     // MARK: - Properties
     
-    @Published private(set) var state: HomeState
+    @Published var state: HomeState
     
     // MARK: - Dependencies
     
