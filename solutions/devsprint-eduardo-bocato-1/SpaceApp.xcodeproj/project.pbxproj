@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7A0E950727D950CD00F04843 /* SpaceButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950627D950CD00F04843 /* SpaceButtonStyle.swift */; };
-		7A0E950A27D9FB5F00F04843 /* DS+MaxLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950927D9FB5F00F04843 /* DS+MaxLines.swift */; };
+		7A0E950A27D9FB5F00F04843 /* DS+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950927D9FB5F00F04843 /* DS+Typography.swift */; };
 		7A0E950C27D9FD5F00F04843 /* DS+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950B27D9FD5F00F04843 /* DS+Spacing.swift */; };
 		7A0E950E27DA006700F04843 /* DS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950D27DA006700F04843 /* DS.swift */; };
 		7A0E951027DA018100F04843 /* DS+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E950F27DA018100F04843 /* DS+Padding.swift */; };
 		7A0E951227DA068A00F04843 /* DS+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E951127DA068A00F04843 /* DS+CornerRadius.swift */; };
+		7A19B1C327DDF4C7001614A0 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19B1C227DDF4C7001614A0 /* Text.swift */; };
+		7A19B1C727DDF9DE001614A0 /* DS+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19B1C627DDF9DE001614A0 /* DS+Color.swift */; };
 		7A60612827D7DE1800279648 /* LaunchDetailsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
@@ -42,11 +44,13 @@
 
 /* Begin PBXFileReference section */
 		7A0E950627D950CD00F04843 /* SpaceButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpaceButtonStyle.swift; path = Buttons/Styles/SpaceButtonStyle.swift; sourceTree = SOURCE_ROOT; };
-		7A0E950927D9FB5F00F04843 /* DS+MaxLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+MaxLines.swift"; path = "DesignSystem/DS+MaxLines.swift"; sourceTree = SOURCE_ROOT; };
+		7A0E950927D9FB5F00F04843 /* DS+Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Typography.swift"; path = "DesignSystem/DS+Typography.swift"; sourceTree = SOURCE_ROOT; };
 		7A0E950B27D9FD5F00F04843 /* DS+Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Spacing.swift"; path = "DesignSystem/DS+Spacing.swift"; sourceTree = SOURCE_ROOT; };
 		7A0E950D27DA006700F04843 /* DS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DS.swift; path = DesignSystem/DS.swift; sourceTree = SOURCE_ROOT; };
 		7A0E950F27DA018100F04843 /* DS+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Padding.swift"; path = "DesignSystem/DS+Padding.swift"; sourceTree = SOURCE_ROOT; };
 		7A0E951127DA068A00F04843 /* DS+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+CornerRadius.swift"; path = "DesignSystem/DS+CornerRadius.swift"; sourceTree = SOURCE_ROOT; };
+		7A19B1C227DDF4C7001614A0 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Text.swift; path = DesignSystem/Text.swift; sourceTree = SOURCE_ROOT; };
+		7A19B1C627DDF9DE001614A0 /* DS+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Color.swift"; path = "DesignSystem/DS+Color.swift"; sourceTree = SOURCE_ROOT; };
 		7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsBodyView.swift; path = Details/Scenes/LaunchDetails/Views/LaunchDetailsBodyView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
@@ -236,9 +240,10 @@
 			isa = PBXGroup;
 			children = (
 				7A0E951127DA068A00F04843 /* DS+CornerRadius.swift */,
-				7A0E950927D9FB5F00F04843 /* DS+MaxLines.swift */,
+				7A0E950927D9FB5F00F04843 /* DS+Typography.swift */,
 				7A0E950B27D9FD5F00F04843 /* DS+Spacing.swift */,
 				7A0E950F27DA018100F04843 /* DS+Padding.swift */,
+				7A19B1C627DDF9DE001614A0 /* DS+Color.swift */,
 				7A0E950D27DA006700F04843 /* DS.swift */,
 			);
 			path = DesignSystem;
@@ -247,6 +252,7 @@
 		E50FB67227D5FF7300DFD1DD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7A19B1C227DDF4C7001614A0 /* Text.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				7A0E950727D950CD00F04843 /* SpaceButtonStyle.swift in Sources */,
+				7A19B1C327DDF4C7001614A0 /* Text.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
@@ -498,7 +505,8 @@
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
 				7A0E951227DA068A00F04843 /* DS+CornerRadius.swift in Sources */,
 				7A0E951027DA018100F04843 /* DS+Padding.swift in Sources */,
-				7A0E950A27D9FB5F00F04843 /* DS+MaxLines.swift in Sources */,
+				7A19B1C727DDF9DE001614A0 /* DS+Color.swift in Sources */,
+				7A0E950A27D9FB5F00F04843 /* DS+Typography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
