@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  L10n.swift
 //  SpaceApp
 //
 //  Created by Gustavo Soares on 10/03/22.
