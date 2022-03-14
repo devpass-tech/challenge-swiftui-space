@@ -16,6 +16,10 @@
 		7A19B1C327DDF4C7001614A0 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19B1C227DDF4C7001614A0 /* Text.swift */; };
 		7A19B1C727DDF9DE001614A0 /* DS+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A19B1C627DDF9DE001614A0 /* DS+Color.swift */; };
 		7A60612827D7DE1800279648 /* LaunchDetailsBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */; };
+		1508B1D827D8180300B90148 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1508B1D727D8180300B90148 /* Localizable.strings */; };
+		155FE62127DA9DE000B2D6A4 /* NavigationSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FE62027DA9DE000B2D6A4 /* NavigationSceneView.swift */; };
+		15B42B7F27DA97AE009AF552 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B42B7E27DA97AE009AF552 /* Constants.swift */; };
+		15B42B8227DA97FB009AF552 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B42B8127DA97FB009AF552 /* String+Localized.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeScene.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -30,6 +34,8 @@
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */; };
+		F37BA22727D8E2B800C03F99 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA22627D8E2B800C03F99 /* EmptyView.swift */; };
+		F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,10 @@
 		7A19B1C227DDF4C7001614A0 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Text.swift; path = DesignSystem/Text.swift; sourceTree = SOURCE_ROOT; };
 		7A19B1C627DDF9DE001614A0 /* DS+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "DS+Color.swift"; path = "DesignSystem/DS+Color.swift"; sourceTree = SOURCE_ROOT; };
 		7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailsBodyView.swift; path = Details/Scenes/LaunchDetails/Views/LaunchDetailsBodyView.swift; sourceTree = "<group>"; };
+		1508B1D727D8180300B90148 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		155FE62027DA9DE000B2D6A4 /* NavigationSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSceneView.swift; sourceTree = "<group>"; };
+		15B42B7E27DA97AE009AF552 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		15B42B8127DA97FB009AF552 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
@@ -69,6 +79,8 @@
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E50FB67E27D602F700DFD1DD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F37BA22627D8E2B800C03F99 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,20 @@
 				7A60612727D7DE1800279648 /* LaunchDetailsBodyView.swift */,
 			);
 			name = Views;
+		15B42B7D27DA9758009AF552 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				15B42B7E27DA97AE009AF552 /* Constants.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		15B42B8027DA97D4009AF552 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15B42B8127DA97FB009AF552 /* String+Localized.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		98B551622784D78900AC9086 = {
@@ -184,6 +210,7 @@
 			children = (
 				98BDC9902784FBFC003820AD /* Info.plist */,
 				98B551722784D78E00AC9086 /* Assets.xcassets */,
+				1508B1D727D8180300B90148 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,6 +237,8 @@
 		E50FB66E27D5FF5200DFD1DD /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				15B42B8027DA97D4009AF552 /* Extension */,
+				15B42B7D27DA9758009AF552 /* Theme */,
 				E50FB67427D5FF8D00DFD1DD /* Networking */,
 				E50FB67327D5FF7D00DFD1DD /* Services */,
 				E50FB66F27D5FF5F00DFD1DD /* UI */,
@@ -220,20 +249,11 @@
 		E50FB66F27D5FF5F00DFD1DD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F37BA22427D8E29800C03F99 /* Components */,
 				E50FB67227D5FF7300DFD1DD /* Extensions */,
 				E50FB67127D5FF6A00DFD1DD /* DesignSystem */,
-				E50FB67027D5FF6500DFD1DD /* Components */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		E50FB67027D5FF6500DFD1DD /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				E50FB68427D6150E00DFD1DD /* Views */,
-				E50FB68327D6150600DFD1DD /* Buttons */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		E50FB67127D5FF6A00DFD1DD /* DesignSystem */ = {
@@ -363,28 +383,32 @@
 			path = AllLaunches;
 			sourceTree = "<group>";
 		};
-		E50FB68327D6150600DFD1DD /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				7A0E950527D950BC00F04843 /* Styles */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		E50FB68427D6150E00DFD1DD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E50FB68627D617BC00DFD1DD /* DevpassExample-APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				7A0E950527D950BC00F04843 /* Styles */,
 				98BDC9782784F681003820AD /* Models */,
 				98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */,
 			);
 			path = "DevpassExample-APIClient";
+			sourceTree = "<group>";
+		};
+		F37BA22427D8E29800C03F99 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F37BA22527D8E2A300C03F99 /* Views */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F37BA22527D8E2A300C03F99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F37BA22627D8E2B800C03F99 /* EmptyView.swift */,
+				F37BA22827D8E84B00C03F99 /* ContentInfoView.swift */,
+				155FE62027DA9DE000B2D6A4 /* NavigationSceneView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B551762784D78E00AC9086 /* Preview Assets.xcassets in Resources */,
+				1508B1D827D8180300B90148 /* Localizable.strings in Resources */,
 				98B551732784D78E00AC9086 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,19 +519,27 @@
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				7A0E950727D950CD00F04843 /* SpaceButtonStyle.swift in Sources */,
 				7A19B1C327DDF4C7001614A0 /* Text.swift in Sources */,
+				F37BA22727D8E2B800C03F99 /* EmptyView.swift in Sources */,
+				E50FB67F27D602F700DFD1DD /* HomeViewModel.swift in Sources */,
+				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
+				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				15B42B8227DA97FB009AF552 /* String+Localized.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
+				F37BA22927D8E84B00C03F99 /* ContentInfoView.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				7A0E950E27DA006700F04843 /* DS.swift in Sources */,
 				7A60612827D7DE1800279648 /* LaunchDetailsBodyView.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
+				155FE62127DA9DE000B2D6A4 /* NavigationSceneView.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
 				7A0E951227DA068A00F04843 /* DS+CornerRadius.swift in Sources */,
 				7A0E951027DA018100F04843 /* DS+Padding.swift in Sources */,
 				7A19B1C727DDF9DE001614A0 /* DS+Color.swift in Sources */,
 				7A0E950A27D9FB5F00F04843 /* DS+Typography.swift in Sources */,
+				15B42B7F27DA97AE009AF552 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
