@@ -1,5 +1,8 @@
-import Foundation
+import UIKit
 
-struct Constants {
-    static let preview_square_size = 400.0
+enum Constants {
+    enum PreviewSquareSize: CGFloat {
+        /// width = 400
+        case medium = 400
+    }
 }
