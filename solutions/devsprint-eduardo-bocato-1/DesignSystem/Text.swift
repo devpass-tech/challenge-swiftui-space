@@ -19,6 +19,6 @@ extension Text {
         self
             .font(typography.font)
             .lineLimit(typography.maxLines)
-            .foregroundColor(.black)
+            .foregroundColor(.ds(color))
     }
 }
