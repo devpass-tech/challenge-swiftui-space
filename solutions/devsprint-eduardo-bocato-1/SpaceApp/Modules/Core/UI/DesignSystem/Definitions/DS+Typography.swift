@@ -16,6 +16,6 @@ extension DS {
 }
 
 extension DS.Typography {
-    public static let headline: Self = .init(font: .headline, maxLines: 1)
+    public static let headline: Self = .init(font: .headline, maxLines: 2)
     public static let descriptionLabel: Self = .init(font: .body, maxLines: 3)
 }
