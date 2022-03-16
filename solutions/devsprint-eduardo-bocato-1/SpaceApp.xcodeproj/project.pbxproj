@@ -21,6 +21,7 @@
 		A236929E27E2719700D7CE27 /* NewDS+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929927E2719700D7CE27 /* NewDS+CornerRadius.swift */; };
 		A236929F27E2719700D7CE27 /* NewDSNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929A27E2719700D7CE27 /* NewDSNamespace.swift */; };
 		A23692A027E2719700D7CE27 /* NewDS+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929B27E2719700D7CE27 /* NewDS+Colors.swift */; };
+		A23692A227E2737000D7CE27 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23692A127E2737000D7CE27 /* PrimaryButton.swift */; };
 		E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D8FDE27DFF8B0006F16EC /* SpaceAppApp.swift */; };
 		E58D8FED27DFF96C006F16EC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D8FEB27DFF96C006F16EC /* HomeViewModel.swift */; };
 		E58D8FEE27DFF96C006F16EC /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D8FEC27DFF96C006F16EC /* HomeScene.swift */; };
@@ -81,6 +82,7 @@
 		A236929927E2719700D7CE27 /* NewDS+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewDS+CornerRadius.swift"; sourceTree = "<group>"; };
 		A236929A27E2719700D7CE27 /* NewDSNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDSNamespace.swift; sourceTree = "<group>"; };
 		A236929B27E2719700D7CE27 /* NewDS+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewDS+Colors.swift"; sourceTree = "<group>"; };
+		A23692A127E2737000D7CE27 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		E58D8FDE27DFF8B0006F16EC /* SpaceAppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		E58D8FEB27DFF96C006F16EC /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E58D8FEC27DFF96C006F16EC /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				E58D902627DFFB42006F16EC /* SpaceButtonStyle.swift */,
+				A23692A127E2737000D7CE27 /* PrimaryButton.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 				E58D8FEE27DFF96C006F16EC /* HomeScene.swift in Sources */,
 				E58D902F27DFFB65006F16EC /* NavigationSceneView.swift in Sources */,
 				A236929D27E2719700D7CE27 /* NewDS+Typography.swift in Sources */,
+				A23692A227E2737000D7CE27 /* PrimaryButton.swift in Sources */,
 				A23692A027E2719700D7CE27 /* NewDS+Colors.swift in Sources */,
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
 				E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */,

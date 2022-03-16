@@ -37,6 +37,19 @@ extension DS.Typography {
 
     /// A font with the caption text style.
     public static let caption: Self = .init(font: .caption)
+
+    /// Font of buttons
+    public static let button: Self = .init(font: .system(size: 18, weight: .semibold))
+}
+
+public extension Label {
+    func newDsFont(_ font: NewDS.Typography) -> some View {
+        self.font(font.font)
+    }
+
+    func newDsFont(_ font: NewDS.Typography, color: NewDS.Color) -> some View {
+        self.font(font.font).newDsForegroundColor(color)
+    }
 }
 
 public extension Text {
