@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-extension DS {
-    public struct Font {
+extension NewDS {
+    public struct Typography {
         let font: SwiftUI.Font
     }
 }
 
-extension DS.Font {
+extension NewDS.Typography {
     /// A font with the large title text style.
     public static let largeTitle: Self = .init(font: .largeTitle)
 
@@ -37,17 +37,14 @@ extension DS.Font {
 
     /// A font with the caption text style.
     public static let caption: Self = .init(font: .caption)
-
-    /// Any custom font
-    public static let custom: Self = .init(font: .system(size: 18, weight: .bold, design: .serif))
 }
 
 public extension Text {
-    func dsFont(_ font: DS.Font) -> some View {
+    func newDsFont(_ font: NewDS.Typography) -> some View {
         self.font(font.font)
     }
 
-    func dsFont(_ font: DS.Font, color: DS.Color) -> some View {
-        self.font(font.font).dsForegroundColor(color)
+    func newDsFont(_ font: NewDS.Typography, color: NewDS.Color) -> some View {
+        self.font(font.font).newDsForegroundColor(color)
     }
 }

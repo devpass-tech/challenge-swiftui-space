@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension DS {
+extension NewDS {
     public struct Color {
         let color: SwiftUI.Color
     }
@@ -18,21 +18,13 @@ extension DS {
         let light: SwiftUI.Color
         let dark: SwiftUI.Color
 
-        var dsColor: DS.Color {
+        var dsColor: NewDS.Color {
             colorScheme == .light ? .init(color: light) : .init(color: dark)
         }
     }
 }
 
-extension DS.Color {
-    /// A white color suitable for use in UI elements.
-    @available(*, deprecated, message: "Check if you should use primary, secondary, background or accentColor")
-    public static let white: Self = .init(color: .white)
-
-    /// A blue color suitable for use in UI elements.
-    @available(*, deprecated, message: "Check if you should use primary, secondary, background or accentColor")
-    public static let blue: Self = .init(color: .blue)
-
+extension NewDS.Color {
     /// The color to use for primary content.
     public static let primary: Self = .init(color: .primary)
 
@@ -44,24 +36,24 @@ extension DS.Color {
 
     /// A color that reflects the background color of app (mainly white or almost white)
     public static var background: Self = {
-        let dynamic = DS.DynamicColor(
+        let adaptative = NewDS.DynamicColor(
             light: Color.white,
             dark: Color.gray.opacity(0.1)
         )
-        return dynamic.dsColor
+        return adaptative.dsColor
     }()
 }
 
 public extension Color {
-    static func ds(_ color: DS.Color) -> Self { color.color }
+    static func newDs(_ color: NewDS.Color) -> Self { color.color }
 }
 
 public extension View {
-    func dsForegroundColor(_ color: DS.Color) -> some View {
-        self.foregroundColor(.ds(color))
+    func newDsForegroundColor(_ color: NewDS.Color) -> some View {
+        self.foregroundColor(.newDs(color))
     }
 
-    func dsBackgroundColor(_ color: DS.Color) -> some View {
+    func newDsBackgroundColor(_ color: NewDS.Color) -> some View {
         self.background(color.color)
     }
 }

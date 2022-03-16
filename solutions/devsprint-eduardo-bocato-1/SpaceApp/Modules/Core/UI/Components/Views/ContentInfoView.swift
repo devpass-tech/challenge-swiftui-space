@@ -20,10 +20,10 @@ public struct ContentInfoView: View {
                 Button("Retry") {
                     retryAction()
                 }
-                .dsForegroundColor(.white)
-                .dsPadding(.xxSmall)
-                .dsBackgroundColor(.blue)
-                .dsCornerRadius(.xxSmall)
+                .foregroundColor(.white)
+                .newDsPadding(.xxSmall)
+                .background(Color.blue)
+                .newDsCornerRadius(.xxSmall)
             }
             Spacer()
         }
