@@ -14,5 +14,7 @@ extension DS {
 }
 
 extension DS.CornerRadius {
+    public static let xxSmall: Self = .init(value: 8)
+    public static let xSmall: Self = .init(value: 12)
     public static let small: Self = .init(value: 16)
 }
