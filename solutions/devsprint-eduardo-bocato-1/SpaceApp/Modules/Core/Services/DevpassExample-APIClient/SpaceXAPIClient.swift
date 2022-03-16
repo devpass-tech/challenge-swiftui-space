@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import Combine
 
 final class SpaceXAPI {
 
     var baseURL: URL {
 
         return URL(string: "https://api.spacexdata.com/v5/launches")!
+    }
+
+    var baseUrlString: String {
+        "https://api.spacexdata.com/v5/launches"
     }
 
     var parameters: [String : String] = [:]
@@ -22,6 +27,27 @@ final class SpaceXAPI {
     }
 
     let networkClient = NetworkClient()
+
+    private let networkManager: NetworkManager
+
+    private var testRequestCancellable: AnyCancellable?
+
+    init(networkManager: NetworkManager = NetworkManagerService()) {
+        self.networkManager = networkManager
+    }
+
+    func testRequest() {
+        testRequestCancellable = networkManager.request(httpMethod: .get,
+                               url: baseUrlString,
+                               parameters: parameters,
+                               headers: httpHeaders).sink { completion in
+            if case let .failure(error) = completion {
+                print(error)
+            }
+        } receiveValue: { data in
+            print(data)
+        }
+    }
 
     func fetchAllLaunches(completion: @escaping ([Launch]?) -> ()) {
 

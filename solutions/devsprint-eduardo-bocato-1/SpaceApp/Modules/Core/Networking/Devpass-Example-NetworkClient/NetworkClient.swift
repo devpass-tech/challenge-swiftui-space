@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class NetworkClient {
 
@@ -66,5 +67,4 @@ final class NetworkClient {
         }
         task.resume()
     }
-
 }
