@@ -10,8 +10,7 @@ import Combine
 
 final class SpaceXAPI {
 
-    var baseURL: URL {
-
+    static var baseURL: URL {
         return URL(string: "https://api.spacexdata.com/v5/launches")!
     }
 
@@ -51,7 +50,7 @@ final class SpaceXAPI {
 
     func fetchAllLaunches(completion: @escaping ([Launch]?) -> ()) {
 
-        self.networkClient.get(url: self.baseURL,
+        self.networkClient.get(url: SpaceXAPI.baseURL,
                                parameters: self.parameters,
                                headers: self.httpHeaders) { response in
 

@@ -1,3 +1,4 @@
+import Combine
 import Foundation
 import SwiftUI
 
@@ -11,7 +12,8 @@ struct HomeState: Equatable {
 // MARK: - Environment
 
 struct HomeEnvironment {
-    let spaceXAPI: SpaceXAPI
+//    let spaceXAPI: SpaceXAPI
+    let launchService: LaunchServiceProtocol
 }
 
 // MARK: - ViewModel
@@ -25,6 +27,7 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Dependencies
     
     private let environment: HomeEnvironment
+    private var launchesServiceCancellable: AnyCancellable?
 
     // MARK: - Initialization
     
@@ -39,10 +42,18 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Public API
     
     func loadLaunches() {
-//        environment.spaceXAPI.fetchAllLaunches { launches in
-//            self.state.launches = launches ?? []
-//        }
-        environment.spaceXAPI.testRequest()
+        launchesServiceCancellable = environment.launchService.fetchAllLaunches()
+            .receive(on: DispatchQueue.main)
+            .sink(
+            receiveCompletion: { completion in
+                if case let .failure(error) = completion {
+                    print(error)
+                }
+            },
+            receiveValue: { [weak self] in
+                self?.state.launches = $0
+            }
+        )
     }
 }
 extension HomeViewModel {

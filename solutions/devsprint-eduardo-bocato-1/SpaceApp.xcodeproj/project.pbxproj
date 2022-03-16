@@ -40,6 +40,7 @@
 		E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902A27DFFB65006F16EC /* ContentInfoView.swift */; };
 		E58D902E27DFFB65006F16EC /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902B27DFFB65006F16EC /* EmptyView.swift */; };
 		E58D902F27DFFB65006F16EC /* NavigationSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902C27DFFB65006F16EC /* NavigationSceneView.swift */; };
+		F33C35B827E296E000DD8C12 /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C35B727E296E000DD8C12 /* LaunchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		E58D902A27DFFB65006F16EC /* ContentInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentInfoView.swift; sourceTree = "<group>"; };
 		E58D902B27DFFB65006F16EC /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		E58D902C27DFFB65006F16EC /* NavigationSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationSceneView.swift; sourceTree = "<group>"; };
+		F33C35B727E296E000DD8C12 /* LaunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				E58D8FFA27DFFA0C006F16EC /* DevpassExample-APIClient */,
+				F33C35B727E296E000DD8C12 /* LaunchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
 				E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */,
 				E58D902027DFFAE3006F16EC /* DS+CornerRadius.swift in Sources */,
+				F33C35B827E296E000DD8C12 /* LaunchService.swift in Sources */,
 				E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */,
 				E58D900927DFFA5A006F16EC /* ContentType.swift in Sources */,
 				E58D900C27DFFA5A006F16EC /* Response.swift in Sources */,

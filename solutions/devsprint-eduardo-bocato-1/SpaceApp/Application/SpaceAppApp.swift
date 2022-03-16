@@ -7,7 +7,7 @@ struct SpaceAppApp: App {
             HomeScene(
                 viewModel: .init(
                     initialState: .init(),
-                    environment: .init(spaceXAPI: .init())
+                    environment: .init(launchService: LaunchServiceImplementation())
                 )
             )
         }

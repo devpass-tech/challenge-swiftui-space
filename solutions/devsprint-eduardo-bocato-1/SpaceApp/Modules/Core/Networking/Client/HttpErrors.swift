@@ -17,5 +17,5 @@ public enum HttpRequestError: LocalizedError {
     case networkError
     case invalidUrl
     case invalidHttpResponse
-case emptyData
+    case emptyData
 }

@@ -45,14 +45,14 @@ struct HomeScene_Previews: PreviewProvider {
             HomeScene(
                 viewModel: .init(
                     initialState: .init(),
-                    environment: .init(spaceXAPI: .init())
+                    environment: .init(launchService: LaunchServiceImplementation())
                 )
             ).preferredColorScheme(ColorScheme.dark)
 
             HomeScene(
                 viewModel: .init(
                     initialState: .init(),
-                    environment: .init(spaceXAPI: .init())
+                    environment: .init(launchService: LaunchServiceImplementation())
                 )
             ).preferredColorScheme(ColorScheme.light)
         }
