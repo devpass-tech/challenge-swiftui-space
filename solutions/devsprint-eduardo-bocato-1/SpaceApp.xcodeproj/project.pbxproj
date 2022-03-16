@@ -42,6 +42,7 @@
 		E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902A27DFFB65006F16EC /* ContentInfoView.swift */; };
 		E58D902E27DFFB65006F16EC /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902B27DFFB65006F16EC /* EmptyView.swift */; };
 		E58D902F27DFFB65006F16EC /* NavigationSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902C27DFFB65006F16EC /* NavigationSceneView.swift */; };
+		F33C35A327E117F800DD8C12 /* LaunchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C35A227E117F800DD8C12 /* LaunchDetailsHeaderView.swift */; };
 		E58D903927E1C64F006F16EC /* LaunchDetailsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D903727E1C64E006F16EC /* LaunchDetailsScene.swift */; };
 		E58D903A27E1C64F006F16EC /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D903827E1C64E006F16EC /* LaunchDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -103,6 +104,7 @@
 		E58D902A27DFFB65006F16EC /* ContentInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentInfoView.swift; sourceTree = "<group>"; };
 		E58D902B27DFFB65006F16EC /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		E58D902C27DFFB65006F16EC /* NavigationSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationSceneView.swift; sourceTree = "<group>"; };
+		F33C35A227E117F800DD8C12 /* LaunchDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsHeaderView.swift; sourceTree = "<group>"; };
 		E58D903727E1C64E006F16EC /* LaunchDetailsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsScene.swift; sourceTree = "<group>"; };
 		E58D903827E1C64E006F16EC /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				E58D8FF127DFF995006F16EC /* LaunchDetailsBodyView.swift */,
+				F33C35A227E117F800DD8C12 /* LaunchDetailsHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				E58D900827DFFA5A006F16EC /* NetworkClient.swift in Sources */,
 				E58D900B27DFFA5A006F16EC /* HTTPMethod.swift in Sources */,
 				E58D900727DFFA5A006F16EC /* HTTPHeaderField.swift in Sources */,
+				F33C35A327E117F800DD8C12 /* LaunchDetailsHeaderView.swift in Sources */,
 				E58D8FED27DFF96C006F16EC /* HomeViewModel.swift in Sources */,
 				E58D901E27DFFAE3006F16EC /* DS.swift in Sources */,
 				E58D901F27DFFAE3006F16EC /* DS+Color.swift in Sources */,
