@@ -45,6 +45,7 @@
 		E58D903927E1C64F006F16EC /* LaunchDetailsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D903727E1C64E006F16EC /* LaunchDetailsScene.swift */; };
 		E58D903A27E1C64F006F16EC /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D903827E1C64E006F16EC /* LaunchDetailsViewModel.swift */; };
 		F33C35A327E117F800DD8C12 /* LaunchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C35A227E117F800DD8C12 /* LaunchDetailsHeaderView.swift */; };
+		F33C35B827E296E000DD8C12 /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C35B727E296E000DD8C12 /* LaunchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		E58D903727E1C64E006F16EC /* LaunchDetailsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsScene.swift; sourceTree = "<group>"; };
 		E58D903827E1C64E006F16EC /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
 		F33C35A227E117F800DD8C12 /* LaunchDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsHeaderView.swift; sourceTree = "<group>"; };
+		F33C35B727E296E000DD8C12 /* LaunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				E58D8FFA27DFFA0C006F16EC /* DevpassExample-APIClient */,
+				F33C35B727E296E000DD8C12 /* LaunchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -615,6 +618,8 @@
 				154CA5BD27E227EF00DB94D0 /* HttpErrors.swift in Sources */,
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
 				E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */,
+				E58D902027DFFAE3006F16EC /* DS+CornerRadius.swift in Sources */,
+				F33C35B827E296E000DD8C12 /* LaunchService.swift in Sources */,
 				E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */,
 				E58D900927DFFA5A006F16EC /* ContentType.swift in Sources */,
 				E58D900C27DFFA5A006F16EC /* Response.swift in Sources */,

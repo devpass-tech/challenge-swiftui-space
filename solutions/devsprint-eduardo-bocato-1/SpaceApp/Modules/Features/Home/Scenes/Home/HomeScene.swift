@@ -62,19 +62,21 @@ struct HomeScene: View {
 #if DEBUG
 struct HomeScene_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScene(
-            viewModel: .init(
-                initialState: .init(),
-                environment: .init(spaceXAPI: .init())
-            )
-        ).preferredColorScheme(ColorScheme.dark)
+        Group {
+            HomeScene(
+                viewModel: .init(
+                    initialState: .init(),
+                    environment: .init(launchService: LaunchServiceImplementation())
+                )
+            ).preferredColorScheme(ColorScheme.dark)
 
-        HomeScene(
-            viewModel: .init(
-                initialState: .init(),
-                environment: .init(spaceXAPI: .init())
-            )
-        ).preferredColorScheme(ColorScheme.light)
+            HomeScene(
+                viewModel: .init(
+                    initialState: .init(),
+                    environment: .init(launchService: LaunchServiceImplementation())
+                )
+            ).preferredColorScheme(ColorScheme.light)
+        }
     }
 }
 #endif
