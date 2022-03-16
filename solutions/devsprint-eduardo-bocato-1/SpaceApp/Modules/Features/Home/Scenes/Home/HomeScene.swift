@@ -32,6 +32,8 @@ struct HomeScene: View {
             }.tabItem {
                 Label(L10n.HomeScene.launchesTitle, systemImage: "location.north.fill")
             }.tag(HomeTabs.launches)
+        }.onAppear {
+            viewModel.loadLaunches()
         }
     }
 }

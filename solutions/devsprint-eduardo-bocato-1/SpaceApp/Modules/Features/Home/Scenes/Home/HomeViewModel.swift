@@ -25,7 +25,7 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Dependencies
     
     private let environment: HomeEnvironment
-    
+
     // MARK: - Initialization
     
     init(
@@ -39,9 +39,10 @@ final class HomeViewModel: ObservableObject {
     // MARK: - Public API
     
     func loadLaunches() {
-        environment.spaceXAPI.fetchAllLaunches { launches in
-            self.state.launches = launches ?? []
-        }
+//        environment.spaceXAPI.fetchAllLaunches { launches in
+//            self.state.launches = launches ?? []
+//        }
+        environment.spaceXAPI.testRequest()
     }
 }
 extension HomeViewModel {

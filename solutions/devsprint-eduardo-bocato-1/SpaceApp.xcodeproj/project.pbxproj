@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154CA5BA27E2265800DB94D0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154CA5B927E2265800DB94D0 /* NetworkManager.swift */; };
+		154CA5BD27E227EF00DB94D0 /* HttpErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154CA5BC27E227EF00DB94D0 /* HttpErrors.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
 		98B551762784D78E00AC9086 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551752784D78E00AC9086 /* Preview Assets.xcassets */; };
 		98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154CA5B927E2265800DB94D0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		154CA5BC27E227EF00DB94D0 /* HttpErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrors.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B551722784D78E00AC9086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98B551752784D78E00AC9086 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -120,6 +124,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		154CA5B827E2264100DB94D0 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				154CA5BC27E227EF00DB94D0 /* HttpErrors.swift */,
+				154CA5B927E2265800DB94D0 /* NetworkManager.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +305,7 @@
 		E58D8FF427DFF9B0006F16EC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				154CA5B827E2264100DB94D0 /* Client */,
 				E58D900027DFFA4B006F16EC /* Devpass-Example-NetworkClient */,
 			);
 			path = Networking;
@@ -554,12 +568,14 @@
 				E58D8FFD27DFFA27006F16EC /* SpaceXAPIClient.swift in Sources */,
 				E58D8FEE27DFF96C006F16EC /* HomeScene.swift in Sources */,
 				E58D902F27DFFB65006F16EC /* NavigationSceneView.swift in Sources */,
+				154CA5BD27E227EF00DB94D0 /* HttpErrors.swift in Sources */,
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
 				E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */,
 				E58D902027DFFAE3006F16EC /* DS+CornerRadius.swift in Sources */,
 				E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */,
 				E58D900927DFFA5A006F16EC /* ContentType.swift in Sources */,
 				E58D900C27DFFA5A006F16EC /* Response.swift in Sources */,
+				154CA5BA27E2265800DB94D0 /* NetworkManager.swift in Sources */,
 				E58D901A27DFFAE3006F16EC /* DS+Padding.swift in Sources */,
 				E58D900A27DFFA5A006F16EC /* HTTPClient.swift in Sources */,
 				E58D900827DFFA5A006F16EC /* NetworkClient.swift in Sources */,

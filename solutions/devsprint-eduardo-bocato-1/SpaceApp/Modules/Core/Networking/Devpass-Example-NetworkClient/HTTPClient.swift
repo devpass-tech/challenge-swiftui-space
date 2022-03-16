@@ -8,7 +8,6 @@
 import Foundation
 
 protocol HTTPClientProtocol: AnyObject {
-
     var baseURL: URL { get }
     var parameters: [String : String] { get }
     var httpHeaders: [HTTPHeaderField : String] { get }
