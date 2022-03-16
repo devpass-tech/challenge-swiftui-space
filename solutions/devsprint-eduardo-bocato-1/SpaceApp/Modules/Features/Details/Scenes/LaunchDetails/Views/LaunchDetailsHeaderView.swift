@@ -9,32 +9,32 @@ import SwiftUI
 
 struct LaunchDetailsHeaderView: View {
     struct Model {
-        let image: UIImage
+        let image: Image
         let title: String
         let subTitle: String
         let dateDescription: String
     }
 
-    let model: Model
+    let launchDetailsModel: Model
 
     var body: some View {
         VStack(
             alignment: .center
         ) {
-            Image(uiImage: model.image)
+            Image("badge")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(.dsCornerRadius(.xxSmall))
 
-            Text(model.title)
+            Text(launchDetailsModel.title)
                 .dsTypography(.headline)
                 .foregroundColor(.white)
 
-            Text(model.subTitle)
+            Text(launchDetailsModel.subTitle)
                 .dsTypography(.descriptionLabel)
                 .foregroundColor(.gray)
 
-            Text(model.dateDescription)
+            Text(launchDetailsModel.dateDescription)
                 .dsTypography(.descriptionLabel)
                 .foregroundColor(.gray)
 
@@ -47,7 +47,7 @@ struct LaunchDetailsHeaderView: View {
 #if DEBUG
 extension LaunchDetailsHeaderView.Model {
     static func fixture (
-        image: UIImage = UIImage(named: "badge")!,
+        image: Image = Image("development_badge"),
         title: String = "CRS-20",
         subTitle: String = "Success",
         dateDescription: String = "Mar 15, 2022"
@@ -65,10 +65,10 @@ extension LaunchDetailsHeaderView.Model {
 #if DEBUG
 struct LaunchDetailsHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchDetailsHeaderView(model: .fixture())
+        LaunchDetailsHeaderView(launchDetailsModel: .fixture())
             .previewLayout(.sizeThatFits)
             .preferredColorScheme(.light)
-        LaunchDetailsHeaderView(model: .fixture())
+        LaunchDetailsHeaderView(launchDetailsModel: .fixture())
             .previewLayout(.sizeThatFits)
             .preferredColorScheme(.dark)
     }
