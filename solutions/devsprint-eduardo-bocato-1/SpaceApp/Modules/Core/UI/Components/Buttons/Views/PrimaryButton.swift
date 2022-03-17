@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct PrimaryButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration
-            .label
+struct PrimaryButton: View {
+    var title: String
+    var action: (() -> Void)
+
+    init(_ title: String, action: @escaping (() -> Void)) {
+        self.title = title
+        self.action = action
+    }
+
+    var body: some View {
+        Button(title, action: action)
             .frame(height: 60)
             .frame(maxWidth: .infinity)
             .font(NewDS.Typography.button.font)
             .foregroundColor(.white)
             .newDsBackgroundColor(.accentColor)
             .newDsCornerRadius(.small)
-            .shadow(color: .black.opacity(0.25), radius: 5, x: 0, y: 2)
-    }
-}
-
-extension Button {
-    func primaryButtonStyle() -> some View {
-        self.buttonStyle(PrimaryButtonStyle())
     }
 }
 
@@ -31,14 +31,12 @@ extension Button {
 struct PrimaryButtonStyle_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Button("See more", action: {})
-                .primaryButtonStyle()
+            PrimaryButton("See more", action: {})
                 .padding(5)
                 .previewLayout(.sizeThatFits)
                 .previewDisplayName("Light mode")
 
-            Button("See more", action: {})
-                .primaryButtonStyle()
+            PrimaryButton("See more", action: {})
                 .padding(5)
                 .previewLayout(.sizeThatFits)
                 .background(Color(.systemBackground))

@@ -245,6 +245,14 @@
 			path = SpaceApp/Modules/Core/DesignSystem;
 			sourceTree = SOURCE_ROOT;
 		};
+		A23692A327E2B9A800D7CE27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A23692A127E2737000D7CE27 /* PrimaryButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E58D8FDC27DFF878006F16EC /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +419,7 @@
 		E58D902427DFFB23006F16EC /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				A23692A327E2B9A800D7CE27 /* Views */,
 				E58D902527DFFB2A006F16EC /* Styles */,
 			);
 			path = Buttons;
@@ -420,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				E58D902627DFFB42006F16EC /* SpaceButtonStyle.swift */,
-				A23692A127E2737000D7CE27 /* PrimaryButton.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
