@@ -7,14 +7,11 @@
 
 import Foundation
 
-
 public enum HttpRequestError: LocalizedError {
-    // TODO: Create a errorDescription customized
     case unkown
     case invalidRequest
-    case notAuthorized
     case jsonDecodeError
-    case networkError
+    case internalServerError
     case invalidUrl
     case invalidHttpResponse
     case emptyData
