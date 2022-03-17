@@ -8,13 +8,13 @@
 import SwiftUI
 import CoreGraphics
 
-extension NewDS {
+extension DS {
     public struct Spacing {
         let value: CGFloat
     }
 }
 
-extension NewDS.Spacing {
+extension DS.Spacing {
     /// 0 px
     public static let none: Self = .init(value: 0)
     /// 2 px
@@ -38,11 +38,11 @@ extension NewDS.Spacing {
 }
 
 public extension CGFloat {
-    static func newDsSpacing(_ spacing: NewDS.Spacing) -> Self { spacing.value }
+    static func dsSpacing(_ spacing: DS.Spacing) -> Self { spacing.value }
 }
 
 public extension View {
-    func newDsPadding(_ spacing: NewDS.Spacing) -> some View {
-        self.padding(.newDsSpacing(spacing))
+    func dsPadding(_ spacing: DS.Spacing) -> some View {
+        self.padding(.dsSpacing(spacing))
     }
 }

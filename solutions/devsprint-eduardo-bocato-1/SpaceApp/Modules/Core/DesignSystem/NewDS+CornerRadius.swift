@@ -8,13 +8,13 @@
 import SwiftUI
 import CoreGraphics
 
-extension NewDS {
+extension DS {
     public struct CornerRadius {
         let value: CGFloat
     }
 }
 
-extension NewDS.CornerRadius {
+extension DS.CornerRadius {
     /// 0 px
     public static let none: Self = .init(value: 0)
     /// 2 px
@@ -38,11 +38,11 @@ extension NewDS.CornerRadius {
 }
 
 public extension CGFloat {
-    static func newDsCornerRadius(_ cornerRadius: NewDS.CornerRadius) -> Self { cornerRadius.value }
+    static func dsCornerRadius(_ cornerRadius: DS.CornerRadius) -> Self { cornerRadius.value }
 }
 
 public extension View {
-    func newDsCornerRadius(_ cornerRadius: NewDS.CornerRadius) -> some View {
+    func dsCornerRadius(_ cornerRadius: DS.CornerRadius) -> some View {
         self.cornerRadius(cornerRadius.value)
     }
 }

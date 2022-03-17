@@ -36,13 +36,6 @@
 		E58D900C27DFFA5A006F16EC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D900627DFFA5A006F16EC /* Response.swift */; };
 		E58D900E27DFFA74006F16EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E58D900D27DFFA74006F16EC /* Localizable.strings */; };
 		E58D901027DFFA91006F16EC /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D900F27DFFA91006F16EC /* L10n.swift */; };
-		E58D901A27DFFAE3006F16EC /* DS+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901327DFFAE3006F16EC /* DS+Padding.swift */; };
-		E58D901B27DFFAE3006F16EC /* DS+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901427DFFAE3006F16EC /* DS+Spacing.swift */; };
-		E58D901C27DFFAE3006F16EC /* DS+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901527DFFAE3006F16EC /* DS+Typography.swift */; };
-		E58D901D27DFFAE3006F16EC /* Text+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901627DFFAE3006F16EC /* Text+Typography.swift */; };
-		E58D901E27DFFAE3006F16EC /* DS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901727DFFAE3006F16EC /* DS.swift */; };
-		E58D901F27DFFAE3006F16EC /* DS+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901827DFFAE3006F16EC /* DS+Color.swift */; };
-		E58D902027DFFAE3006F16EC /* DS+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D901927DFFAE3006F16EC /* DS+CornerRadius.swift */; };
 		E58D902727DFFB42006F16EC /* SpaceButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902627DFFB42006F16EC /* SpaceButtonStyle.swift */; };
 		E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902A27DFFB65006F16EC /* ContentInfoView.swift */; };
 		E58D902E27DFFB65006F16EC /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D902B27DFFB65006F16EC /* EmptyView.swift */; };
@@ -103,13 +96,6 @@
 		E58D900627DFFA5A006F16EC /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E58D900D27DFFA74006F16EC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E58D900F27DFFA91006F16EC /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
-		E58D901327DFFAE3006F16EC /* DS+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Padding.swift"; sourceTree = "<group>"; };
-		E58D901427DFFAE3006F16EC /* DS+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Spacing.swift"; sourceTree = "<group>"; };
-		E58D901527DFFAE3006F16EC /* DS+Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Typography.swift"; sourceTree = "<group>"; };
-		E58D901627DFFAE3006F16EC /* Text+Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+Typography.swift"; sourceTree = "<group>"; };
-		E58D901727DFFAE3006F16EC /* DS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DS.swift; sourceTree = "<group>"; };
-		E58D901827DFFAE3006F16EC /* DS+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Color.swift"; sourceTree = "<group>"; };
-		E58D901927DFFAE3006F16EC /* DS+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+CornerRadius.swift"; sourceTree = "<group>"; };
 		E58D902627DFFB42006F16EC /* SpaceButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceButtonStyle.swift; sourceTree = "<group>"; };
 		E58D902A27DFFB65006F16EC /* ContentInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentInfoView.swift; sourceTree = "<group>"; };
 		E58D902B27DFFB65006F16EC /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
@@ -406,40 +392,9 @@
 			isa = PBXGroup;
 			children = (
 				E58D902327DFFB1C006F16EC /* Components */,
-				E58D901227DFFAD3006F16EC /* DesignSystem */,
 				E58D903227E1C4C8006F16EC /* Extensions */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		E58D901227DFFAD3006F16EC /* DesignSystem */ = {
-			isa = PBXGroup;
-			children = (
-				E58D902127DFFAF7006F16EC /* Definitions */,
-				E58D902227DFFB0E006F16EC /* Modifiers */,
-			);
-			path = DesignSystem;
-			sourceTree = "<group>";
-		};
-		E58D902127DFFAF7006F16EC /* Definitions */ = {
-			isa = PBXGroup;
-			children = (
-				E58D901727DFFAE3006F16EC /* DS.swift */,
-				E58D901827DFFAE3006F16EC /* DS+Color.swift */,
-				E58D901927DFFAE3006F16EC /* DS+CornerRadius.swift */,
-				E58D901327DFFAE3006F16EC /* DS+Padding.swift */,
-				E58D901427DFFAE3006F16EC /* DS+Spacing.swift */,
-				E58D901527DFFAE3006F16EC /* DS+Typography.swift */,
-			);
-			path = Definitions;
-			sourceTree = "<group>";
-		};
-		E58D902227DFFB0E006F16EC /* Modifiers */ = {
-			isa = PBXGroup;
-			children = (
-				E58D901627DFFAE3006F16EC /* Text+Typography.swift */,
-			);
-			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		E58D902327DFFB1C006F16EC /* Components */ = {
@@ -630,14 +585,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58D903927E1C64F006F16EC /* LaunchDetailsScene.swift in Sources */,
-				E58D901C27DFFAE3006F16EC /* DS+Typography.swift in Sources */,
 				E58D8FFF27DFFA30006F16EC /* AllLaunchesResponse.swift in Sources */,
 				E58D8FF227DFF995006F16EC /* LaunchDetailsBodyView.swift in Sources */,
 				7A6B2AFC27E0A6A0008BE9B4 /* AllLaunchesScene.swift in Sources */,
-				E58D901B27DFFAE3006F16EC /* DS+Spacing.swift in Sources */,
 				E58D902E27DFFB65006F16EC /* EmptyView.swift in Sources */,
 				E58D902727DFFB42006F16EC /* SpaceButtonStyle.swift in Sources */,
-				E58D901D27DFFAE3006F16EC /* Text+Typography.swift in Sources */,
 				94E94FF827E0DED5003CA84B /* LoadingView.swift in Sources */,
 				E58D8FFD27DFFA27006F16EC /* SpaceXAPIClient.swift in Sources */,
 				A236929E27E2719700D7CE27 /* NewDS+CornerRadius.swift in Sources */,
@@ -648,11 +600,9 @@
 				A23692A027E2719700D7CE27 /* NewDS+Colors.swift in Sources */,
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
 				E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */,
-				E58D902027DFFAE3006F16EC /* DS+CornerRadius.swift in Sources */,
 				E58D902D27DFFB65006F16EC /* ContentInfoView.swift in Sources */,
 				E58D900927DFFA5A006F16EC /* ContentType.swift in Sources */,
 				E58D900C27DFFA5A006F16EC /* Response.swift in Sources */,
-				E58D901A27DFFAE3006F16EC /* DS+Padding.swift in Sources */,
 				7A6B2AFE27E0A6D8008BE9B4 /* LaunchCard.swift in Sources */,
 				E58D900A27DFFA5A006F16EC /* HTTPClient.swift in Sources */,
 				A236929F27E2719700D7CE27 /* NewDSNamespace.swift in Sources */,
@@ -662,8 +612,6 @@
 				F33C35A327E117F800DD8C12 /* LaunchDetailsHeaderView.swift in Sources */,
 				E58D8FED27DFF96C006F16EC /* HomeViewModel.swift in Sources */,
 				A236929C27E2719700D7CE27 /* NewDS+Spacing.swift in Sources */,
-				E58D901E27DFFAE3006F16EC /* DS.swift in Sources */,
-				E58D901F27DFFAE3006F16EC /* DS+Color.swift in Sources */,
 				E58D8FF727DFF9D4006F16EC /* String+Localized.swift in Sources */,
 				E58D903A27E1C64F006F16EC /* LaunchDetailsViewModel.swift in Sources */,
 			);

@@ -7,4 +7,4 @@
 
 import SwiftUI
 
-public struct NewDS {}
+public struct DS {}

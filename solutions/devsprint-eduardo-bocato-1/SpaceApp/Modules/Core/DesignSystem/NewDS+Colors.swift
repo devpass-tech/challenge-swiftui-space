@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension NewDS {
+extension DS {
     public struct Color {
         let color: SwiftUI.Color
     }
@@ -18,13 +18,13 @@ extension NewDS {
         let light: SwiftUI.Color
         let dark: SwiftUI.Color
 
-        var dsColor: NewDS.Color {
+        var dsColor: DS.Color {
             colorScheme == .light ? .init(color: light) : .init(color: dark)
         }
     }
 }
 
-extension NewDS.Color {
+extension DS.Color {
     /// The color to use for primary content.
     public static let primary: Self = .init(color: .primary)
 
@@ -36,7 +36,7 @@ extension NewDS.Color {
 
     /// A color that reflects the background color of app (mainly white or almost white)
     public static var background: Self = {
-        let adaptative = NewDS.DynamicColor(
+        let adaptative = DS.DynamicColor(
             light: Color.white,
             dark: Color.gray.opacity(0.1)
         )
@@ -45,15 +45,15 @@ extension NewDS.Color {
 }
 
 public extension Color {
-    static func newDs(_ color: NewDS.Color) -> Self { color.color }
+    static func ds(_ color: DS.Color) -> Self { color.color }
 }
 
 public extension View {
-    func newDsForegroundColor(_ color: NewDS.Color) -> some View {
-        self.foregroundColor(.newDs(color))
+    func dsForegroundColor(_ color: DS.Color) -> some View {
+        self.foregroundColor(.ds(color))
     }
 
-    func newDsBackgroundColor(_ color: NewDS.Color) -> some View {
+    func dsBackgroundColor(_ color: DS.Color) -> some View {
         self.background(color.color)
     }
 }
