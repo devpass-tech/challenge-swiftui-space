@@ -21,9 +21,9 @@ public struct ContentInfoView: View {
                     retryAction()
                 }
                 .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(8)
+                .dsPadding(.xxSmall)
+                .dsBackgroundColor(.accentColor)
+                .dsCornerRadius(.xxSmall)
             }
             Spacer()
         }

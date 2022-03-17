@@ -28,7 +28,8 @@ struct LaunchDetailsBodyView: View {
                 .frame(alignment: .leading)
             
             Text(model.description)
-                .dsTypography(.descriptionLabel)
+                .dsTypography(.body)
+                .lineLimit(3)
 
             Button {
                 buttonAction()
@@ -38,7 +39,7 @@ struct LaunchDetailsBodyView: View {
                     .frame(minWidth: .zero, maxWidth: .infinity)
             }.buttonStyle(SpaceButtonStyle())
         }
-        .padding(.dsPadding(.small))
+        .dsPadding(.small)
     }
 }
 

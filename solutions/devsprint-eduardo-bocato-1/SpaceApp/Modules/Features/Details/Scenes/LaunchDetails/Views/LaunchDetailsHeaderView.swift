@@ -31,11 +31,13 @@ struct LaunchDetailsHeaderView: View {
                 .foregroundColor(.white)
 
             Text(launchDetailsModel.subTitle)
-                .dsTypography(.descriptionLabel)
+                .dsTypography(.body)
+                .lineLimit(3)
                 .foregroundColor(.gray)
 
             Text(launchDetailsModel.dateDescription)
-                .dsTypography(.descriptionLabel)
+                .dsTypography(.body)
+                .lineLimit(3)
                 .foregroundColor(.gray)
 
             Spacer()
