@@ -6,6 +6,7 @@ import SwiftUI
 struct HomeState: Equatable {
     var launches: [Launch] = []
     var selectedTabIndex: HomeTabs = .home
+    var errorMessage: String?
 }
 
 // MARK: - Environment
@@ -40,7 +41,12 @@ final class HomeViewModel: ObservableObject {
     
     func loadLaunches() {
         environment.spaceXAPI.fetchAllLaunches { launches in
-            self.state.launches = launches ?? []
+            guard let launches = launches else {
+                self.state.errorMessage = ""
+                return
+            }
+
+            self.state.launches = launches
         }
     }
 }

@@ -35,27 +35,41 @@ struct HomeScene: View {
     
     private func launchesTab() -> some View {
         NavigationSceneView(title: L10n.Common.appTitle) {
-            List(viewModel.launches) { launch in
-                NavigationLink(
-                    destination: LaunchDetailsScene(
-                        viewModel: DetailsViewModel(
-                            initialState: .init(details: launch),
-                            environment: .init(someDetailsAPI: SomeDetailsAPI())
-                        )
-                    )
-                ) {
-                    Text("\(launch.name)")
+            if let errorMessage = viewModel.errorMessage {
+                ErrorView(title: "Ops, something went wrong!", subtitle: "Check your internet connection and try again.") {
+                    .navigationBarItems(
+                        leading:
+                            Button(action: {
+                                List(viewModel.loadLaunches())
+                            }, label: {
+                                Text("OK")
+                                    .bold()
+                                    .foregroundColor(Color.black)
+                            }))
                 }
+            } else {
+                List(viewModel.launches) { launch in
+                    NavigationLink(
+                        destination: LaunchDetailsScene(
+                            viewModel: DetailsViewModel(
+                                initialState: .init(details: launch),
+                                environment: .init(someDetailsAPI: SomeDetailsAPI())
+                            )
+                        )
+                    ) {
+                        Text("\(launch.name)")
+                    }
+                }
+                .onAppear { viewModel.loadLaunches() }
             }
-            .onAppear { viewModel.loadLaunches() }
+                .tabItem {
+                    Label(
+                        L10n.HomeScene.launchesTitle,
+                        systemImage: "location.north.fill"
+                    )
+                }
+                .tag(HomeTabs.launches)
         }
-        .tabItem {
-            Label(
-                L10n.HomeScene.launchesTitle,
-                systemImage: "location.north.fill"
-            )
-        }
-        .tag(HomeTabs.launches)
     }
 }
 
