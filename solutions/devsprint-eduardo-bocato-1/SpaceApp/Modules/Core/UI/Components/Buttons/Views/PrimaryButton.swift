@@ -8,22 +8,30 @@
 import SwiftUI
 
 struct PrimaryButton: View {
-    var title: String
-    var action: (() -> Void)
+    // MARK: Constants
+    private struct Constants {
+        static var buttonHeight: CGFloat = 60
+    }
 
+    // MARK: Properties
+    private let title: String
+    private let action: (() -> Void)
+
+    // MARK: Initializer
     init(_ title: String, action: @escaping (() -> Void)) {
         self.title = title
         self.action = action
     }
 
+    // MARK: View
     var body: some View {
         Button(title, action: action)
-            .frame(height: 60)
+            .frame(height: Constants.buttonHeight)
             .frame(maxWidth: .infinity)
-            .font(NewDS.Typography.button.font)
+            .dsTypography(.button)
             .foregroundColor(.white)
-            .newDsBackgroundColor(.accentColor)
-            .newDsCornerRadius(.small)
+            .dsBackgroundColor(.accentColor)
+            .dsCornerRadius(.small)
     }
 }
 
