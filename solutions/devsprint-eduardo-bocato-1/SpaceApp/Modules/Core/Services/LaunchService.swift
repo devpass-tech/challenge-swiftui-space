@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 protocol LaunchServiceProtocol {
-    func fetchAllLaunches() -> AnyPublisher<[Launch], HttpRequestError>
+    func fetchAllLaunches() -> AnyPublisher<[Launch], HTTPRequestError>
 }
 
 final class LaunchServiceImplementation: LaunchServiceProtocol {
@@ -22,14 +22,14 @@ final class LaunchServiceImplementation: LaunchServiceProtocol {
         self.networking = networking
     }
 
-    func fetchAllLaunches() -> AnyPublisher<[Launch], HttpRequestError> {
+    func fetchAllLaunches() -> AnyPublisher<[Launch], HTTPRequestError> {
         networking.request(httpMethod: .get, url: SpaceXAPI.baseURL.absoluteString, parameters: [:], headers: [:])
             .decode(
                 type: [Launch].self,
                 decoder: JSONDecoder()
             )
             .mapError { _ in
-                return HttpRequestError.jsonDecodeError
+                return HTTPRequestError.jsonDecodeError
             }
             .eraseToAnyPublisher()
     }
