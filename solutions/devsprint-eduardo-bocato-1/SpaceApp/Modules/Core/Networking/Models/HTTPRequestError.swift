@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum HTTPRequestError: Error, Equatable {
+public enum HTTPRequestError: Error, Equatable {
     case requestSerialization(Error)
     case invalidRequest
     case networking(Error)

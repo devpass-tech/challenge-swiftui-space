@@ -69,7 +69,7 @@ public final class HTTPRequestDispatcher: HTTPRequestDispatching {
                     case let urlError as URLError where urlError.code == .networkConnectionLost:
                         return .unreachableNetwork
                     case let requestError as HTTPRequestError:
-                        return HTTPRequestError
+                        return requestError
                     default:
                         return .networking(rawError)
                     }

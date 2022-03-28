@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HTTPResponseData: Equatable {
+public struct HTTPResponseData: Equatable {
     public let data: Data
     public let statusCode: Int
 
