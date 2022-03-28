@@ -13,9 +13,9 @@
 		98B551802784D78F00AC9086 /* SpaceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5517F2784D78F00AC9086 /* SpaceAppTests.swift */; };
 		98B5518A2784D78F00AC9086 /* SpaceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551892784D78F00AC9086 /* SpaceAppUITests.swift */; };
 		98B5518C2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5518B2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift */; };
-		A236929D27E2719700D7CE27 /* NewDS+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929827E2719700D7CE27 /* NewDS+Typography.swift */; };
-		A236929E27E2719700D7CE27 /* NewDS+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929927E2719700D7CE27 /* NewDS+CornerRadius.swift */; };
-		A23692A027E2719700D7CE27 /* NewDS+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929B27E2719700D7CE27 /* NewDS+Colors.swift */; };
+		A236929D27E2719700D7CE27 /* DS+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929827E2719700D7CE27 /* DS+Typography.swift */; };
+		A236929E27E2719700D7CE27 /* DS+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929927E2719700D7CE27 /* DS+CornerRadius.swift */; };
+		A23692A027E2719700D7CE27 /* DS+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929B27E2719700D7CE27 /* DS+Colors.swift */; };
 		E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D8FDE27DFF8B0006F16EC /* SpaceAppApp.swift */; };
 		E58D8FED27DFF96C006F16EC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D8FEB27DFF96C006F16EC /* HomeViewModel.swift */; };
 		E58D8FEE27DFF96C006F16EC /* HomeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D8FEC27DFF96C006F16EC /* HomeScene.swift */; };
@@ -41,6 +41,7 @@
 		F3EFF38F27F24DD10018AA34 /* Launches.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFF38E27F24DD10018AA34 /* Launches.swift */; };
 		F3EFF39127F24DEC0018AA34 /* LaunchesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFF39027F24DEC0018AA34 /* LaunchesPage.swift */; };
 		F3EFF39327F24E230018AA34 /* SpaceXLaunchesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EFF39227F24E230018AA34 /* SpaceXLaunchesEndpoint.swift */; };
+		F3EFF39427F256BB0018AA34 /* DSNamespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A236929A27E2719700D7CE27 /* DSNamespace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,11 +72,11 @@
 		98B551892784D78F00AC9086 /* SpaceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppUITests.swift; sourceTree = "<group>"; };
 		98B5518B2784D78F00AC9086 /* SpaceAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A236929727E2719700D7CE27 /* NewDS+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewDS+Spacing.swift"; sourceTree = "<group>"; };
-		A236929827E2719700D7CE27 /* NewDS+Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewDS+Typography.swift"; sourceTree = "<group>"; };
-		A236929927E2719700D7CE27 /* NewDS+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewDS+CornerRadius.swift"; sourceTree = "<group>"; };
-		A236929A27E2719700D7CE27 /* NewDSNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDSNamespace.swift; sourceTree = "<group>"; };
-		A236929B27E2719700D7CE27 /* NewDS+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NewDS+Colors.swift"; sourceTree = "<group>"; };
+		A236929727E2719700D7CE27 /* DS+Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Spacing.swift"; sourceTree = "<group>"; };
+		A236929827E2719700D7CE27 /* DS+Typography.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Typography.swift"; sourceTree = "<group>"; };
+		A236929927E2719700D7CE27 /* DS+CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+CornerRadius.swift"; sourceTree = "<group>"; };
+		A236929A27E2719700D7CE27 /* DSNamespace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSNamespace.swift; sourceTree = "<group>"; };
+		A236929B27E2719700D7CE27 /* DS+Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+Colors.swift"; sourceTree = "<group>"; };
 		E58D8FDE27DFF8B0006F16EC /* SpaceAppApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		E58D8FEB27DFF96C006F16EC /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E58D8FEC27DFF96C006F16EC /* HomeScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScene.swift; sourceTree = "<group>"; };
@@ -208,11 +209,11 @@
 		A236929627E2719700D7CE27 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
-				A236929B27E2719700D7CE27 /* NewDS+Colors.swift */,
-				A236929727E2719700D7CE27 /* NewDS+Spacing.swift */,
-				A236929827E2719700D7CE27 /* NewDS+Typography.swift */,
-				A236929927E2719700D7CE27 /* NewDS+CornerRadius.swift */,
-				A236929A27E2719700D7CE27 /* NewDSNamespace.swift */,
+				A236929B27E2719700D7CE27 /* DS+Colors.swift */,
+				A236929727E2719700D7CE27 /* DS+Spacing.swift */,
+				A236929827E2719700D7CE27 /* DS+Typography.swift */,
+				A236929927E2719700D7CE27 /* DS+CornerRadius.swift */,
+				A236929A27E2719700D7CE27 /* DSNamespace.swift */,
 			);
 			name = DesignSystem;
 			path = SpaceApp/Modules/Core/DesignSystem;
@@ -590,15 +591,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EFF39427F256BB0018AA34 /* DSNamespace.swift in Sources */,
 				E58D8FF227DFF995006F16EC /* LaunchDetailsBodyView.swift in Sources */,
 				E58D902E27DFFB65006F16EC /* EmptyView.swift in Sources */,
 				E58D902727DFFB42006F16EC /* SpaceButtonStyle.swift in Sources */,
 				F33C35CA27E51C6800DD8C12 /* HTTPRequestBuilder.swift in Sources */,
-				A236929E27E2719700D7CE27 /* NewDS+CornerRadius.swift in Sources */,
+				A236929E27E2719700D7CE27 /* DS+CornerRadius.swift in Sources */,
 				E58D8FEE27DFF96C006F16EC /* HomeScene.swift in Sources */,
 				E58D902F27DFFB65006F16EC /* NavigationSceneView.swift in Sources */,
-				A236929D27E2719700D7CE27 /* NewDS+Typography.swift in Sources */,
-				A23692A027E2719700D7CE27 /* NewDS+Colors.swift in Sources */,
+				A236929D27E2719700D7CE27 /* DS+Typography.swift in Sources */,
+				A23692A027E2719700D7CE27 /* DS+Colors.swift in Sources */,
 				E58D901027DFFA91006F16EC /* L10n.swift in Sources */,
 				F3EFF38D27F24D1E0018AA34 /* LaunchesQuery.swift in Sources */,
 				E58D8FDF27DFF8B0006F16EC /* SpaceAppApp.swift in Sources */,

@@ -5,6 +5,6 @@
 //  Created by Pedro Gabriel on 14/03/22.
 //
 
-import SwiftUI
+import Foundation
 
-public struct DS {}
+public enum DS {}
