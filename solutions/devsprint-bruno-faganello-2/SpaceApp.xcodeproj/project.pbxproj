@@ -23,6 +23,8 @@
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8A2818B70300AD4E09 /* Endpoint.swift */; };
+		B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */; };
+		B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1280B8A2818B70300AD4E09 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchsEndpoint.swift; sourceTree = "<group>"; };
+		B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchsEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				B1280B8A2818B70300AD4E09 /* Endpoint.swift */,
+				B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */,
+				B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */,
 			);
 			path = Endpoint;
 			sourceTree = "<group>";
@@ -363,8 +369,10 @@
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
+				B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
+				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
