@@ -9,10 +9,16 @@ import SwiftUI
 
 struct LaunchView: View {
     var body: some View {
-        Text("Launch View")
+        ZStack {
+            Color.SP.contentBlack
+            
+            Text("Launch View")
+                .foregroundColor(.white)
+        }
     }
 }
 
+//MARK: - PreviewProvider
 struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
         LaunchView()
