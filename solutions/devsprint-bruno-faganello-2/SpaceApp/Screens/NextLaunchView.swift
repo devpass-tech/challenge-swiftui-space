@@ -23,7 +23,8 @@ struct NextLaunchView: View {
                 
                 Text(viewData.description)
                     .lineLimit(3)
-                    .foregroundColor(.white)
+                    .font(.system(size: 20, weight: .regular))
+                    .foregroundColor(.gray)
             }
             .padding(16)
             .frame(maxWidth: .infinity)
@@ -52,17 +53,15 @@ struct NextLaunchView: View {
     private var launchInformationsStack: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(viewData.launchName)
-                .foregroundColor(.white)
                 .font(.system(size: 24, weight: .semibold))
             
             Text(viewData.launchNumber)
-                .foregroundColor(.gray)
                 .font(.system(size: 20, weight: .regular))
             
             Text(viewData.launchDate)
-                .foregroundColor(.gray)
                 .font(.system(size: 20, weight: .regular))
         }
+        .foregroundColor(.gray)
     }
 }
 
