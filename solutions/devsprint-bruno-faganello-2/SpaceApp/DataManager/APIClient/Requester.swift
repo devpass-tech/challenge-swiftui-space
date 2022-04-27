@@ -18,11 +18,13 @@ class Requester {
     }
     
     //MARK: - Methods
-    func perform<T: Codable>(with endpoint: Endpoint) async -> T? {
-        let result = await networkClient.get(
-            url: endpoint.url, parameters: endpoint.parameters,
-            headers: endpoint.httpHeaders
-        )
+    func performGET<T: Codable>(with endpoint: Endpoint) async -> T? {
+        let result = await networkClient.get(endpoint: endpoint)
+        return self.handleResult(result: result, expect: T.self)
+    }
+    
+    func performPOST<T: Codable>(with endpoint: Endpoint) async -> T? {
+        let result = await networkClient.post(endpoint: endpoint)
         return self.handleResult(result: result, expect: T.self)
     }
     

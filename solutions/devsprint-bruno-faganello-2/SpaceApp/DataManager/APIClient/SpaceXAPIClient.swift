@@ -22,12 +22,12 @@ final class SpaceXAPI: Requester, SpaceXAPIProtocol {
     //MARK: - Methods
     func fetchAllLaunches() async -> [Launch]? {
         let endpoint = AllLaunchsEndpoint()
-        return await perform(with: endpoint)
+        return await performGET(with: endpoint)
     }
     
     func fetchNextLaunch() async -> NextLaunchResponseModel? {
         let endpoint = NextLaunchsEndpoint()
-        return await perform(with: endpoint)
+        return await performGET(with: endpoint)
     }
 }
 

@@ -27,6 +27,7 @@
 		B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */; };
 		B1280B922818B87500AD4E09 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B912818B87500AD4E09 /* Requester.swift */; };
 		B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */; };
+		B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchsEndpoint.swift; sourceTree = "<group>"; };
 		B1280B912818B87500AD4E09 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponseModel.swift; sourceTree = "<group>"; };
+		B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				98BDC9862784F888003820AD /* Response.swift */,
 				98BDC9882784F891003820AD /* NetworkClient.swift */,
 				98BDC98A2784F8B5003820AD /* HTTPMethod.swift */,
+				B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */,
 			);
 			path = NetworkClient;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
+				B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
