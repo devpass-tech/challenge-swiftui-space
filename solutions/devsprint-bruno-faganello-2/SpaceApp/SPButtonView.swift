@@ -1,5 +1,5 @@
 //
-//  SpCustomBtn.swift
+// SPButtonView.swift
 //  SpaceApp
 //
 //  Created by Tatiana Rico on 26/04/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SpCustomBtn: View {
+struct SPButtonView: View {
     var colorText: Color?
     var colorBtn: Color?
     var action: () -> Void
@@ -26,7 +26,7 @@ struct SpCustomBtn: View {
                         Text("Press Me")
                     }
                     .foregroundColor(colorText)
-                    .frame(width: 350, height: 40.0, alignment: .center)
+                    .frame(minWidth: 200, maxWidth: 320, alignment: .center)
                     .padding(.all, 20)
                     .background(colorBtn)
                     .cornerRadius(16)
@@ -37,7 +37,7 @@ struct SpCustomBtn: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SpCustomBtn {
+        SPButtonView {
             print("Button Tapped")
         }
     }

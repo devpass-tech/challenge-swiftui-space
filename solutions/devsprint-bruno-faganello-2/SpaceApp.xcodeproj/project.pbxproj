@@ -22,7 +22,7 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
-		B9BC492628182FAD008BA738 /* SpCustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BC492528182FAD008BA738 /* SpCustomBtn.swift */; };
+		B9BC492628182FAD008BA738 /* SPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BC492528182FAD008BA738 /* SPButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9BC492528182FAD008BA738 /* SpCustomBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpCustomBtn.swift; sourceTree = "<group>"; };
+		B9BC492528182FAD008BA738 /* SPButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 				98BDC9772784F674003820AD /* DataManager */,
 				98BDC97F2784F6FA003820AD /* Extensions */,
 				98B551742784D78E00AC9086 /* Preview Content */,
-				B9BC492528182FAD008BA738 /* SpCustomBtn.swift */,
+				B9BC492528182FAD008BA738 /* SPButtonView.swift */,
 			);
 			path = SpaceApp;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
-				B9BC492628182FAD008BA738 /* SpCustomBtn.swift in Sources */,
+				B9BC492628182FAD008BA738 /* SPButtonView.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
