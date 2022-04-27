@@ -10,7 +10,7 @@ import SwiftUI
 struct LaunchView: View {
     var body: some View {
         ZStack {
-            Color.SP.contentBlack
+            Color.black
                 .ignoresSafeArea(.all)
             
             Text("Launch View")

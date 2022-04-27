@@ -24,16 +24,10 @@
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		B1280B9A2818C62600AD4E09 /* SPTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B992818C62600AD4E09 /* SPTabBar.swift */; };
 		B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */; };
-		B1280B9F2818CFC700AD4E09 /* SPUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B9E2818CFC700AD4E09 /* SPUIColorExtension.swift */; };
 		B1A027FA281761020021AB28 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027F9281761020021AB28 /* LaunchView.swift */; };
 		B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */; };
 		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
-		B1A0280B2817644A0021AB28 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0280A2817644A0021AB28 /* View+Extensions.swift */; };
-		B1A02812281764B20021AB28 /* SPViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A02811281764B20021AB28 /* SPViewExtension.swift */; };
-		B1A02819281767090021AB28 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A02818281767090021AB28 /* String+Extension.swift */; };
-		B1A0281B281767290021AB28 /* SPStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281A281767290021AB28 /* SPStringExtension.swift */; };
 		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
-		B1A0282028176A300021AB28 /* SPColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281F28176A300021AB28 /* SPColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,16 +69,10 @@
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1280B992818C62600AD4E09 /* SPTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBar.swift; sourceTree = "<group>"; };
 		B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
-		B1280B9E2818CFC700AD4E09 /* SPUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPUIColorExtension.swift; sourceTree = "<group>"; };
 		B1A027F9281761020021AB28 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSystemIconsConstants.swift; sourceTree = "<group>"; };
 		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
-		B1A0280A2817644A0021AB28 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
-		B1A02811281764B20021AB28 /* SPViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPViewExtension.swift; sourceTree = "<group>"; };
-		B1A02818281767090021AB28 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		B1A0281A281767290021AB28 /* SPStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPStringExtension.swift; sourceTree = "<group>"; };
 		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		B1A0281F28176A300021AB28 /* SPColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,15 +234,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B1280B9B2818CFA500AD4E09 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */,
-				B1280B9E2818CFC700AD4E09 /* SPUIColorExtension.swift */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
 		B1A028002817631C0021AB28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,39 +253,10 @@
 		B1A02809281764390021AB28 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B1280B9B2818CFA500AD4E09 /* UIColor */,
-				B1A0281C2817684C0021AB28 /* Color */,
-				B1A02817281766FB0021AB28 /* String */,
-				B1A0280C281764800021AB28 /* View */,
+				B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */,
+				B1A0281D2817685C0021AB28 /* Color+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		B1A0280C281764800021AB28 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B1A0280A2817644A0021AB28 /* View+Extensions.swift */,
-				B1A02811281764B20021AB28 /* SPViewExtension.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B1A02817281766FB0021AB28 /* String */ = {
-			isa = PBXGroup;
-			children = (
-				B1A02818281767090021AB28 /* String+Extension.swift */,
-				B1A0281A281767290021AB28 /* SPStringExtension.swift */,
-			);
-			path = String;
-			sourceTree = "<group>";
-		};
-		B1A0281C2817684C0021AB28 /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				B1A0281D2817685C0021AB28 /* Color+Extension.swift */,
-				B1A0281F28176A300021AB28 /* SPColorExtension.swift */,
-			);
-			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,7 +391,6 @@
 			files = (
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
 				B1A027FA281761020021AB28 /* LaunchView.swift in Sources */,
-				B1280B9F2818CFC700AD4E09 /* SPUIColorExtension.swift in Sources */,
 				B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
@@ -449,17 +398,12 @@
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
-				B1A02819281767090021AB28 /* String+Extension.swift in Sources */,
 				B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */,
 				B1280B9A2818C62600AD4E09 /* SPTabBar.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
-				B1A0281B281767290021AB28 /* SPStringExtension.swift in Sources */,
-				B1A0282028176A300021AB28 /* SPColorExtension.swift in Sources */,
-				B1A02812281764B20021AB28 /* SPViewExtension.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
-				B1A0280B2817644A0021AB28 /* View+Extensions.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

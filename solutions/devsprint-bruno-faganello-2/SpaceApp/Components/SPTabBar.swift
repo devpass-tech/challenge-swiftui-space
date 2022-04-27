@@ -20,22 +20,22 @@ struct SPTabBar: View {
             HomeView()
                 .tabItem {
                     SPTabBarPages.home.icon.image
-                    SPTabBarPages.home.tabBarName.SP.asText
+                    Text(SPTabBarPages.home.tabBarName)
                 }
             
             LaunchView()
                 .tabItem {
                     SPTabBarPages.launch.icon.image
-                    SPTabBarPages.launch.tabBarName.SP.asText
+                    Text(SPTabBarPages.launch.tabBarName)
                 }
         }
     }
     
     private func setupTabBarStyle() {
         UITabBar.appearance().isOpaque = true
-        UITabBar.appearance().barTintColor = .SP.darkGray
-        UITabBar.appearance().unselectedItemTintColor = .SP.grayUnselected
-        UITabBar.appearance().backgroundColor = .SP.darkGray
+        UITabBar.appearance().barTintColor = .darkGray
+        UITabBar.appearance().unselectedItemTintColor = .grayUnselected
+        UITabBar.appearance().backgroundColor = .darkGray
     }
 }
 
