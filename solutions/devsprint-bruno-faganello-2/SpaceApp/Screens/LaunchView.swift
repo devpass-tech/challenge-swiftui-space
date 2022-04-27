@@ -11,6 +11,7 @@ struct LaunchView: View {
     var body: some View {
         ZStack {
             Color.SP.contentBlack
+                .ignoresSafeArea(.all)
             
             Text("Launch View")
                 .foregroundColor(.white)
