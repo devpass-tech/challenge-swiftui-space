@@ -34,7 +34,6 @@
 		B1A0281B281767290021AB28 /* SPStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281A281767290021AB28 /* SPStringExtension.swift */; };
 		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
 		B1A0282028176A300021AB28 /* SPColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281F28176A300021AB28 /* SPColorExtension.swift */; };
-		B1A0282228176FC30021AB28 /* SPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0282128176FC30021AB28 /* SPConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,6 @@
 		B1A0281A281767290021AB28 /* SPStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPStringExtension.swift; sourceTree = "<group>"; };
 		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B1A0281F28176A300021AB28 /* SPColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPColorExtension.swift; sourceTree = "<group>"; };
-		B1A0282128176FC30021AB28 /* SPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				B1A02809281764390021AB28 /* Extensions */,
-				B1A0282128176FC30021AB28 /* SPConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -444,7 +441,6 @@
 			files = (
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
 				B1A027FA281761020021AB28 /* LaunchView.swift in Sources */,
-				B1A0282228176FC30021AB28 /* SPConstants.swift in Sources */,
 				B1280B9F2818CFC700AD4E09 /* SPUIColorExtension.swift in Sources */,
 				B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
