@@ -11,8 +11,7 @@ import SwiftUI
 struct SpaceAppApp: App {
     var body: some Scene {
         WindowGroup {
-            let service = SpaceXAPI()
-            HomeView(service: service)
+            HomeView()
         }
     }
 }
