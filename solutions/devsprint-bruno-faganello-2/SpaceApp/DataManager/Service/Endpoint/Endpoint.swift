@@ -5,6 +5,8 @@
 //  Created by Paolo Prodossimo Lopes on 26/04/22.
 //
 
+import Foundation
+
 protocol Endpoint {
     var baseURL: String { get }
     var path: String { get }
