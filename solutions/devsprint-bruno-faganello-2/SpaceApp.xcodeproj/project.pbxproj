@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ADC21EA2818019700BB7A00 /* DetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADC21E92818019700BB7A00 /* DetailsHeaderView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeView.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ADC21E92818019700BB7A00 /* DetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5ADC21ED2818240500BB7A00 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5ADC21E92818019700BB7A00 /* DetailsHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		98B5516D2784D78900AC9086 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
+				5ADC21ED2818240500BB7A00 /* Components */,
 				98BDC97C2784F6B3003820AD /* App */,
 				98BDC97D2784F6CA003820AD /* Resources */,
 				98BDC97B2784F6A5003820AD /* Screens */,
@@ -354,6 +365,7 @@
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
+				5ADC21EA2818019700BB7A00 /* DetailsHeaderView.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
