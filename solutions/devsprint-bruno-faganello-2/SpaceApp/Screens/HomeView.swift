@@ -10,6 +10,11 @@ import SwiftUI
 struct HomeView: View {
 
     @State var launches: [Launch] = []
+    private let service: SpaceXAPIProtocol
+    
+    init(service: SpaceXAPIProtocol) {
+        self.service = service
+    }
     
     var body: some View {
         NavigationView {
@@ -17,16 +22,18 @@ struct HomeView: View {
                 Text("\(launch.name)")
             }
             .onAppear() {
-                SpaceXAPI().fetchAllLaunches { launches in
-                    self.launches = launches ?? []
+                service.fetchAllLaunches { launchs in
+                    self.launches = launchs ?? []
                 }
-            }.navigationTitle("Space App 🚀")
+            }
+            .navigationTitle("Space App 🚀")
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        let service = SpaceXAPI()
+        HomeView(service: service)
     }
 }

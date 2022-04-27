@@ -26,7 +26,6 @@
 		B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */; };
 		B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */; };
 		B1280B922818B87500AD4E09 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B912818B87500AD4E09 /* Requester.swift */; };
-		B1280B942818B8BD00AD4E09 /* SPXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B932818B8BD00AD4E09 /* SPXService.swift */; };
 		B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +70,6 @@
 		B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchsEndpoint.swift; sourceTree = "<group>"; };
 		B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchsEndpoint.swift; sourceTree = "<group>"; };
 		B1280B912818B87500AD4E09 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
-		B1280B932818B8BD00AD4E09 /* SPXService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPXService.swift; sourceTree = "<group>"; };
 		B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,7 +242,6 @@
 		B1280B902818B85300AD4E09 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				B1280B932818B8BD00AD4E09 /* SPXService.swift */,
 				B1280B912818B87500AD4E09 /* Requester.swift */,
 				B1280B892818B6F200AD4E09 /* Endpoint */,
 			);
@@ -393,7 +390,6 @@
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
-				B1280B942818B8BD00AD4E09 /* SPXService.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
