@@ -21,12 +21,15 @@ struct HomeView: View {
             List(launches) { launch in
                 Text("\(launch.name)")
             }
-            .onAppear() {
-                service.fetchAllLaunches { launchs in
-                    self.launches = launchs ?? []
-                }
-            }
+            .onAppear(perform: fetchAllLaunches)
             .navigationTitle("Space App 🚀")
+        }
+    }
+    
+    private func fetchAllLaunches() {
+        Task {
+            let result = await service.fetchAllLaunches()
+            DispatchQueue.main.async { self.launches = result ?? [] }
         }
     }
 }

@@ -159,7 +159,6 @@
 		98BDC9772784F674003820AD /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				B1280B902818B85300AD4E09 /* Service */,
 				98BDC9782784F681003820AD /* Models */,
 				98BDC9792784F687003820AD /* APIClient */,
 				98BDC97A2784F695003820AD /* NetworkClient */,
@@ -179,6 +178,8 @@
 		98BDC9792784F687003820AD /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				B1280B892818B6F200AD4E09 /* Endpoint */,
+				B1280B912818B87500AD4E09 /* Requester.swift */,
 				98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */,
 			);
 			path = APIClient;
@@ -237,15 +238,6 @@
 				B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */,
 			);
 			path = Endpoint;
-			sourceTree = "<group>";
-		};
-		B1280B902818B85300AD4E09 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				B1280B912818B87500AD4E09 /* Requester.swift */,
-				B1280B892818B6F200AD4E09 /* Endpoint */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -18,24 +18,17 @@ class Requester {
     }
     
     //MARK: - Methods
-    func perform<T: Codable>(with endpoint: Endpoint, completion: @escaping (T?) -> Void) {
-        networkClient.get(
+    func perform<T: Codable>(with endpoint: Endpoint) async -> T? {
+        let result = await networkClient.get(
             url: endpoint.url, parameters: endpoint.parameters,
             headers: endpoint.httpHeaders
-        ) { result in
-            self.handleResult(result: result, completion: completion)
-        }
+        )
+        return self.handleResult(result: result, expect: T.self)
     }
     
     //MARK: - Helpers
-    private func handleResult<T: Codable>(
-        result: Response, completion: @escaping (T?) -> Void
-    ) {
+    private func handleResult<T: Codable>(result: Response, expect: T.Type) -> T? {
         var completionValue: T?
-        
-        defer {
-            DispatchQueue.main.async { completion(completionValue) }
-        }
         
         switch result {
         case .result(let data):
@@ -43,6 +36,8 @@ class Requester {
         case .error:
             completionValue = nil
         }
+        
+        return completionValue
     }
     
     private func decode<T: Codable>(data: Data) -> T? {

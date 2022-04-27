@@ -8,8 +8,8 @@
 import Foundation
 
 protocol SpaceXAPIProtocol {
-    func fetchAllLaunches(_ completion: @escaping ([Launch]?) -> Void)
-    func fetchNextLaunch(_ completion: @escaping (NextLaunchResponseModel?) -> Void)
+    func fetchAllLaunches() async -> [Launch]?
+    func fetchNextLaunch() async -> NextLaunchResponseModel?
 }
 
 final class SpaceXAPI: Requester, SpaceXAPIProtocol {
@@ -20,14 +20,14 @@ final class SpaceXAPI: Requester, SpaceXAPIProtocol {
     }
     
     //MARK: - Methods
-    func fetchAllLaunches(_ completion: @escaping ([Launch]?) -> Void) {
+    func fetchAllLaunches() async -> [Launch]? {
         let endpoint = AllLaunchsEndpoint()
-        perform(with: endpoint, completion: completion)
+        return await perform(with: endpoint)
     }
     
-    func fetchNextLaunch(_ completion: @escaping (NextLaunchResponseModel?) -> Void) {
+    func fetchNextLaunch() async -> NextLaunchResponseModel? {
         let endpoint = NextLaunchsEndpoint()
-        perform(with: endpoint, completion: completion)
+        return await perform(with: endpoint)
     }
 }
 
