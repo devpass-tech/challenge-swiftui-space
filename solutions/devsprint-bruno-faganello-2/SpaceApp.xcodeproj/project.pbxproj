@@ -23,7 +23,7 @@
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
 		B1280B81281804FC00AD4E09 /* NextLaunchViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B80281804FC00AD4E09 /* NextLaunchViewData.swift */; };
-		B1A028262817F6E90021AB28 /* NextLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028252817F6E90021AB28 /* NextLaunchView.swift */; };
+		B1A028262817F6E90021AB28 /* NextLaunchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1280B80281804FC00AD4E09 /* NextLaunchViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewData.swift; sourceTree = "<group>"; };
-		B1A028252817F6E90021AB28 /* NextLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchView.swift; sourceTree = "<group>"; };
+		B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				98B551702784D78900AC9086 /* HomeView.swift */,
-				B1A028252817F6E90021AB28 /* NextLaunchView.swift */,
+				B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				B1280B81281804FC00AD4E09 /* NextLaunchViewData.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
-				B1A028262817F6E90021AB28 /* NextLaunchView.swift in Sources */,
+				B1A028262817F6E90021AB28 /* NextLaunchViewCell.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,

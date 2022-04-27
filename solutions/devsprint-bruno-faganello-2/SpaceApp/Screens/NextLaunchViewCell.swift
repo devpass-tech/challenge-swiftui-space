@@ -1,5 +1,5 @@
 //
-//  NextLaunchView.swift
+//  NextLaunchViewCell.swift
 //  SpaceApp
 //
 //  Created by Paolo Prodossimo Lopes on 26/04/22.
@@ -7,13 +7,20 @@
 
 import SwiftUI
 
-struct NextLaunchView: View {
+struct NextLaunchViewCell: View {
     
     let viewData: NextLaunchViewData
     
     var body: some View {
-        ZStack {
-            Color.black
+        VStack(spacing: 16) {
+            HStack {
+                Text("Upcoming")
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(.white)
+                
+                Spacer()
+            }
             
             VStack(spacing: 16) {
                 HStack(spacing: 16) {
@@ -28,7 +35,7 @@ struct NextLaunchView: View {
             }
             .padding(16)
             .frame(maxWidth: .infinity)
-            .background(.white.opacity(0.1))
+            .background(Color(red: 25/255, green: 25/255, blue: 25/255))
             .cornerRadius(10)
         }
     }
@@ -39,15 +46,18 @@ struct NextLaunchView: View {
             case .empty:
                 ProgressView()
                     .progressViewStyle(.circular)
+                    .frame(width: 125, height: 125)
+                    .tint(.white)
+                
             case .success(let image):
                 image
                     .resizable()
+                    .frame(width: 125, height: 125)
                     .aspectRatio(contentMode: .fit)
             default:
                 Text("Failed fetching image. Make sure to check your data connection and try again.")
             }
         }
-        .frame(width: 125, height: 125)
     }
     
     private var launchInformationsStack: some View {
@@ -65,8 +75,12 @@ struct NextLaunchView: View {
     }
 }
 
-struct NextLaunchView_Previews: PreviewProvider {
+struct NextLaunchViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        NextLaunchView(viewData: .init())
+        NextLaunchViewCell(viewData: .init())
+        .previewLayout(PreviewLayout.sizeThatFits)
+        .padding()
+        .previewDisplayName("Default preview")
+        .background(Color.black)
     }
 }
