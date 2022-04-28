@@ -28,6 +28,12 @@
 		B1280B922818B87500AD4E09 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B912818B87500AD4E09 /* Requester.swift */; };
 		B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */; };
 		B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */; };
+		B1280B9A2818C62600AD4E09 /* SPTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B992818C62600AD4E09 /* SPTabBar.swift */; };
+		B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */; };
+		B1A027FA281761020021AB28 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027F9281761020021AB28 /* LaunchView.swift */; };
+		B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */; };
+		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
+		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,12 @@
 		B1280B912818B87500AD4E09 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchResponseModel.swift; sourceTree = "<group>"; };
 		B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIErrors.swift; sourceTree = "<group>"; };
+		B1280B992818C62600AD4E09 /* SPTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBar.swift; sourceTree = "<group>"; };
+		B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		B1A027F9281761020021AB28 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSystemIconsConstants.swift; sourceTree = "<group>"; };
+		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
+		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,8 @@
 		98B5516D2784D78900AC9086 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
+				B1A02808281764360021AB28 /* Utils */,
+				B1A028002817631C0021AB28 /* Components */,
 				98BDC97C2784F6B3003820AD /* App */,
 				98BDC97D2784F6CA003820AD /* Resources */,
 				98BDC97B2784F6A5003820AD /* Screens */,
@@ -173,6 +187,8 @@
 			children = (
 				98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */,
 				B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */,
+				B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */,
+				B1A028062817639B0021AB28 /* SPTabBarPages.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				98B551702784D78900AC9086 /* HomeView.swift */,
+				B1A027F9281761020021AB28 /* LaunchView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -241,6 +258,31 @@
 				B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */,
 			);
 			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		B1A028002817631C0021AB28 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B1280B992818C62600AD4E09 /* SPTabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B1A02808281764360021AB28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B1A02809281764390021AB28 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B1A02809281764390021AB28 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */,
+				B1A0281D2817685C0021AB28 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,13 +416,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
+				B1A027FA281761020021AB28 /* LaunchView.swift in Sources */,
+				B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				B1280B922818B87500AD4E09 /* Requester.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
 				B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */,
+				B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */,
+				B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */,
+				B1280B9A2818C62600AD4E09 /* SPTabBar.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
