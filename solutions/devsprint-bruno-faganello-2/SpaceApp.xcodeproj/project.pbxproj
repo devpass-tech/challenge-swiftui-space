@@ -28,6 +28,8 @@
 		B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */; };
 		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
 		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
+		E4DFE277281B810200A5E6E0 /* CompleteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFE275281B810200A5E6E0 /* CompleteDetailsViewModel.swift */; };
+		E4DFE278281B810200A5E6E0 /* CompleteDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFE276281B810200A5E6E0 /* CompleteDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSystemIconsConstants.swift; sourceTree = "<group>"; };
 		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
 		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E4DFE275281B810200A5E6E0 /* CompleteDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteDetailsViewModel.swift; sourceTree = "<group>"; };
+		E4DFE276281B810200A5E6E0 /* CompleteDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 		98BDC97B2784F6A5003820AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E4DFE274281B80EA00A5E6E0 /* CompleteDetails */,
 				98B551702784D78900AC9086 /* HomeView.swift */,
 				B1A027F9281761020021AB28 /* LaunchView.swift */,
 			);
@@ -257,6 +262,15 @@
 				B1A0281D2817685C0021AB28 /* Color+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4DFE274281B80EA00A5E6E0 /* CompleteDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E4DFE276281B810200A5E6E0 /* CompleteDetailsView.swift */,
+				E4DFE275281B810200A5E6E0 /* CompleteDetailsViewModel.swift */,
+			);
+			path = CompleteDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +405,9 @@
 			files = (
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
 				B1A027FA281761020021AB28 /* LaunchView.swift in Sources */,
+				E4DFE278281B810200A5E6E0 /* CompleteDetailsView.swift in Sources */,
 				B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */,
+				E4DFE277281B810200A5E6E0 /* CompleteDetailsViewModel.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
 				B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */,
