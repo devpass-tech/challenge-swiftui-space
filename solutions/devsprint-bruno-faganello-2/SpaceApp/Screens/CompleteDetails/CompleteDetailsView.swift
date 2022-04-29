@@ -13,15 +13,16 @@ struct CompleteDetailsView: View {
     
     init(viewModel: CompleteDetailsViewModel = CompleteDetailsViewModel()) {
         self.viewModel = viewModel
-        UINavigationBar.appearance().backgroundColor = UIColor(.gray)
     }
     
     var body: some View {
         NavigationView {
             ZStack {
                 Color.black
+                    .ignoresSafeArea()
                 ScrollView {
                     Text(viewModel.description)
+                        .multilineTextAlignment(.leading)
                         .foregroundColor(.gray)
                         .font(.system(size: 20, weight: .regular))
                         .padding([.top, .leading, .trailing] , 20)
@@ -29,6 +30,7 @@ struct CompleteDetailsView: View {
                         .toolbar {
                             ToolbarItem(placement: .principal) {
                                 Text(viewModel.title).font(.headline)
+                                    .foregroundColor(.white)
                             }
                         }
                 }
