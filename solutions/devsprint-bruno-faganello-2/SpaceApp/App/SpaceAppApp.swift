@@ -11,7 +11,7 @@ import SwiftUI
 struct SpaceAppApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(viewModel: .init(service: SpaceXAPI()))
+            SPTabBar()
         }
     }
 }
