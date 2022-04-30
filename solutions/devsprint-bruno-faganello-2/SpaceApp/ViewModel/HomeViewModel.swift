@@ -39,7 +39,13 @@ final class HomeViewModel: ObservableObject {
         Task { [weak self] in
             guard let self = self else { return }
             let nextLaunch = await service.fetchNextLaunch()
-            DispatchQueue.main.async { self.nextLaunch = .init(nextLaunchResponse: nextLaunch) }
+            DispatchQueue.main.async {
+                guard let nl = nextLaunch else {
+                    self.nextLaunch = nil
+                    return
+                }
+                self.nextLaunch = .init(nextLaunchResponse: nl)
+            }
         }
     }
 }
