@@ -16,13 +16,10 @@ struct HomeView: View {
             List(launches) { launch in
                 Text("\(launch.name)")
             }
-            .onAppear() {
-                SpaceXAPI().fetchAllLaunches { launches in
-                    self.launches = launches ?? []
-                }
-            }.navigationTitle("Space App 🚀")
+            .navigationTitle("Space App 🚀")
         }
     }
+
 }
 
 struct HomeView_Previews: PreviewProvider {
