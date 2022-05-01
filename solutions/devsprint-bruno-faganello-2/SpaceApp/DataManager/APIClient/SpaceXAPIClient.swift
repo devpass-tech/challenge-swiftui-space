@@ -7,54 +7,27 @@
 
 import Foundation
 
-final class SpaceXAPI {
+protocol SpaceXAPIProtocol {
+    func fetchAllLaunches() async -> [Launch]?
+    func fetchNextLaunch() async -> NextLaunchResponseModel?
+}
 
-    var baseURL: URL {
+final class SpaceXAPI: Requester, SpaceXAPIProtocol {
 
-        return URL(string: "https://api.spacexdata.com/v5/launches")!
+    //MARK: - Constructor
+    override init(networkClient: NetworkClient = .init()) {
+        super.init(networkClient: networkClient)
     }
-
-    var parameters: [String : String] = [:]
-
-    var httpHeaders: [HTTPHeaderField : String] {
-
-        return [:]
+    
+    //MARK: - Methods
+    func fetchAllLaunches() async -> [Launch]? {
+        let endpoint = AllLaunchsEndpoint()
+        return await performGET(with: endpoint)
     }
-
-    let networkClient = NetworkClient()
-
-    func fetchAllLaunches(completion: @escaping ([Launch]?) -> ()) {
-
-        self.networkClient.get(url: self.baseURL,
-                               parameters: self.parameters,
-                               headers: self.httpHeaders) { response in
-
-            DispatchQueue.main.async {
-
-                switch response {
-
-                case .result(let data):
-
-                    completion(self.decodeData(data))
-                case .error:
-
-                    completion(nil)
-                }
-            }
-        }
-    }
-
-    private func decodeData(_ data: Data) -> [Launch]? {
-
-        let jsonDecoder = JSONDecoder()
-        do {
-
-            let response = try jsonDecoder.decode([Launch].self, from: data)
-            return response
-        } catch {
-            print(error)
-            return nil
-        }
+    
+    func fetchNextLaunch() async -> NextLaunchResponseModel? {
+        let endpoint = NextLaunchsEndpoint()
+        return await performGET(with: endpoint)
     }
 }
 
