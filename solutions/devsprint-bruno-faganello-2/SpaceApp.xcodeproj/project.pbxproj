@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5AC671C4281EEE6300D1278B /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */; };
+		7EC3B6F92819B8AA002FF7E8 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3B6F82819B8AA002FF7E8 /* DetailsView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeView.swift */; };
 		98B551732784D78E00AC9086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B551722784D78E00AC9086 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		7EC3B6F82819B8AA002FF7E8 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
 		98B551702784D78900AC9086 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EC3B6F72819B88B002FF7E8 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				7EC3B6F82819B8AA002FF7E8 /* DetailsView.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
 		98B551622784D78900AC9086 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +232,7 @@
 		98BDC97B2784F6A5003820AD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				7EC3B6F72819B88B002FF7E8 /* DetailsView */,
 				98B551702784D78900AC9086 /* HomeView.swift */,
 				B1A027F9281761020021AB28 /* LaunchView.swift */,
 			);
@@ -434,6 +445,7 @@
 				B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */,
 				B1280B9A2818C62600AD4E09 /* SPTabBar.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
+				7EC3B6F92819B8AA002FF7E8 /* DetailsView.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
 				B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */,
