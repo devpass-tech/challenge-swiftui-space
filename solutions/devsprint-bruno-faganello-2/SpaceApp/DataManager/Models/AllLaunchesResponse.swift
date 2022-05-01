@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Launch: Decodable, Identifiable {
+struct Launch: Codable, Identifiable {
 
     let id: String
     let name: String
