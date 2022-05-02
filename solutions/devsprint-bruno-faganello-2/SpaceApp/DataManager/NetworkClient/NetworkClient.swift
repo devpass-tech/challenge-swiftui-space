@@ -7,64 +7,61 @@
 
 import Foundation
 
-final class NetworkClient {
-
-    func get(url: URL,
-             parameters: [String : String],
-             headers: [HTTPHeaderField : String],
-             completion: @escaping (Response) -> ()) {
-
-        self.performRequest(httpMethod: .get,
-                            url: url,
-                            parameters: parameters,
-                            headers: headers,
-                            completion: completion)
+struct NetworkClient {
+    
+    //MARK: - Methods
+    func get(endpoint: Endpoint) async -> Response {
+        return await performRequest(httpMethod: .get, endpoint: endpoint)
     }
-
-    func post(url: URL,
-              parameters: [String : String],
-              headers: [HTTPHeaderField : String],
-              completion: @escaping (Response) -> ()) {
-
-        self.performRequest(httpMethod: .post,
-                            url: url,
-                            parameters: parameters,
-                            headers: headers,
-                            completion: completion)
+    
+    func post(endpoint: Endpoint) async -> Response {
+        return await performRequest(httpMethod: .post, endpoint: endpoint)
     }
-
-    func performRequest(httpMethod: HTTPMethod, url: URL, parameters: [String : String], headers: [HTTPHeaderField : String], completion: @escaping (Response) -> ()) {
-
-        var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
-        components.queryItems = parameters.map { (key, value) in
+    
+    //MARK: - Helpers
+    
+    private func performRequest(httpMethod: HTTPMethod, endpoint: Endpoint) async -> Response {
+        
+        let request = configureURLRequest(httpMethod: httpMethod,endpoint: endpoint)
+        
+        do {
+            let (data, response) = try await URLSession.shared.data(for: request)
+            return handleRequestResult(data: data, response: response)
+        } catch {
+            return .error(SpaceXAPIErrors.RequestFail)
+        }
+    }
+    
+    private func configureURLRequest(httpMethod: HTTPMethod, endpoint: Endpoint) -> URLRequest {
+        var components = URLComponents(url: endpoint.url, resolvingAgainstBaseURL: true)!
+        components.queryItems = endpoint.parameters.map { (key, value) in
             URLQueryItem(name: key, value: value)
         }
-
+        
         var request = URLRequest(url: components.url!)
         request.httpMethod = httpMethod.rawValue
-
-        headers.forEach { headerField, value in
-
+        
+        endpoint.httpHeaders.forEach { headerField, value in
             request.setValue(value, forHTTPHeaderField: headerField.rawValue)
         }
-
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-
-            if let error = error {
-
-                completion(.error(error))
-                return
-            }
-
-            guard let data = data else {
-
-                completion(.error(nil))
-                return
-            }
-
-            completion(.result(data))
-        }
-        task.resume()
+        
+        return request
     }
-
+    
+    private func handleRequestResult(data: Data, response: URLResponse) -> Response {
+        if let response = response as? HTTPURLResponse {
+            switch response.statusCode {
+            case 200:
+                return .result(data)
+            case 201...299:
+                return .error(SpaceXAPIErrors.ResponseInvalid)
+            case 401:
+                return .error(SpaceXAPIErrors.unauthorized)
+            default:
+                return .error(SpaceXAPIErrors.unexpectedStatusCode)
+            }
+        }
+        
+        return .error(SpaceXAPIErrors.withoutResponse)
+    }
 }
