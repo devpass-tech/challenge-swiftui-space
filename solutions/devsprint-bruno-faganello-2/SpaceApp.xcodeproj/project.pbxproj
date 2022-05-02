@@ -35,7 +35,7 @@
 		B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */; };
 		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
 		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
-		B9BC492628182FAD008BA738 /* SPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BC492528182FAD008BA738 /* SPButtonView.swift */; };
+		B9A2E7BC28208B8F0069BE44 /* SpCustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +88,7 @@
 		B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSystemIconsConstants.swift; sourceTree = "<group>"; };
 		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
 		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		B9BC492528182FAD008BA738 /* SPButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonView.swift; sourceTree = "<group>"; };
+		B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpCustomBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				98BDC9772784F674003820AD /* DataManager */,
 				98BDC97F2784F6FA003820AD /* Extensions */,
 				98B551742784D78E00AC9086 /* Preview Content */,
-				B9BC492528182FAD008BA738 /* SPButtonView.swift */,
 			);
 			path = SpaceApp;
 			sourceTree = "<group>";
@@ -156,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				98B551752784D78E00AC9086 /* Preview Assets.xcassets */,
+				B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -440,7 +440,7 @@
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
 				B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */,
-				B9BC492628182FAD008BA738 /* SPButtonView.swift in Sources */,
+				B9A2E7BC28208B8F0069BE44 /* SpCustomBtn.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
