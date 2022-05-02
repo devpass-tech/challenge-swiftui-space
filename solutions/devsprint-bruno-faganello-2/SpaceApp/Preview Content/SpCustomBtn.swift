@@ -10,13 +10,15 @@ import SwiftUI
 
 struct SpCustomBtn: View {
     var colorText: Color?
+    var title: String
     var colorBtn: Color?
     var action: () -> Void
     
-    init(colorText: Color = .black, colorBtn: Color = .blue, action: @escaping () -> Void) {
+    init(colorText: Color = .black, colorBtn: Color = .blue, title: String, action: @escaping () -> Void) {
         self.colorText = colorText
         self.colorBtn = colorBtn
         self.action = action
+        self.title = title
     }
     
     var body: some View {
@@ -24,7 +26,7 @@ struct SpCustomBtn: View {
             Button(action: {
                      action()
                     }) {
-                        Text("Press Me")
+                        Text(title)
                     }
                     .foregroundColor(colorText)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
@@ -38,7 +40,7 @@ struct SpCustomBtn: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SpCustomBtn {
+        SpCustomBtn(title: "") {
             print("Button Tapped")
         }
     }
