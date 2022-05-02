@@ -23,6 +23,8 @@
 		98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98A2784F8B5003820AD /* HTTPMethod.swift */; };
 		98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */; };
 		98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */; };
+		B1280B81281804FC00AD4E09 /* NextLaunchViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B80281804FC00AD4E09 /* NextLaunchViewData.swift */; };
+		B1A028262817F6E90021AB28 /* NextLaunchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */; };
 		B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8A2818B70300AD4E09 /* Endpoint.swift */; };
 		B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */; };
 		B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */; };
@@ -75,6 +77,8 @@
 		98BDC98C2784F928003820AD /* SpaceXAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIClient.swift; sourceTree = "<group>"; };
 		98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchesResponse.swift; sourceTree = "<group>"; };
 		98BDC9902784FBFC003820AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1280B80281804FC00AD4E09 /* NextLaunchViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewData.swift; sourceTree = "<group>"; };
+		B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewCell.swift; sourceTree = "<group>"; };
 		B1280B8A2818B70300AD4E09 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		B1280B8C2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLaunchsEndpoint.swift; sourceTree = "<group>"; };
 		B1280B8E2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchsEndpoint.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */,
+				B1280B80281804FC00AD4E09 /* NextLaunchViewData.swift */,
 				B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */,
 				B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */,
 				B1A028062817639B0021AB28 /* SPTabBarPages.swift */,
@@ -223,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				98B551702784D78900AC9086 /* HomeView.swift */,
+				B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */,
 				B1A027F9281761020021AB28 /* LaunchView.swift */,
 			);
 			path = Screens;
@@ -423,8 +429,10 @@
 				B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */,
 				5AC671C4281EEE6300D1278B /* DetailHeaderView.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
+				B1280B81281804FC00AD4E09 /* NextLaunchViewData.swift in Sources */,
 				B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				B1A028262817F6E90021AB28 /* NextLaunchViewCell.swift in Sources */,
 				B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				B1280B922818B87500AD4E09 /* Requester.swift in Sources */,
