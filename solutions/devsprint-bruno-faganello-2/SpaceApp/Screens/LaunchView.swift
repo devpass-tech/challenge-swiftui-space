@@ -8,20 +8,13 @@
 import SwiftUI
 
 struct LaunchView: View {
-    
-    @State private var showingSheet = false
-    
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea(.all)
             
-            Button("Show Complete Details View") {
-                        showingSheet.toggle()
-                    }
-                    .sheet(isPresented: $showingSheet) {
-                        CompleteDetailsView()
-                    }
+            Text("Launch View")
+                .foregroundColor(.white)
         }
     }
 }
