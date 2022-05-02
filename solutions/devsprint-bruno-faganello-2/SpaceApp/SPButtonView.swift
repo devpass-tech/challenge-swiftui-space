@@ -26,7 +26,7 @@ struct SPButtonView: View {
                         Text("Press Me")
                     }
                     .foregroundColor(colorText)
-                    .frame(minWidth: 200, maxWidth: 320, alignment: .center)
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
                     .padding(.all, 20)
                     .background(colorBtn)
                     .cornerRadius(16)
