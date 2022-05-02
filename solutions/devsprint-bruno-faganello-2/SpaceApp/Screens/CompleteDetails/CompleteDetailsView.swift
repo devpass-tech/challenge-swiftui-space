@@ -13,6 +13,7 @@ struct CompleteDetailsView: View {
     
     init(viewModel: CompleteDetailsViewModel = CompleteDetailsViewModel()) {
         self.viewModel = viewModel
+        setupToolBar()
     }
     
     var body: some View {
@@ -37,6 +38,20 @@ struct CompleteDetailsView: View {
             }
         }
     }
+}
+
+func setupToolBar(){
+    let coloredAppearance = UINavigationBarAppearance()
+     coloredAppearance.configureWithOpaqueBackground()
+     coloredAppearance.backgroundColor = .darkGray
+     coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+     coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+     UINavigationBar.appearance().standardAppearance = coloredAppearance
+     UINavigationBar.appearance().compactAppearance = coloredAppearance
+     UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+
+     UINavigationBar.appearance().tintColor = .white
 }
 
 struct DetailsView_Previews: PreviewProvider {
