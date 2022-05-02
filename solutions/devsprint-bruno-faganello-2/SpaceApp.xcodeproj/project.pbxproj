@@ -36,6 +36,8 @@
 		B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */; };
 		B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */; };
 		B1280BC4281A098D00AD4E09 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1280BC3281A098D00AD4E09 /* HomeViewModel.swift */; };
+		B157114A281FE0F300E431B2 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1571149281FE0F300E431B2 /* Int+Extensions.swift */; };
+		B157114C281FE10800E431B2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157114B281FE10800E431B2 /* String+Extensions.swift */; };
 		B1A027FA281761020021AB28 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027F9281761020021AB28 /* LaunchView.swift */; };
 		B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */; };
 		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
@@ -94,6 +96,8 @@
 		B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		B1280BA028196B5700AD4E09 /* SpaceXAPIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIErrors.swift; sourceTree = "<group>"; };
 		B1280BC3281A098D00AD4E09 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B1571149281FE0F300E431B2 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		B157114B281FE10800E431B2 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B1A027F9281761020021AB28 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSystemIconsConstants.swift; sourceTree = "<group>"; };
 		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
@@ -326,6 +330,8 @@
 			children = (
 				B1280B9C2818CFB500AD4E09 /* UIColor+extensions.swift */,
 				B1A0281D2817685C0021AB28 /* Color+Extension.swift */,
+				B1571149281FE0F300E431B2 /* Int+Extensions.swift */,
+				B157114B281FE10800E431B2 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -469,10 +475,12 @@
 				B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */,
 				B1280B81281804FC00AD4E09 /* NextLaunchViewData.swift in Sources */,
 				98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */,
+				B157114C281FE10800E431B2 /* String+Extensions.swift in Sources */,
 				B1A028262817F6E90021AB28 /* NextLaunchViewCell.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,
 				B1280B922818B87500AD4E09 /* Requester.swift in Sources */,
 				98BDC98B2784F8B5003820AD /* HTTPMethod.swift in Sources */,
+				B157114A281FE0F300E431B2 /* Int+Extensions.swift in Sources */,
 				B1280B8F2818B7EB00AD4E09 /* NextLaunchsEndpoint.swift in Sources */,
 				B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */,
 				98BDC9832784F86F003820AD /* HTTPClient.swift in Sources */,

@@ -8,6 +8,9 @@
 import XCTest
 @testable import SpaceApp
 
+import UIKit
+import SwiftUI
+
 final class HomeViewModelTests: XCTestCase {
     
     //MARK: - Properties
