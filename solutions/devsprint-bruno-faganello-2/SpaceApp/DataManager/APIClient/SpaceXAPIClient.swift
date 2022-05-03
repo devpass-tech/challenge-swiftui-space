@@ -32,7 +32,7 @@ final class SpaceXAPI: Requester, SpaceXAPIProtocol {
     }
     
     func fetchNextLaunches() async -> NextLaunchesResponseModel? {
-        let endpoint = NextLaunchesEndpoint()
+        let endpoint = Next20LaunchesEndpoint()
         return await performPOST(with: endpoint)
     }
 }

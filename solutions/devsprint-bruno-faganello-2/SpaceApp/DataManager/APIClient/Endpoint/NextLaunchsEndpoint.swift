@@ -11,7 +11,7 @@ struct NextLaunchsEndpoint: Endpoint {
     var httpHeaders: [HTTPHeaderField : String] = [:]
 }
 
-struct NextLaunchesEndpoint: Endpoint {
+struct Next20LaunchesEndpoint: Endpoint {
     var path: String = "/query"
     var parameters: [String : String] = [:]
     var httpHeaders: [HTTPHeaderField : String] = [:]
