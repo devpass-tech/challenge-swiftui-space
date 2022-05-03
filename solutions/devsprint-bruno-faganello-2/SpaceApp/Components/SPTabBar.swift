@@ -17,6 +17,7 @@ struct SPTabBar: View {
         setupTabBarStyle()
         
         return TabView {
+            
             let homeService = SpaceXAPI()
             let homeViewModel = HomeViewModel(service: homeService)
             HomeView(viewModel: homeViewModel)

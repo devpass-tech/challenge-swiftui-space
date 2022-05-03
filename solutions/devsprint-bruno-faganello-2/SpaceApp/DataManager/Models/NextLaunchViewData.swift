@@ -7,14 +7,40 @@
 
 import Foundation
 
-struct NextLaunchViewData {
-    var badgeURLString: String = "https://images2.imgbox.com/02/51/7NLaBm8c_o.png"
-    var launchName: String = "Transporter-3"
-    var launchNumber: String = "#145"
-    var launchDate: String = "January 13, 2022"
-    var description: String = "SpaceX's 20th and final Crew Resupply Mission under the original NASA CRS contract, this mission..."
+struct NextLaunchViewData: Identifiable {
     
-    var badgeURL: URL? { URL(string: badgeURLString) }
+    private let nextLaunchResponse: NextLaunchResponseModel?
+    
+    init(nextLaunchResponse: NextLaunchResponseModel?) {
+        self.nextLaunchResponse = nextLaunchResponse
+    }
+    
+    let id: UUID = .init()
+    
+    var rocketName: String {
+        nextLaunchResponse?.aircraftName ?? .emptyString
+    }
+    
+    var launchNumber: String {
+        let codeNumber = nextLaunchResponse?.flightNumber ?? .zero
+        return codeNumber.asLaunchCode
+    }
+    
+    var launchDescription: String {
+        nextLaunchResponse?.detail ?? .emptyString
+    }
+    
+    var launchDate: String {
+        let date = nextLaunchResponse?.launchDate ?? .emptyString
+        return date.dateFormattedFromUTC
+    }
+    
+    var iconImageURL: URL {
+        let pth = nextLaunchResponse?.links.patch.small ?? .emptyString
+        return URL(string: pth)!
+    }
+    
+    var description: String {
+        nextLaunchResponse?.detail ?? .emptyString
+    }
 }
-
-//TODO: Verify correct API response informations to refactor this code and make properties that givem formatted values

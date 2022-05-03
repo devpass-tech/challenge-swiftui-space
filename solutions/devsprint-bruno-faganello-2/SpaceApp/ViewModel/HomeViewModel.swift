@@ -12,7 +12,7 @@ final class HomeViewModel: ObservableObject {
     //MARK: - Propertie
     private let service: SpaceXAPIProtocol
     
-    @Published private(set) var launchs: [Launch] = []
+    @Published private(set) var nextLaunch: NextLaunchViewData?
     
     //MARK: - Constructor
     init(service: SpaceXAPIProtocol) {
@@ -21,16 +21,20 @@ final class HomeViewModel: ObservableObject {
     
     //MARK: - Methods
     func start() {
-        fetchAllLaunch()
+        fetchNextLaunch()
     }
     
     //MARK: - Helpers
-    private func fetchAllLaunch() {
+    private func fetchNextLaunch() {
         Task { [weak self] in
             guard let self = self else { return }
-            let allLaunchs = await service.fetchAllLaunches() ?? []
-            DispatchQueue.main.async { self.launchs = allLaunchs }
+            let nextLaunch = await service.fetchNextLaunch()
+            DispatchQueue.main.async { self.serviceResultHandler(nextLaunch) }
         }
     }
+    
+    private func serviceResultHandler(_ response: NextLaunchResponseModel?) {
+        guard let nl = response else { self.nextLaunch = nil; return }
+        self.nextLaunch = .init(nextLaunchResponse: nl)
+    }
 }
-
