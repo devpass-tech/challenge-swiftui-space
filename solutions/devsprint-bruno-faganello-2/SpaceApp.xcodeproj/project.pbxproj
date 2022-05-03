@@ -41,6 +41,7 @@
 		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
 		E4BD81932820903300E8520F /* CompleteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BD81922820903300E8520F /* CompleteDetailView.swift */; };
 		E4BD81952820905300E8520F /* CompleteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BD81942820905300E8520F /* CompleteDetailsViewModel.swift */; };
+		B9A2E7BC28208B8F0069BE44 /* SPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2E7BB28208B8F0069BE44 /* SPButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E4BD81922820903300E8520F /* CompleteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteDetailView.swift; sourceTree = "<group>"; };
 		E4BD81942820905300E8520F /* CompleteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteDetailsViewModel.swift; sourceTree = "<group>"; };
+		B9A2E7BB28208B8F0069BE44 /* SPButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 		B1A028002817631C0021AB28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B9A2E7BB28208B8F0069BE44 /* SPButtonView.swift */,
 				B1280B992818C62600AD4E09 /* SPTabBar.swift */,
 				5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */,
 			);
@@ -474,6 +477,7 @@
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
 				B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */,
+				B9A2E7BC28208B8F0069BE44 /* SPButtonView.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
@@ -566,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -621,7 +625,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -639,7 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = V7FM6MN466;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
@@ -669,7 +673,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceApp/Preview Content\"";
-				DEVELOPMENT_TEAM = B8F644M47X;
+				DEVELOPMENT_TEAM = V7FM6MN466;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceApp/Resources/Info.plist;
