@@ -17,7 +17,9 @@ struct SPTabBar: View {
         setupTabBarStyle()
         
         return TabView {
-            HomeView()
+            let homeService = SpaceXAPI()
+            let homeViewModel = HomeViewModel(service: homeService)
+            HomeView(viewModel: homeViewModel)
                 .tabItem {
                     SPTabBarPages.home.icon.image
                     Text(SPTabBarPages.home.tabBarName)
