@@ -10,6 +10,7 @@ import Foundation
 protocol SpaceXAPIProtocol {
     func fetchAllLaunches() async -> [Launch]?
     func fetchNextLaunch() async -> NextLaunchResponseModel?
+    func fetchNextLaunches() async -> NextLaunchesResponseModel?
 }
 
 final class SpaceXAPI: Requester, SpaceXAPIProtocol {
@@ -28,6 +29,11 @@ final class SpaceXAPI: Requester, SpaceXAPIProtocol {
     func fetchNextLaunch() async -> NextLaunchResponseModel? {
         let endpoint = NextLaunchsEndpoint()
         return await performGET(with: endpoint)
+    }
+    
+    func fetchNextLaunches() async -> NextLaunchesResponseModel? {
+        let endpoint = NextLaunchesEndpoint()
+        return await performPOST(with: endpoint)
     }
 }
 
