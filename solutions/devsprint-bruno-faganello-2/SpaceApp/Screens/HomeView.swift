@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     //MARK: - Properties
-    @StateObject var viewModel: HomeViewModel
+    @ObservedObject var viewModel: HomeViewModel
     
     //MARK: - View
     var body: some View {
@@ -43,10 +43,8 @@ struct HomeView: View {
 }
 
 //MARK: - PreviewProvider
-#if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(viewModel: .init(service: SpaceXAPI.init()))
     }
 }
-#endif
