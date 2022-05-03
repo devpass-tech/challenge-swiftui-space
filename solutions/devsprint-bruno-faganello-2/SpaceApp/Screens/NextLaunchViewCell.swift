@@ -9,18 +9,11 @@ import SwiftUI
 
 struct NextLaunchViewCell: View {
     
-    let viewData: NextLaunchViewData
+    let viewData: NextLaunchViewData?
     
     var body: some View {
         VStack(spacing: 16) {
-            HStack {
-                Text("Upcoming")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(.white)
-                
-                Spacer()
-            }
+            headerSection
             
             VStack(spacing: 16) {
                 HStack(spacing: 16) {
@@ -28,7 +21,7 @@ struct NextLaunchViewCell: View {
                     launchInformationsStack
                 }
                 
-                Text(viewData.description)
+                Text(viewData?.description ?? .emptyString)
                     .lineLimit(3)
                     .font(.system(size: 20, weight: .regular))
                     .foregroundColor(.gray)
@@ -40,8 +33,20 @@ struct NextLaunchViewCell: View {
         }
     }
     
+    private var headerSection: some View {
+        HStack {
+            Text("Upcoming")
+                .font(.title)
+                .bold()
+                .foregroundColor(.white)
+            
+            Spacer()
+        }
+        .padding(.top, 20)
+    }
+    
     private var bagdeIconImage: some View {
-        AsyncImage(url: viewData.badgeURL) { phase in
+        AsyncImage(url: viewData?.iconImageURL) { phase in
             switch phase {
             case .empty:
                 ProgressView()
@@ -60,15 +65,15 @@ struct NextLaunchViewCell: View {
         }
     }
     
-    private var launchInformationsStack: some View {
+    @ViewBuilder private var launchInformationsStack: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(viewData.launchName)
+            Text(viewData?.rocketName ?? .emptyString)
                 .font(.system(size: 24, weight: .semibold))
             
-            Text(viewData.launchNumber)
+            Text(viewData?.launchNumber ?? .emptyString)
                 .font(.system(size: 20, weight: .regular))
             
-            Text(viewData.launchDate)
+            Text(viewData?.launchDate ?? .emptyString)
                 .font(.system(size: 20, weight: .regular))
         }
         .foregroundColor(.gray)
@@ -77,7 +82,10 @@ struct NextLaunchViewCell: View {
 
 struct NextLaunchViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        NextLaunchViewCell(viewData: .init())
+        ZStack {
+            NextLaunchViewCell(viewData: .init(nextLaunchResponse: .init(links: .init(patch: .init(small: "https://images2.imgbox.com/02/51/7NLaBm8c_o.png")), detail: "kasjhfklasjhfkasfjdkasjhfklasjhfkasfjdkasjhfklasjhfkasfjdkasjhfklasjhfkasfjd", flightNumber: 234, aircraftName: "Tester", launchDate: "September 12, 2023", id: "23wq"))
+            )
+        }
         .previewLayout(PreviewLayout.sizeThatFits)
         .padding()
         .previewDisplayName("Default preview")

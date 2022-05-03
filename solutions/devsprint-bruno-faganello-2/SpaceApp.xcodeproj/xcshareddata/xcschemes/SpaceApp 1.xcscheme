@@ -26,34 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-<<<<<<< HEAD
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98B5517A2784D78F00AC9086"
-               BuildableName = "SpaceAppTests.xctest"
-               BlueprintName = "SpaceAppTests"
-               ReferencedContainer = "container:SpaceApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98B551842784D78F00AC9086"
-               BuildableName = "SpaceAppUITests.xctest"
-               BlueprintName = "SpaceAppUITests"
-               ReferencedContainer = "container:SpaceApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-=======
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
->>>>>>> 7a9d2f7883aa01d835e1abb99fc73c7a20dd3bb8
       </Testables>
    </TestAction>
    <LaunchAction
