@@ -120,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				98B5516D2784D78900AC9086 /* SpaceApp */,
+				B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */,
 				98B5517E2784D78F00AC9086 /* SpaceAppTests */,
 				98B551882784D78F00AC9086 /* SpaceAppUITests */,
 				98B5516C2784D78900AC9086 /* Products */,
@@ -155,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				98B551752784D78E00AC9086 /* Preview Assets.xcassets */,
-				B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
