@@ -120,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				98B5516D2784D78900AC9086 /* SpaceApp */,
-				B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */,
 				98B5517E2784D78F00AC9086 /* SpaceAppTests */,
 				98B551882784D78F00AC9086 /* SpaceAppUITests */,
 				98B5516C2784D78900AC9086 /* Products */,
@@ -268,6 +267,7 @@
 		B1A028002817631C0021AB28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B9A2E7BB28208B8F0069BE44 /* SpCustomBtn.swift */,
 				B1280B992818C62600AD4E09 /* SPTabBar.swift */,
 				5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */,
 			);
