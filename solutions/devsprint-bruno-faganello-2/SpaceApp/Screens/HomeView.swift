@@ -18,9 +18,11 @@ struct HomeView: View {
             ZStack {
                 Color.black
                 
-                ScrollView {
+                VStack {
                     NextLaunchViewCell(viewData: viewModel.nextLaunch)
                         .padding(.horizontal)
+                    
+                    Spacer()
                 }
             }
             .background(Color.darkGray)
