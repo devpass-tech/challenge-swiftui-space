@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-<<<<<<< HEAD
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
@@ -50,10 +49,6 @@
                ReferencedContainer = "container:SpaceApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-=======
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
->>>>>>> 7a9d2f7883aa01d835e1abb99fc73c7a20dd3bb8
       </Testables>
    </TestAction>
    <LaunchAction

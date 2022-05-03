@@ -9,17 +9,16 @@ import SwiftUI
 
 struct NextLaunchViewCell: View {
     
+    //MARK: - Propeties
     let viewData: NextLaunchViewData?
     
+    //MARK: - View
     var body: some View {
         VStack(spacing: 16) {
             headerSection
             
             VStack(spacing: 16) {
-                HStack(spacing: 16) {
-                    bagdeIconImage
-                    launchInformationsStack
-                }
+                LaunchBadgeWithInfos(viewData)
                 
                 Text(viewData?.description ?? .emptyString)
                     .lineLimit(3)
@@ -33,6 +32,7 @@ struct NextLaunchViewCell: View {
         }
     }
     
+    //MARK: - Helper
     private var headerSection: some View {
         HStack {
             Text("Upcoming")
@@ -44,42 +44,9 @@ struct NextLaunchViewCell: View {
         }
         .padding(.top, 20)
     }
-    
-    private var bagdeIconImage: some View {
-        AsyncImage(url: viewData?.iconImageURL) { phase in
-            switch phase {
-            case .empty:
-                ProgressView()
-                    .progressViewStyle(.circular)
-                    .frame(width: 125, height: 125)
-                    .tint(.white)
-                
-            case .success(let image):
-                image
-                    .resizable()
-                    .frame(width: 125, height: 125)
-                    .aspectRatio(contentMode: .fit)
-            default:
-                Text("Failed fetching image. Make sure to check your data connection and try again.")
-            }
-        }
-    }
-    
-    @ViewBuilder private var launchInformationsStack: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(viewData?.rocketName ?? .emptyString)
-                .font(.system(size: 24, weight: .semibold))
-            
-            Text(viewData?.launchNumber ?? .emptyString)
-                .font(.system(size: 20, weight: .regular))
-            
-            Text(viewData?.launchDate ?? .emptyString)
-                .font(.system(size: 20, weight: .regular))
-        }
-        .foregroundColor(.gray)
-    }
 }
 
+//MARK: - PreviewProvider
 struct NextLaunchViewCell_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {

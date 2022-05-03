@@ -10,11 +10,15 @@ import SwiftUI
 struct LaunchView: View {
     var body: some View {
         ZStack {
-            Color.black
-                .ignoresSafeArea(.all)
+            Color.black.ignoresSafeArea(.all)
             
-            Text("Launch View")
-                .foregroundColor(.white)
+            ScrollView {
+                //TODO: Remove mocked list when API are done
+                ForEach(0..<10) { _ in
+                    LaunchViewCell(
+                        viewData: .init(iconImageURL: URL(string: "https://images2.imgbox.com/02/51/7NLaBm8c_o.png"), rocketName: "Aleatorio", launchNumber: "#1234", launchDate: "September 12, 2023"))
+                }
+            }
         }
     }
 }
@@ -22,6 +26,9 @@ struct LaunchView: View {
 //MARK: - PreviewProvider
 struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchView()
+        ZStack {
+            Color.black
+            LaunchView()
+        }
     }
 }
