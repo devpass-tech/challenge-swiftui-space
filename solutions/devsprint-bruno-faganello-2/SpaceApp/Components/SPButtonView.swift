@@ -1,5 +1,5 @@
 //
-//  SpCustomBtn.swift
+//  SPButtonView.swift
 //  SpaceApp
 //
 //  Created by Tatiana Rico on 02/05/22.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct SpCustomBtn: View {
+struct SPButtonView: View {
     var colorText: Color?
     var title: String
     var colorBtn: Color?
@@ -40,7 +40,7 @@ struct SpCustomBtn: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SpCustomBtn(title: "") {
+        SPButtonView(title: "") {
             print("Button Tapped")
         }
     }
