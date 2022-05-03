@@ -9,26 +9,27 @@ import SwiftUI
 
 struct HomeView: View {
     
+    //MARK: - Properties
     @StateObject var viewModel: HomeViewModel
     
-    private var BGColor: Color { Color.init(red: 25/255, green: 25/255, blue: 25/255) }
-    
+    //MARK: - View
     var body: some View {
         NavigationView {
             ZStack {
                 Color.black
+                
                 ScrollView {
                     NextLaunchViewCell(viewData: viewModel.nextLaunch)
                         .padding(.horizontal)
-                    Spacer()
                 }
             }
-            .background(BGColor)
+            .background(Color.darkGray)
             .navigationTitle("Home")
             .onAppear(perform: onAppear)
         }
     }
     
+    //MARK: - Helpers
     private func onAppear() {
         setupNavigationBarAppearance()
         viewModel.start()
@@ -37,14 +38,15 @@ struct HomeView: View {
     private func setupNavigationBarAppearance() {
         UINavigationBar.appearance().barStyle = .black
         UINavigationBar.appearance().prefersLargeTitles = false
-        UINavigationBar.appearance().backgroundColor = .init(
-            red: 25/255, green: 25/255, blue: 25/255, alpha: 1
-        )
+        UINavigationBar.appearance().backgroundColor = .darkGray
     }
 }
 
+//MARK: - PreviewProvider
+#if DEBUG
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(viewModel: .init(service: SpaceXAPI.init()))
     }
 }
+#endif
