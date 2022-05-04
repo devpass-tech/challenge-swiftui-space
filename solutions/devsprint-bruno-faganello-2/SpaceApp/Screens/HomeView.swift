@@ -39,7 +39,7 @@ struct HomeView: View {
     
     private func setupNavigationBarAppearance() {
         UINavigationBar.appearance().barStyle = .black
-        UINavigationBar.appearance().prefersLargeTitles = false
+        UINavigationBar.appearance().prefersLargeTitles = true
         UINavigationBar.appearance().backgroundColor = .darkGray
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class HomeViewModel: ObservableObject {
+final class HomeViewModel: SPXViewModelActor, ObservableObject {
     
     //MARK: - Propertie
     private let service: SpaceXAPIProtocol
@@ -29,7 +29,7 @@ final class HomeViewModel: ObservableObject {
         Task { [weak self] in
             guard let self = self else { return }
             let nextLaunch = await service.fetchNextLaunch()
-            DispatchQueue.main.async { self.serviceResultHandler(nextLaunch) }
+            self.serviceResultHandler(nextLaunch)
         }
     }
     

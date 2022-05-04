@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct SPTabBar: View {
+    
     var body: some View {
         setupTabBarStyle()
         return makeTabBar()
     }
     
-    private func makeTabBar() -> some View {
+    @MainActor private func makeTabBar() -> some View {
         setupTabBarStyle()
         
         return TabView {
@@ -26,7 +27,9 @@ struct SPTabBar: View {
                     Text(SPTabBarPages.home.tabBarName)
                 }
             
-            LaunchView()
+            let launchesService = SpaceXAPI()
+            let launchesViewModel = LaunchViewModel(service: launchesService)
+            LaunchView(viewModel: launchesViewModel)
                 .tabItem {
                     SPTabBarPages.launch.icon.image
                     Text(SPTabBarPages.launch.tabBarName)

@@ -8,18 +8,57 @@
 import SwiftUI
 
 struct LaunchView: View {
+    
+    //MARK: - Properties
+    @ObservedObject private var viewModel: LaunchViewModel
+    
+    //MARK: - Constructor
+    init(viewModel: LaunchViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    //MARK: - View
     var body: some View {
-        ZStack {
-            Color.black.ignoresSafeArea(.all)
-            
-            ScrollView {
-                //TODO: Remove mocked list when API are done
-                ForEach(0..<10) { _ in
-                    LaunchViewCell(
-                        viewData: .init(iconImageURL: URL(string: "https://images2.imgbox.com/02/51/7NLaBm8c_o.png"), rocketName: "Aleatorio", launchNumber: "#1234", launchDate: "September 12, 2023"))
+        NavigationView {
+            ZStack {
+                Color.black.ignoresSafeArea(.all)
+                
+                ScrollView {
+                    ForEach(viewModel.launches, id: \.id) { info in
+                        LaunchViewCell(
+                            viewData: .init(
+                                iconImageURL: info.iconImageURL,
+                                rocketName: info.rocketName,
+                                launchNumber: info.launchNumber,
+                                launchDate: info.launchDate)
+                        )
+                    }
                 }
+                .padding(.top)
+                .navigationTitle("Launches")
+                .onAppear(perform: onApearMethod)
             }
         }
+    }
+    
+    //MARK: - Helpers
+    private func onApearMethod() {
+        setupNavigationBarAppearance()
+        viewModel.start()
+    }
+    
+    private func setupNavigationBarAppearance() {
+        UINavigationBar.appearance().barStyle = .black
+        UINavigationBar.appearance().prefersLargeTitles = true
+        UINavigationBar.appearance().backgroundColor = .darkGray
+    }
+    
+    private var navigationLink: some View {
+        NavigationLink(
+            destination: CompleteDetailsView.init,
+            isActive: $viewModel.shouldShowView,
+            label: EmptyView.init
+        )
     }
 }
 
@@ -28,7 +67,7 @@ struct LaunchView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color.black
-            LaunchView()
+            LaunchView(viewModel: .init(service: SpaceXAPI()))
         }
     }
 }

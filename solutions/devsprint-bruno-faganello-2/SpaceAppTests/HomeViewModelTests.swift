@@ -11,6 +11,9 @@ import XCTest
 import UIKit
 import SwiftUI
 
+
+
+@MainActor
 final class HomeViewModelTests: XCTestCase {
     
     //MARK: - Properties
@@ -18,24 +21,29 @@ final class HomeViewModelTests: XCTestCase {
     private var sut: HomeViewModel!
     
     //MARK: - Setup
-    override func setUp() {
+    
+    @MainActor override func setUp() {
         makeSUT()
     }
     
     //MARK: - Tests
+    
     func test_HomeViewModel_NextLaunchPropertie_WhenInititlize_ShouldbeNil() {
         XCTAssertNil(sut.nextLaunch)
     }
+    
     
     func test_HomeViewModel_NextLaunchPropertie_WhenStart_ShouldbeNotNil() {
         sut.start()
         wait { XCTAssertNotNil(self.sut.nextLaunch) }
     }
     
+    
     func test_HomeViewModel_FetchNextLaunchWasCalled_WhenStartCall_ShoudlBeCalled() {
         sut.start()
         wait { XCTAssertTrue(self.serviceMock.fetchNextLaunchWasCalled) }
     }
+    
     
     func test_HomeViewModel_nextLaunchPropertie_WhenAPIFail_ShouldBeNil() {
         serviceMock.fetchNextLaunchShouldBeFail = true
@@ -43,20 +51,24 @@ final class HomeViewModelTests: XCTestCase {
         wait { XCTAssertNil(self.sut.nextLaunch) }
     }
     
+    
     func test_HomeViewModel_rocketNamePropertie_WhenAPISucceded_ShouldBeEqualExpected() {
         sut.start()
         wait { XCTAssertEqual(self.sut?.nextLaunch?.rocketName, Constants.jsonRocketName) }
     }
+    
     
     func test_HomeViewModel_launchDatePropertie_WhenAPISucceded_ShouldBeEqualExpected() {
         sut.start()
         wait { XCTAssertEqual(self.sut?.nextLaunch?.launchDate, Constants.jsonLaunchDate) }
     }
     
+    
     func test_HomeViewModel_descriptionPropertie_WhenAPISucceded_ShouldBeEqualExpected() {
         sut.start()
         wait { XCTAssertEqual(self.sut?.nextLaunch?.description, Constants.jsonDescription) }
     }
+    
     
     func test_HomeViewModel_launchNumberPropertie_WhenAPISucceded_ShouldBeEqualExpected() {
         sut.start()
@@ -64,7 +76,8 @@ final class HomeViewModelTests: XCTestCase {
     }
     
     //MARK: - TearDown
-    override func tearDown() {
+    
+    @MainActor override func tearDown() {
         serviceMock = nil
         sut = nil
     }

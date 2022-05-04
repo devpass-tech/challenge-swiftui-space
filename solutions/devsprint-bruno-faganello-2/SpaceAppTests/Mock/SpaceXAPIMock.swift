@@ -10,11 +10,14 @@ import XCTest
 
 final class SpaceXAPIMock: SpaceXAPIProtocol {
     
+    //MARK: - Apies
     private(set) var fetchAllLaunchesWasCalled: Bool = false
     private(set) var fetchNextLaunchWasCalled: Bool = false
     
+    //MARK: - Constrollers
     var fetchNextLaunchShouldBeFail: Bool = false
     
+    //MARK: - SpaceXAPIProtocol
     func fetchAllLaunches() async -> [Launch]? {
         fetchAllLaunchesWasCalled = true
         return []
@@ -24,5 +27,9 @@ final class SpaceXAPIMock: SpaceXAPIProtocol {
         fetchNextLaunchWasCalled = true
         if fetchNextLaunchShouldBeFail { return nil }
         return JSONHelper.decode()
+    }
+    
+    func fetchNextLaunches() async -> NextLaunchesResponseModel? {
+        return nil
     }
 }

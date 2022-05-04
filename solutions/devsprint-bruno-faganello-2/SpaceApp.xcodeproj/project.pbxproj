@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A59BA5D2820B8B90045A976 /* NextLaunchesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59BA5C2820B8B90045A976 /* NextLaunchesResponseModel.swift */; };
 		5AC671C4281EEE6300D1278B /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */; };
 		98B5516F2784D78900AC9086 /* SpaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B5516E2784D78900AC9086 /* SpaceAppApp.swift */; };
 		98B551712784D78900AC9086 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B551702784D78900AC9086 /* HomeView.swift */; };
@@ -42,6 +43,9 @@
 		B15711502821E9A300E431B2 /* LaunchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157114F2821E9A300E431B2 /* LaunchViewCell.swift */; };
 		B15711522821F1B300E431B2 /* LaunchBadgeWithInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15711512821F1B300E431B2 /* LaunchBadgeWithInfos.swift */; };
 		B15711542821F22C00E431B2 /* LaunchBadgeWithInfosViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15711532821F22C00E431B2 /* LaunchBadgeWithInfosViewData.swift */; };
+		B15711562821F50C00E431B2 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15711552821F50C00E431B2 /* LaunchViewModel.swift */; };
+		B15711582821F61600E431B2 /* SPXViewModelActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15711572821F61600E431B2 /* SPXViewModelActor.swift */; };
+		B157115A2821F6FF00E431B2 /* LaunchesViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15711592821F6FF00E431B2 /* LaunchesViewData.swift */; };
 		B1A027FA281761020021AB28 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027F9281761020021AB28 /* LaunchView.swift */; };
 		B1A027FF281761A90021AB28 /* SPSystemIconsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */; };
 		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
@@ -70,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A59BA5C2820B8B90045A976 /* NextLaunchesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchesResponseModel.swift; sourceTree = "<group>"; };
 		5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		98B5516B2784D78900AC9086 /* SpaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B5516E2784D78900AC9086 /* SpaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppApp.swift; sourceTree = "<group>"; };
@@ -109,6 +114,9 @@
 		B157114F2821E9A300E431B2 /* LaunchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewCell.swift; sourceTree = "<group>"; };
 		B15711512821F1B300E431B2 /* LaunchBadgeWithInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchBadgeWithInfos.swift; sourceTree = "<group>"; };
 		B15711532821F22C00E431B2 /* LaunchBadgeWithInfosViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchBadgeWithInfosViewData.swift; sourceTree = "<group>"; };
+		B15711552821F50C00E431B2 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		B15711572821F61600E431B2 /* SPXViewModelActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPXViewModelActor.swift; sourceTree = "<group>"; };
+		B15711592821F6FF00E431B2 /* LaunchesViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewData.swift; sourceTree = "<group>"; };
 		B1A027F9281761020021AB28 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSystemIconsConstants.swift; sourceTree = "<group>"; };
 		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
@@ -223,10 +231,12 @@
 			children = (
 				98BDC98E2784F9D1003820AD /* AllLaunchesResponse.swift */,
 				B1280B80281804FC00AD4E09 /* NextLaunchViewData.swift */,
+				B15711592821F6FF00E431B2 /* LaunchesViewData.swift */,
 				B1280B952818B97400AD4E09 /* NextLaunchResponseModel.swift */,
 				B1A027FE281761A90021AB28 /* SPSystemIconsConstants.swift */,
 				B1A028062817639B0021AB28 /* SPTabBarPages.swift */,
 				B15711532821F22C00E431B2 /* LaunchBadgeWithInfosViewData.swift */,
+				5A59BA5C2820B8B90045A976 /* NextLaunchesResponseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				B1280BC3281A098D00AD4E09 /* HomeViewModel.swift */,
+				B15711552821F50C00E431B2 /* LaunchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				B1A02809281764390021AB28 /* Extensions */,
+				B15711572821F61600E431B2 /* SPXViewModelActor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -496,6 +508,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A59BA5D2820B8B90045A976 /* NextLaunchesResponseModel.swift in Sources */,
 				B1280BC4281A098D00AD4E09 /* HomeViewModel.swift in Sources */,
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
 				B1A027FA281761020021AB28 /* LaunchView.swift in Sources */,
@@ -520,6 +533,8 @@
 				B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */,
 				B1280B9A2818C62600AD4E09 /* SPTabBar.swift in Sources */,
 				B15711542821F22C00E431B2 /* LaunchBadgeWithInfosViewData.swift in Sources */,
+				B157115A2821F6FF00E431B2 /* LaunchesViewData.swift in Sources */,
+				B15711562821F50C00E431B2 /* LaunchViewModel.swift in Sources */,
 				B15711502821E9A300E431B2 /* LaunchViewCell.swift in Sources */,
 				98BDC9892784F891003820AD /* NetworkClient.swift in Sources */,
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
@@ -529,6 +544,7 @@
 				B15711522821F1B300E431B2 /* LaunchBadgeWithInfos.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
+				B15711582821F61600E431B2 /* SPXViewModelActor.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
 				98BDC98F2784F9D1003820AD /* AllLaunchesResponse.swift in Sources */,
 				E4BD81932820903300E8520F /* CompleteDetailView.swift in Sources */,
