@@ -21,7 +21,7 @@ struct LaunchView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.black.ignoresSafeArea(.all)
+                Color.black
                 
                 ScrollView {
                     ForEach(viewModel.launches, id: \.id) { info in
@@ -35,9 +35,11 @@ struct LaunchView: View {
                     }
                 }
                 .padding(.top)
-                .navigationTitle("Launches")
-                .onAppear(perform: onApearMethod)
+
             }
+            .background(Color.darkGray)
+            .navigationTitle("Launches")
+            .onAppear(perform: onApearMethod)
         }
     }
     
@@ -51,14 +53,6 @@ struct LaunchView: View {
         UINavigationBar.appearance().barStyle = .black
         UINavigationBar.appearance().prefersLargeTitles = true
         UINavigationBar.appearance().backgroundColor = .darkGray
-    }
-    
-    private var navigationLink: some View {
-        NavigationLink(
-            destination: CompleteDetailsView.init,
-            isActive: $viewModel.shouldShowView,
-            label: EmptyView.init
-        )
     }
 }
 
