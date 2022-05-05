@@ -45,9 +45,10 @@
 		B1A028072817639B0021AB28 /* SPTabBarPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028062817639B0021AB28 /* SPTabBarPages.swift */; };
 		B1A0281E2817685C0021AB28 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0281D2817685C0021AB28 /* Color+Extension.swift */; };
 		B1A028262817F6E90021AB28 /* NextLaunchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */; };
+		B93EC3CC28246A20000D6E80 /* RocketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93EC3CB28246A1F000D6E80 /* RocketView.swift */; };
+		B93EC3CE28246A2C000D6E80 /* SPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93EC3CD28246A2C000D6E80 /* SPButtonView.swift */; };
 		E4BD81932820903300E8520F /* CompleteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BD81922820903300E8520F /* CompleteDetailView.swift */; };
 		E4BD81952820905300E8520F /* CompleteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BD81942820905300E8520F /* CompleteDetailsViewModel.swift */; };
-		B9A2E7BC28208B8F0069BE44 /* SPButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A2E7BB28208B8F0069BE44 /* SPButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,9 +111,10 @@
 		B1A028062817639B0021AB28 /* SPTabBarPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTabBarPages.swift; sourceTree = "<group>"; };
 		B1A0281D2817685C0021AB28 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		B1A028252817F6E90021AB28 /* NextLaunchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewCell.swift; sourceTree = "<group>"; };
+		B93EC3CB28246A1F000D6E80 /* RocketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketView.swift; sourceTree = "<group>"; };
+		B93EC3CD28246A2C000D6E80 /* SPButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPButtonView.swift; sourceTree = "<group>"; };
 		E4BD81922820903300E8520F /* CompleteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteDetailView.swift; sourceTree = "<group>"; };
 		E4BD81942820905300E8520F /* CompleteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteDetailsViewModel.swift; sourceTree = "<group>"; };
-		B9A2E7BB28208B8F0069BE44 /* SPButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,7 +326,8 @@
 		B1A028002817631C0021AB28 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B9A2E7BB28208B8F0069BE44 /* SPButtonView.swift */,
+				B93EC3CD28246A2C000D6E80 /* SPButtonView.swift */,
+				B93EC3CB28246A1F000D6E80 /* RocketView.swift */,
 				B1280B992818C62600AD4E09 /* SPTabBar.swift */,
 				5AC671C3281EEE6300D1278B /* DetailHeaderView.swift */,
 			);
@@ -493,11 +496,13 @@
 				5A59BA5D2820B8B90045A976 /* NextLaunchesResponseModel.swift in Sources */,
 				B1280BC4281A098D00AD4E09 /* HomeViewModel.swift in Sources */,
 				98B551712784D78900AC9086 /* HomeView.swift in Sources */,
+				B93EC3CE28246A2C000D6E80 /* SPButtonView.swift in Sources */,
 				B1A027FA281761020021AB28 /* LaunchView.swift in Sources */,
 				E4BD81952820905300E8520F /* CompleteDetailsViewModel.swift in Sources */,
 				B1280B9D2818CFB500AD4E09 /* UIColor+extensions.swift in Sources */,
 				5AC671C4281EEE6300D1278B /* DetailHeaderView.swift in Sources */,
 				98BDC9852784F880003820AD /* HTTPHeaderField.swift in Sources */,
+				B93EC3CC28246A20000D6E80 /* RocketView.swift in Sources */,
 				B157114C281FE10800E431B2 /* String+Extensions.swift in Sources */,
 				B1280B81281804FC00AD4E09 /* NextLaunchViewData.swift in Sources */,
 				B1280B962818B97400AD4E09 /* NextLaunchResponseModel.swift in Sources */,
@@ -518,7 +523,6 @@
 				98BDC9872784F888003820AD /* Response.swift in Sources */,
 				B1280B8D2818B7DD00AD4E09 /* AllLaunchsEndpoint.swift in Sources */,
 				B1280BA128196B5800AD4E09 /* SpaceXAPIErrors.swift in Sources */,
-				B9A2E7BC28208B8F0069BE44 /* SPButtonView.swift in Sources */,
 				98BDC98D2784F928003820AD /* SpaceXAPIClient.swift in Sources */,
 				98BDC9812784F865003820AD /* ContentType.swift in Sources */,
 				B1280B8B2818B70400AD4E09 /* Endpoint.swift in Sources */,
