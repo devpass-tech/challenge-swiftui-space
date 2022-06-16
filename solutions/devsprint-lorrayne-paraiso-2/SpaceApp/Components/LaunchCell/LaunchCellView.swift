@@ -43,7 +43,7 @@ struct LaunchCellView: View {
             }
             .padding(16)
         }
-        .frame(width: 376, height: 157)
+        .frame(height: 157)
         .background(Color.secondaryBG)
         .cornerRadius(10)
     }
@@ -60,6 +60,7 @@ struct LaunchCellView_Previews: PreviewProvider {
         )
 
         LaunchCellView(viewModel: model)
+            .padding(.horizontal, 16)
             .previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 200))
     }
 }
